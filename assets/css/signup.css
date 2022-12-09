@@ -1,0 +1,94 @@
+body{
+    background-image:url("../../assets/images/login_page/backround-signup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.form-box{
+    width:380px;
+    height:480px;
+    position:relative;
+    margin: 13% auto;
+    background-color: white;
+    padding:5px;
+}
+.button-box h1{
+    padding-left: 50px;
+}
+.button-box{
+    border-radius: 20px;
+color: rgb(40, 20, 20);
+    padding-left: 20px;
+    width:220px;
+    margin:35px auto;
+    position: relative;
+    box-shadow:0 0 20px 9px #ff61241f;
+    background-color: white;
+    background-color: rgb(224, 168, 125);
+    
+}
+.login{
+    color:white;
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    position: relative;
+    outline:none;
+}
+.btn{
+    top:0;
+    bottom:0;
+    position:absolute;
+    width:110px;
+    height:100%;
+    
+}
+.social-media{
+    margin:30px auto;
+    text-align:center;
+
+}
+
+.fa-brands {
+    color: rgb(75, 10, 10);
+    font-size: 30px;
+}
+.box{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition:0.5s;
+}
+
+.text{
+    
+    font-size: 20px;
+    width:100%;
+    padding-left: 30px;
+    padding:10px 0px;
+    margin-left:50px;
+    margin-bottom: 20px;
+   border:grey 2px solid;
+    background: transparent;
+}
+.submit{
+
+    color:white;
+    font-size: 20px;
+    width:85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display: block;
+    margin-top: 25px;
+    margin-left:75px;
+    outline:none;
+    border: white 2px solid;
+    background: linear-gradient(to right, rgb(42, 5, 5),rgb(246, 199, 122));
+   
+}
+.submit:hover{
+ color:antiquewhite
+}
+
+
