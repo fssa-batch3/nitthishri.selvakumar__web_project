@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/request.css">
+</head>
+
+<body>
+    <header>
+        <div class="row1">
+
+            <div class="row1a">
+                <a class="connect" href=""><i class="fa-solid fa-phone"></i> 9876543210</a>
+                <a class="connect" href=""> <i class="fa-solid fa-envelope"></i>blackwoodalley@gmail.com</a>
+            </div>
+
+            <div class="row1b">
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="line">
+
+        </div>
+
+        <div class="row2">
+            <div class="row2a">
+                <img class="logo" src="../../assets/images/index_page/logo.png">
+            </div>
+            <div class="row2b">
+                <ul>
+                    <li><a class="navi" href="">Home</a></li>
+                    <li><a class="navi" href="">About</a></li>
+                    <li><a class="service" href="">Service</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/service/">repair electronics</a></li>
+                                <li><a class="sub-service1" href="./pages/service/service1.html">repair furniture</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li><a class="navi" href="">how we restore</a></li>
+                    <li><a class="navi" href="">contact us</a></li>
+                    <li><a class="navi" href="">track request</a></li>
+                    <li><a class="navi" href="./pages/login.html">Login</a></li>
+                    <li><a class="navi1" href="">Request a quote</a>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <div class="backround-image">
+            <h1>REQUEST A QUOTE</h1>
+
+
+
+        </div>
+        <div class="request-box">
+
+            <p>Do you have an item or items you would like to repair or restore?
+                Not sure about the process or what’s possible?</p>
+
+            <p>No worries—you’re in the best of hands! Complete the form below, attach pictures if you have them.</p>
+
+            <p>One of our Restoration Consultants will be in touch soon to discuss
+                your goals and vision for your piece(s). We look forward to connecting with you!</p>
+            <h4>Request a quote</h4>
+
+            <form action="../../index.html" method="get">
+                <div class="full-form">
+                    <div class="both-side">
+                        <div class="side">
+                            <div class="elements">
+                                <label for="first-name"> First name<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="text" name="first-name" id="first-name" required>
+                            </div>
+                            <div class="elements">
+                                <label for="last-name">Last name<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="text" name="last-name" id="last-name" required>
+                            </div>
+                            <div class="elements">
+                                <label for="email">E-mail<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="elements">
+                                <label for="first-name">Phone number<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="number" name="first-name" id="first-name" minlength="10" maxlength="14"
+                                    required>
+                            </div>
+
+                            <div class="elements">
+                                <label for="category">category of item<i class="fa-solid fa-star-of-life"></i></label>
+                                <input list="category" name="category">
+                                <datalist id="category">
+                                    <option value="home-furniture">
+                                    <option value="Radio">
+                                    <option value="Camera">
+                                    <option value="voice recorder">
+                                    <option value="vintage switch">
+                                    <option value="gramophone">
+                                    <option value="walkman">
+                                    <option value="Amplifer">
+                                    <option value="Calculator">
+                                    <option value="Television">
+                                    <option value="Head-phone">
+                                    <option value="Telephone">
+                                    <option value="computer">
+                                    <option value="Tailoring-machine">
+                                    <option value="Bettermass-light">
+                                    <option value="Fan">
+                                    <option value="others">
+                                </datalist>
+
+                            </div>
+                            <div class="elements">
+                                <label for="height">Dimension(height)<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="text" name="height" id="height" required>
+                            </div>
+
+                        </div>
+
+                        <div class="side1">
+
+                            <div class="elements">
+                                <label for="width">Dimension(width)<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="text" name="width" id="width" required>
+                            </div>
+
+                            <div class="elements">
+                                <label for="reason">REASON FOR RESTORATION INQUIRY</label>
+
+                                <div class="reason">
+                                    <input type="radio" name="reason" id="sentimental">
+                                    <label class="why" for="sentimental">I am
+                                        sentimental about it.</label>
+
+                                </div>
+
+                                <div class="reason">
+                                    <input type="radio" name="reason" id="valuable">
+                                    <label class="why" for="valuable"> My furniture/item
+                                        is high-end/good quality.</label>
+                                </div>
+
+                                <div class="reason">
+                                    <input type="radio" name="reason" id="like">
+                                    <label class="why" for="like"> I really like the style and I don't want to replace
+                                        it.</label>
+                                </div>
+
+                                <div class="reason">
+                                    <input type="radio" name="reason" id="sentimental">
+                                    <label class="why" for="sentimental">Others</label>
+                                </div>
+                            </div>
+                            <div class="elements">
+                                <label for="other">Reason for the restortation inquiry(others)</label>
+                                <input type="text" name="others" id="others">
+                            </div>
+
+                            <div class="elements">
+
+                                <label for="reason">WHAT WOULD YOU LIKE TO TALK TO US ABOUT?</label>
+
+                                <div class="reason">
+                                    <input type="radio" name="quote" id="quote">
+                                    <label class="why" for="quote">I want to get a quote for my item.</label>
+                                </div>
+
+                                <div class="reason">
+                                    <input type="radio" name="reason" id="valuable">
+                                    <label class="why" for="valuable"> I want to know more about your services</label>
+                                </div>
+
+                                <div class="elements">
+                                    <label for="file">Photo</label>
+                                    <input type="file" name="file" id="file" >
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="area">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" col="20" row="50"></textarea>
+
+                    </div>
+                    <button class="request-submit">submit</button>
+
+            </form>
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
