@@ -5,13 +5,14 @@ body{
     margin:0;
     padding:0;
     font-family: 'Rubik', sans-serif;
-    background-image: url("../../assets/images/shipping_page/pexels-photo-3196043.jpeg");
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(2, 5, 25, 0.3),rgba(3, 7, 31, 0.581)),url("../../assets/images/shipping_page/wall.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/*nav-starting*/
 .fa-brands{
-    color:white;
+    color:black;
     padding-right: 15px;
 }
 .fa-solid{
@@ -19,18 +20,17 @@ body{
 }
 ul{
     list-style: none;
-    display: inline-flex;
-    
+    display: inline-flex;  
     margin-top: -15px;
 }
 
- a{
-    color:white;
+a{
+    color:black;
     text-decoration: none;
 }
 header{
     z-index: 1;
-    background-color:rgb(94, 59, 13);
+    background-color:burlywood;
     position: fixed;
     top:0;
     height:150px;
@@ -60,22 +60,21 @@ header{
     margin-right: 75px;
 }
 .fa-brands:hover{
-    color:rgb(233, 198, 146);
+    color:brown;
     font-size: 22px;
 
 }
 .fa-solid:hover{
-    color:rgb(221, 172, 98);
+    color:brown;
 }
 .connect{
     font-size: 18px;
     margin-left: 25px;
-    transition: 0.5s;
 }
 .line{
     height: 0.5px;
     width:100%;
-    background-color: rgb(232, 221, 221);
+    background-color: black;
     position: relative;
     top:-40px;
 
@@ -102,11 +101,11 @@ header{
 }
 
 .connect:hover{
-    transform: scale(1.1);
-    color:rgb(230, 191, 130);
+    font-size: 22px;
+    color:brown;
 }
 .navi:hover{
-    color:rgb(230, 191, 130);    
+    color:brown;    
 
 }
 .logo{
@@ -120,7 +119,7 @@ header{
     position: static;
 }
 .service:hover{
-    color:rgb(230, 191, 130);
+    color: brown;
 }
 .navi1{
     border:2px solid rgb(36, 7, 7);
@@ -138,7 +137,7 @@ header{
 }
 .sub-service1:hover{
 
-color:rgb(230, 191, 130);
+color:brown;
 }
 .row2b ul li:hover .sub-service{
     display: block;
@@ -150,12 +149,12 @@ color:rgb(230, 191, 130);
 }
 .row2b ul li:hover .sub-service ul {
     display: block;
-    margin:1px;
+    margin:px;
 }
 .sub-service1.hover{
     display: block;
 }
-/*nav -ending */
+/*nav-ending*/
 
 main{ 
    
@@ -167,7 +166,7 @@ main{
     height:800px ;
     width:400px ;
     background: transparent;
-    background-color: rgb(213, 201, 180);
+    background-color: rgb(212, 209, 206);
     margin-top: 200px;
 padding:20px;
 border-radius: 20px;

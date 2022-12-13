@@ -199,7 +199,7 @@ aside{
     width:300px;
  }
  .outer-box{
-    background-color: rgb(233, 230, 226);
+    background-color: rgb(227, 220, 212);
     padding:20px;
     border:2px black solid;
     height:320px;
@@ -208,7 +208,7 @@ aside{
     box-shadow: 20px 20px 30px rgb(183, 182, 182);
  }
  .outer-box:hover{
-    background-color: #d0b587e1;
+    background-color: #7b480ee1;
  }
  .furniture-imgs{
     margin-top:190px ;

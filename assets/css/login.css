@@ -1,5 +1,5 @@
 body{
-    background-image:url("../images/login_page/backround-signup.jpg");
+    background-image:linear-gradient(rgb(4,9,34,0.3),rgb(4,9,34,0.3)),url("../images/login_page/backround-signup.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -17,7 +17,7 @@ body{
 }
 .button-box{
     border-radius: 20px;
-color: rgb(40, 20, 20);
+    color: rgb(40, 20, 20);
     padding-left: 20px;
     width:220px;
     margin:35px auto;

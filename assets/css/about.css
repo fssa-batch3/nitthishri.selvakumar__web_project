@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Caveat&family=Heebo:wght@300&family=Rubik:wght@300&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    
+}
+/*nav-starting*/
+.fa-brands{
+    color:black;
+    padding-right: 15px;
+}
+.fa-solid{
+    padding-right: 7px;
+}
+ul{
+    list-style: none;
+    display: inline-flex;  
+    margin-top: -15px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+header{
+    z-index: 1;
+    background-color:burlywood;
+    position: fixed;
+    top:0;
+    height:150px;
+    width:100%;
+    
+}
+.row1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:25px ;
+    height:60px;
+    width:100%;
+    font-size: 20px;
+   
+   
+
+
+}
+.row1a{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.row1b{
+    margin-right: 75px;
+}
+.fa-brands:hover{
+    color:brown;
+    font-size: 22px;
+
+}
+.fa-solid:hover{
+    color:brown;
+}
+.connect{
+    font-size: 18px;
+    margin-left: 25px;
+}
+.line{
+    height: 0.5px;
+    width:100%;
+    background-color: black;
+    position: relative;
+    top:-40px;
+
+
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:80px;
+    width:100%;
+    margin-top:0;
+    font-size: 20px;
+    
+
+}
+.row2a{
+    margin-left: 55px;
+    margin-top: -30px;
+}
+.row2b{
+    margin-right: 45px;
+    margin-top: -12px;
+}
+
+.connect:hover{
+    font-size: 22px;
+    color:brown;
+}
+.navi:hover{
+    color:brown;    
+
+}
+.logo{
+    height:60px ;
+    width:60px;
+
+}
+.navi,.navi1,.service{
+    padding-right: 20px;
+    font-weight: 600;
+    position: static;
+}
+.service:hover{
+    color: brown;
+}
+.navi1{
+    border:2px solid rgb(36, 7, 7);
+    background-color:rgb(36, 7, 7) ;
+    color:burlywood;
+    padding: 5px;
+    border-radius: 20px;
+}
+.navi1:hover{
+    color:rgb(226, 157, 68)
+}
+.sub-service{
+    display: none;
+    font-size: 20px;
+}
+.sub-service1:hover{
+
+color:brown;
+}
+.row2b ul li:hover .sub-service{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 6px;
+    margin-left:5px ;
+    padding-top:10px ;
+}
+.row2b ul li:hover .sub-service ul {
+    display: block;
+    margin:px;
+}
+.sub-service1.hover{
+    display: block;
+}
+/*nav-ending*/
+/*backround image starting*/
+.bg-img{
+    background-image:linear-gradient(rgb(4,9,34,0.3),rgb(4,9,34,0.3)),url("../../assets/images/Aboutus-page/bg-image1.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:500px;
+}
+
+.bg-img h1{
+    text-transform: uppercase;
+    font-family:sans-serif;
+    color:white;
+    padding-top: 280px;
+    padding-left: 300px;
+    font-size: 70px;
+   
+}
+h1 span{
+    color:brown;
+
+
+
+}
+.bg-img h1:hover{
+    -webkit-text-stroke: 2px gray;
+    color:transparent;
+}
+/*backround image ends*/
