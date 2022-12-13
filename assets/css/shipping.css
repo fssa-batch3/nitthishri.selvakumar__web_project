@@ -5,11 +5,13 @@ body{
     margin:0;
     padding:0;
     font-family: 'Rubik', sans-serif;
-    
+    background-image: url("../../assets/images/shipping_page/pexels-photo-3196043.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fa-brands{
-    color:black;
+    color:white;
     padding-right: 15px;
 }
 .fa-solid{
@@ -23,12 +25,12 @@ ul{
 }
 
  a{
-    color:black;
+    color:white;
     text-decoration: none;
 }
 header{
     z-index: 1;
-    background-color:burlywood;
+    background-color:rgb(94, 59, 13);
     position: fixed;
     top:0;
     height:150px;
@@ -58,12 +60,12 @@ header{
     margin-right: 75px;
 }
 .fa-brands:hover{
-    color:brown;
+    color:rgb(233, 198, 146);
     font-size: 22px;
 
 }
 .fa-solid:hover{
-    color:brown;
+    color:rgb(221, 172, 98);
 }
 .connect{
     font-size: 18px;
@@ -73,7 +75,7 @@ header{
 .line{
     height: 0.5px;
     width:100%;
-    background-color: black;
+    background-color: rgb(232, 221, 221);
     position: relative;
     top:-40px;
 
@@ -101,10 +103,10 @@ header{
 
 .connect:hover{
     transform: scale(1.1);
-    color:brown;
+    color:rgb(230, 191, 130);
 }
 .navi:hover{
-    color:brown;    
+    color:rgb(230, 191, 130);    
 
 }
 .logo{
@@ -118,7 +120,7 @@ header{
     position: static;
 }
 .service:hover{
-    color: brown;
+    color:rgb(230, 191, 130);
 }
 .navi1{
     border:2px solid rgb(36, 7, 7);
@@ -136,7 +138,7 @@ header{
 }
 .sub-service1:hover{
 
-color:brown;
+color:rgb(230, 191, 130);
 }
 .row2b ul li:hover .sub-service{
     display: block;
@@ -148,131 +150,58 @@ color:brown;
 }
 .row2b ul li:hover .sub-service ul {
     display: block;
-    margin:px;
+    margin:1px;
 }
 .sub-service1.hover{
     display: block;
+}
 /*nav -ending */
-}
-.bgimage{
 
-    
-    width:100%;
-    height:700px;
-    background-image:url("../images/index_page/timer.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    
-}
-.bgimage h1{
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size:55px;
-    color:rgb(245, 237, 237);
-    
-    margin-left: 60px;
-}
-.bgimage p{
-    font-size:20px;
-    color:white;
-    margin-left: 60px;
-}
-.part1{
+main{ 
+   
     display: flex;
-    flex-direction:row;
-    height: 350px;
-    width:100%;
-}
-.part1a,.part1b{
-  height:250px;
-  width:600px;   
- background-color: rgb(216, 195, 167);
- margin-top: 40px;
- margin-left: 70px;
- margin-right: 70px;
- margin-bottom: 40px;
-}
-.repair{
-    height:250px;
-    width:600px;  
-    position: relative;
-    top:20px;
-    left:20px;
+    justify-content: center;
 }
 
-.repair:hover{
-    height:230px;
-    width:580px;  
-
+.verification{
+    height:800px ;
+    width:400px ;
+    background: transparent;
+    background-color: rgb(213, 201, 180);
+    margin-top: 200px;
+padding:20px;
+border-radius: 20px;
+margin-bottom:100px ;
+    
 }
-.repaira{
-    font-size: 30px;
-    border:4px rgb(216, 195, 167) solid;
-    height:50px;
-    width:450px;
-    background-color:rgb(216, 195, 167);
-    position: relative;
-    top:-20px;
-    left:200px;
-
-}
-.bglogo{
-    height:200px ;
-    width: 200px;
-    padding-top: 200px;
-    margin-left:60px ;
-}
-.subvid{
+.verification h1{
     text-align: center;
 }
-.subvid1{
-    width: 100%;
+.column{
+    
     display: flex;
-    flex-direction:row ;
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
 }
-/*nav ends*/
-.bg-image{
-    height: 100px;
-    width:100%;
-    margin-top: 150px;
-    background-color: rgb(220, 212, 212);
+.column input{
+    padding: 7px;
+    font-size: 18px;
 }
-.bg-image{
-  text-align: center;
-  padding-top: 10px;
-  color: rgb(91, 27, 27);
+.column label{
+    color:rgb(68, 13, 13);
+    font-size: 20px;
+    font-weight: 900px;
 }
-/*table*/
-table{
-    width:95%;
-    margin-top: 30px;
-    margin-left:40px ;
-    
+.verification button{
+    height: 40px;
+    width:200px;
+    background-color: rgb(152, 106, 41);
+    border: 1px solid  rgb(152, 106, 41);
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: aliceblue;
 }
-table thead tr th{
-background-color:#f5ba76;
-height:50px;
-font-size:25px;
-padding: 12px;
-
-
-
+.verification button:hover{
+    background-color: rgb(107, 63, 19);
 }
-table tbody tr td{
-    text-align: center;
-    font-size:18px;
-    font-weight: 500;
-    
-}
-table tbody tr td{
-padding: 20px;
-background-color:#f5e9d7;
-}
-.even{
-    background-color: rgb(172, 161, 147);
-}
-tbody tr a{
-    color: blueviolet;
-}
-

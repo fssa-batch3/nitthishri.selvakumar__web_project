@@ -230,6 +230,9 @@ aside {
 
 /*full body*/
 .full-body {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .5px;
+    word-spacing: 7px;
     width:100%;
     display: flex;
     flex-direction: row;
@@ -260,7 +263,7 @@ aside {
     margin-right: 40px;
     font-size: 23px;
     font-weight: 800;
-    word-spacing: 4px;
+    word-spacing: 7px;
     line-height: 35px;
 }
 
@@ -268,19 +271,47 @@ aside {
     margin-left: 250px;
     color: white;
     font-size: 20px;
-    background-color: rgb(73, 13, 13);
+    background-color: #5c4141;
+    border-radius: 30px;
     font-weight: 700;
     border: 2px solid black;
-    padding: 10px;
+    padding:10px 30px 10px 30px;
+    
 }
 .near-aside1 a:hover{
     color: antiquewhite;
 }
 /*touch-with-us starting*/
 .touch-with-us{
+    background: url("../../assets/images/service2_page/backround-contact.jpg");
+display: flex;
+flex-direction: row;
     height: 100px;
+    color:white;
      background-color: rgb(235, 229, 221);
      margin-top: 30px;
+     padding-top: 30px;
+}
+.touch-with-us a{
+    border-radius: 30px;
+    margin-left: 20px;
+    padding:10px 30px 10px 30px;
+    background-color: #e9dada;
+    font-size: 20px;
+    border:1px solid black;
+    height:30px;
+    width:120px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 7px;
+    color:rgb(29, 3, 3);
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+.touch-with-us h1{
+    margin-left: 140px;
+    color:white;
 }
 
 /*touch-with-us ending*/
@@ -307,10 +338,10 @@ aside {
     to{left: 20px;}
 }
 .memories p{
-    font-weight: 600;
+    font-weight: 400;
     margin-left:60px;
     margin-right:60px;
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
 }
 .communicate{
@@ -358,9 +389,11 @@ aside {
     background-color: rgb(244, 241, 238);
 
 }
-
+.outer-box h3{
+    text-align: center;
+}
 .electronics {
-    margin-left: 15px;
+    margin-left: 17px;
     margin-top: 15px;
     height: 250px;
     width: 87%;

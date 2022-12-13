@@ -199,13 +199,16 @@ aside{
     width:300px;
  }
  .outer-box{
-    background-color: rgb(244, 241, 238);
+    background-color: rgb(233, 230, 226);
     padding:20px;
     border:2px black solid;
     height:320px;
     width:300px;
     margin:20px 30px;
     box-shadow: 20px 20px 30px rgb(183, 182, 182);
+ }
+ .outer-box:hover{
+    background-color: #d0b587e1;
  }
  .furniture-imgs{
     margin-top:190px ;
@@ -309,6 +312,7 @@ aside{
     font-size: 50px;
     color: brown;
 }
+
 /*service-ends*/
 
 /*service-level starting*/
@@ -330,6 +334,9 @@ aside{
     transition: 0.5s;
 
 }
+
+
+
 .various-levels:hover{
     transform: scale(1.02);
     background-color: #e3bc6f;
