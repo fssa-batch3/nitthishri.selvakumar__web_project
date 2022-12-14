@@ -165,9 +165,9 @@ color:brown;
     
 }
 .bgimage h1{
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size:55px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400px;
+    font-size: 60px;
     color:rgb(245, 237, 237);
     
     margin-left: 60px;
@@ -323,8 +323,10 @@ font-size: 70px;
 
 
 /*footer starting*/
+
 footer{
-    margin-top: 30px;
+    position: relative;
+    bottom:0;
     background-color: #24262b;
     height:300px;
     width:100%;

@@ -194,11 +194,13 @@ aside{
  /*aside-ends*/
  
  .furniture{
+    border-radius: 10px;
     border:2px black solid;
     height:250px;
     width:300px;
  }
  .outer-box{
+    border-radius: 10px;
     background-color: rgb(227, 220, 212);
     padding:20px;
     border:2px black solid;
@@ -208,9 +210,10 @@ aside{
     box-shadow: 20px 20px 30px rgb(183, 182, 182);
  }
  .outer-box:hover{
-    background-color: #7b480ee1;
+    background-color: #d29753e1;
  }
  .furniture-imgs{
+   
     margin-top:190px ;
     height:250px;
     width:12%;
