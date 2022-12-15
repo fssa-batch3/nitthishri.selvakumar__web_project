@@ -20,11 +20,11 @@
             </div>
 
             <div class="row1b">
-                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://pinterest.com" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://instagram.com" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
             </div>
 
         </div>
@@ -35,7 +35,7 @@
 
         <div class="row2">
             <div class="row2a">
-                <img class="logo" src="../../assets/images/index_page/logo.png">
+                <img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage">
             </div>
             <div class="row2b">
                 <ul>
@@ -80,7 +80,7 @@
 
             <p>One of our Restoration Consultants will be in touch soon to discuss
                 your goals and vision for your piece(s). We look forward to connecting with you!</p>
-            <h4>Request a quote</h4>
+            <h2>Request a quote</h2>
 
             <form action="../../pages/track/track.html" method="get">
                 <div class="full-form">
@@ -99,14 +99,14 @@
                                 <input type="email" name="email" id="email" required>
                             </div>
                             <div class="elements">
-                                <label for="first-name">Phone number<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="number" name="first-name" id="first-name" minlength="10" maxlength="14"
+                                <label for="phone-number">Phone number<i class="fa-solid fa-star-of-life"></i></label>
+                                <input type="number" name="phone-number" id="phone-number" minlength="10" maxlength="14"
                                     required>
                             </div>
 
                             <div class="elements">
-                                <label for="category">category of item<i class="fa-solid fa-star-of-life"></i></label>
-                                <input list="category" name="category">
+                                <label for="categorys">category of item<i class="fa-solid fa-star-of-life"></i></label>
+                                <input list="category" name="category" id="categorys">
                                 <datalist id="category">
                                     <option value="home-furniture">
                                     <option value="Radio">
@@ -153,8 +153,8 @@
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="valuable">
-                                    <label class="why" for="valuable"> My furniture/item
+                                    <input type="radio" name="reason" id="quality">
+                                    <label class="why" for="quality"> My furniture/item
                                         is high-end/good quality.</label>
                                 </div>
 
@@ -165,13 +165,13 @@
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="sentimental">
-                                    <label class="why" for="sentimental">Others</label>
+                                    <input type="radio" name="reason" id="others">
+                                    <label class="why" for="others">Others</label>
                                 </div>
                             </div>
                             <div class="elements">
-                                <label for="other">Reason for the restortation inquiry(others)</label>
-                                <input type="text" name="others" id="others">
+                                <label for="reason-others">Reason for the restortation inquiry(others)</label>
+                                <input type="text" name="others" id="reason-others">
                             </div>
 
                             <div class="elements">

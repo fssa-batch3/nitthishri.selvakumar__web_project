@@ -147,7 +147,7 @@ color:brown;
 }
 .row2b ul li:hover .sub-service ul {
     display: block;
-    margin:px;
+    margin:1px;
 }
 .sub-service1.hover{
     display: block;
@@ -197,7 +197,7 @@ h1 span{
     text-align: center;
     line-height: 39px;
 }
-.practices{
+.practices,.sub-practices{
     padding:40px;
     background-color: #f1eded;
     height:350px;
@@ -205,7 +205,7 @@ h1 span{
     display: flex;
     flex-direction: row;
 }
-.practices img{
+.practices img,.sub-practices img{
     height:350px;
     width:350px;
 }
@@ -213,12 +213,24 @@ h1 span{
     display: flex;
     flex-direction: column;
 }
-.content ul h2{
+.content h1{
     color:brown;
     text-align: center;
 }
 .content ul li{
     list-style: disc;
+    margin-left: 50px;
+    font-size: 22px;
+    text-align: justify;
+padding-bottom: 30px;
+}
+.sub-practices{
+    background-color: #ffffff;
+}
+.content p{
+    word-spacing: 4px;
+    width:900px;
+    margin-right:50px;
     margin-left: 50px;
     font-size: 22px;
     text-align: justify;
@@ -249,7 +261,7 @@ padding: 70px 0;
 width: 25%;
 padding: 0 15px;
 }
-.footer-col h4{
+.footer-col p{
 
 font-size: 27px;
 color: #ffffff;

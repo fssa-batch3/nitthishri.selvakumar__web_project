@@ -11,9 +11,11 @@ body{
 .fa-brands{
     color:black;
     padding-right: 15px;
+    transition: 0.5s;
 }
 .fa-solid{
     padding-right: 7px;
+    transition: 0.5s;
 }
 ul{
     list-style: none;
@@ -58,16 +60,20 @@ header{
     margin-right: 75px;
 }
 .fa-brands:hover{
-    color:brown;
+    color:rgb(87, 17, 17);
     font-size: 22px;
+    transform:scaleX(1.1);
 
 }
 .fa-solid:hover{
-    color:brown;
+    color:rgb(87, 17, 17);
+    transform:scaleX(1.1);
+
 }
 .connect{
     font-size: 18px;
     margin-left: 25px;
+    font-weight: 600;
     transition: 0.5s;
 }
 .line{
@@ -86,7 +92,7 @@ header{
     height:80px;
     width:100%;
     margin-top:0;
-    font-size: 20px;
+    font-size: 22px;
     
 
 }
@@ -101,10 +107,13 @@ header{
 
 .connect:hover{
     transform: scale(1.1);
-    color:brown;
+    color:rgb(87, 17, 17);
+    font-weight: 800;
 }
-.navi:hover{
-    color:brown;    
+
+.row2b ul li .navi:hover{
+    color:rgb(87, 17, 17); 
+
 
 }
 .logo{
@@ -113,10 +122,12 @@ header{
 
 }
 .navi,.navi1,.service{
-    padding-right: 20px;
+    padding-right: 40px;
     font-weight: 600;
     position: static;
 }
+
+
 .service:hover{
     color: brown;
 }
@@ -138,17 +149,33 @@ header{
 
 color:brown;
 }
-.row2b ul li:hover .sub-service{
+.row2b ul li:hover .sub-service ul li:hover{
+font-weight: 1000;
+}
+.row2b ul li:hover .sub-service {
     display: block;
     position: absolute;
-    background-color: white;
-    margin-top: 6px;
-    margin-left:5px ;
-    padding-top:10px ;
+    background-color: rgb(231, 228, 223);
+    margin-top: 1px;
+   margin-left: 0;
+
+}
+.row2b ul li:hover .sub-service ul li{
+
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.row2b ul li:hover .sub-service ul li a{
+    padding-right: 10px;
+    font-size: 21px;
+    font-weight: 700;
 }
 .row2b ul li:hover .sub-service ul {
+    padding-bottom: 10px;
     display: block;
-    margin:px;
+    margin:1px;
 }
 .sub-service1.hover{
     display: block;
@@ -156,16 +183,16 @@ color:brown;
 }
 .bgimage{
 
-    
+    margin-top: 100px;
     width:100%;
     height:700px;
-    background-image:url("../images/index_page/timer.jpg");
+    background-image:linear-gradient(rgb(4,9,34,0.3),rgb(4,9,34,0.3)),url("../images/index_page/timer.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     
 }
 .bgimage h1{
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Kaushan Script', cursive;
     font-weight: 400px;
     font-size: 60px;
     color:rgb(245, 237, 237);
@@ -192,19 +219,31 @@ color:brown;
  margin-right: 70px;
  margin-bottom: 40px;
 }
+.part1a{
+    transition: 0.5s;
+}
+.part1a:hover{
+    transform: scaleX(1.06);  
+
+}
+.part1b{
+    transition: 0.5s;
+}
+.part1b:hover{
+    transform: scaleX(1.06);  
+
+}
 .repair{
     height:250px;
     width:600px;  
     position: relative;
     top:20px;
     left:20px;
+    
+    
 }
 
-.repair:hover{
-    height:230px;
-    width:580px;  
 
-}
 .repaira{
     font-size: 30px;
     border:4px rgb(216, 195, 167) solid;
@@ -214,12 +253,13 @@ color:brown;
     position: relative;
     top:-20px;
     left:200px;
+   
 
 }
 .bglogo{
     height:200px ;
     width: 200px;
-    padding-top: 200px;
+    padding-top: 100px;
     margin-left:60px ;
 }
 .subvid{
@@ -297,6 +337,7 @@ font-size: 70px;
     height: 790px;
     z-index: -1;
     width: 100%;
+    
 
 }
 .link{
@@ -349,7 +390,7 @@ padding: 70px 0;
 width: 25%;
 padding: 0 15px;
 }
-.footer-col h4{
+.footer-col p{
 
 font-size: 27px;
 color: #ffffff;
