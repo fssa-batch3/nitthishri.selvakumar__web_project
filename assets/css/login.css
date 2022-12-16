@@ -65,9 +65,8 @@ body{
     
     font-size: 20px;
     width:100%;
-    padding-left: 30px;
-    padding:10px 0px;
-    margin-left:50px;
+    padding:10px 0px 10px 30px;
+    margin-left:35px;
     margin-bottom: 20px;
    border:grey 2px solid;
     background: transparent;

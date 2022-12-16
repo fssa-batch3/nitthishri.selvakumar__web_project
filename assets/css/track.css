@@ -250,6 +250,11 @@ table{
     margin-left:40px ;
     
 }
+
+table caption {
+    display: none;
+}
+
 table thead tr th{
 background-color:#f5ba76;
 height:50px;
