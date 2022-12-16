@@ -350,8 +350,9 @@ padding-top: 15px;
     padding-top: 10px;
     padding-right:10px ;
 }
-.various-levels ul h3{
+.various-levels h3{
     font-size:30px ;
+    margin-left: 15px;
 }
 
 /*service-level ends*/
