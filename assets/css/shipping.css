@@ -6,7 +6,7 @@ body{
     padding:0;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(2, 5, 25, 0.3),rgba(3, 7, 31, 0.581)),url("../../assets/images/shipping_page/wall.jpeg");
+    background-image: linear-gradient(rgba(2, 5, 25, 0.09),rgba(3, 7, 31, 0.371)),url("../../assets/images/login_page/back1.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
