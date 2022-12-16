@@ -5,26 +5,17 @@ body{
     margin:0;
     padding:0;
     font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
     
 }
-/*nav-starting*/
-.fa-brands{
-    color:black;
-    padding-right: 15px;
-}
-.fa-solid{
-    padding-right: 7px;
+/*menu-bar starting*/
 
-    
-}
 ul{
     list-style: none;
-    display: inline-flex;  
+    display: inline-flex;
     margin-top: -15px;
 }
 
-a{
+ a{
     color:black;
     text-decoration: none;
 }
@@ -37,7 +28,7 @@ header{
     width:100%;
     
 }
-.row1{
+.communicate-us{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,31 +36,40 @@ header{
     height:60px;
     width:100%;
     font-size: 20px;
-   
-   
-
-
 }
-.row1a{
+.sub-communicate-us{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
    
 }
-.row1b{
+.menu-bar{
     margin-right: 75px;
 }
+.fa-brands{
+    color:black;
+    padding-right: 15px;
+    transition: 0.5s;
+}
+.fa-solid{
+    padding-right: 7px;
+    transition: 0.5s;
+}
 .fa-brands:hover{
-    color:brown;
+    color:rgb(87, 17, 17);
     font-size: 22px;
+    transform:scaleX(1.1);
 
 }
 .fa-solid:hover{
-    color:brown;
+    color:rgb(87, 17, 17);
+    transform:scaleX(1.1);
+
 }
 .connect{
     font-size: 18px;
     margin-left: 25px;
+    font-weight: 600;
+    transition: 0.5s;
 }
 .line{
     height: 0.5px;
@@ -80,32 +80,35 @@ header{
 
 
 }
-.row2{
+.navigate{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height:80px;
     width:100%;
     margin-top:0;
-    font-size: 20px;
+    font-size: 22px;
     
 
 }
-.row2a{
+.sub-logo{
     margin-left: 55px;
     margin-top: -30px;
 }
-.row2b{
+.sub-navigate{
     margin-right: 45px;
     margin-top: -12px;
 }
 
 .connect:hover{
-    font-size: 22px;
-    color:brown;
+    transform: scale(1.1);
+    color:rgb(87, 17, 17);
+    font-weight: 800;
 }
-.navi:hover{
-    color:brown;    
+
+.sub-navigate ul li .navi:hover{
+    color:rgb(87, 17, 17); 
+
 
 }
 .logo{
@@ -113,22 +116,24 @@ header{
     width:60px;
 
 }
-.navi,.navi1,.service{
-    padding-right: 20px;
+.navi,.navi-button,.service{
+    padding-right: 40px;
     font-weight: 600;
     position: static;
 }
+
+
 .service:hover{
     color: brown;
 }
-.navi1{
+.navi-button{
     border:2px solid rgb(36, 7, 7);
     background-color:rgb(36, 7, 7) ;
     color:burlywood;
     padding: 5px;
     border-radius: 20px;
 }
-.navi1:hover{
+.navi-button:hover{
     color:rgb(226, 157, 68)
 }
 .sub-service{
@@ -139,22 +144,43 @@ header{
 
 color:brown;
 }
-.row2b ul li:hover .sub-service{
+/*drop-down starting*/
+.sub-navigate ul li:hover .sub-service ul li:hover{
+font-weight: 1000;
+}
+.sub-navigate ul li:hover .sub-service {
     display: block;
     position: absolute;
-    background-color: white;
-    margin-top: 6px;
-    margin-left:5px ;
-    padding-top:10px ;
+    background-color: rgb(231, 228, 223);
+    margin-top: 1px;
+   margin-left: 0;
+
 }
-.row2b ul li:hover .sub-service ul {
+.sub-navigate ul li:hover .sub-service ul li{
+
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.sub-navigate ul li:hover .sub-service ul li a{
+    padding-right: 10px;
+    font-size: 21px;
+    font-weight: 700;
+}
+.sub-navigate ul li:hover .sub-service ul {
+    padding-bottom: 10px;
     display: block;
-    margin:px;
+    margin:1px;
 }
 .sub-service1.hover{
     display: block;
+
 }
-/*nav-ending*/
+/*drop-down ends*/
+/*menu-bar ending */
+
+/*bg-image starting*/
 .bg-image{
     background: url("../../assets/images/service2_page/backround-contact.jpg");
     height: 150px;
@@ -168,6 +194,9 @@ color:brown;
   padding-top: 10px;
   color: rgb(223, 211, 211);
 }
+/*bg-image starting*/
+
+
 /*connect-with-us starting*/
 .connect-with-us{
     padding: 40px 40px 100px 40px;

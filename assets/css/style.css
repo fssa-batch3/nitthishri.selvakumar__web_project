@@ -7,20 +7,11 @@ body{
     font-family: 'Rubik', sans-serif;
     
 }
+/*menu-bar starting*/
 
-.fa-brands{
-    color:black;
-    padding-right: 15px;
-    transition: 0.5s;
-}
-.fa-solid{
-    padding-right: 7px;
-    transition: 0.5s;
-}
 ul{
     list-style: none;
     display: inline-flex;
-    
     margin-top: -15px;
 }
 
@@ -37,7 +28,7 @@ header{
     width:100%;
     
 }
-.row1{
+.communicate-us{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,19 +36,23 @@ header{
     height:60px;
     width:100%;
     font-size: 20px;
-   
-   
-
-
 }
-.row1a{
+.sub-communicate-us{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
    
 }
-.row1b{
+.menu-bar{
     margin-right: 75px;
+}
+.fa-brands{
+    color:black;
+    padding-right: 15px;
+    transition: 0.5s;
+}
+.fa-solid{
+    padding-right: 7px;
+    transition: 0.5s;
 }
 .fa-brands:hover{
     color:rgb(87, 17, 17);
@@ -85,7 +80,7 @@ header{
 
 
 }
-.row2{
+.navigate{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,11 +91,11 @@ header{
     
 
 }
-.row2a{
+.sub-logo{
     margin-left: 55px;
     margin-top: -30px;
 }
-.row2b{
+.sub-navigate{
     margin-right: 45px;
     margin-top: -12px;
 }
@@ -111,7 +106,7 @@ header{
     font-weight: 800;
 }
 
-.row2b ul li .navi:hover{
+.sub-navigate ul li .navi:hover{
     color:rgb(87, 17, 17); 
 
 
@@ -121,7 +116,7 @@ header{
     width:60px;
 
 }
-.navi,.navi1,.service{
+.navi,.navi-button,.service{
     padding-right: 40px;
     font-weight: 600;
     position: static;
@@ -131,14 +126,14 @@ header{
 .service:hover{
     color: brown;
 }
-.navi1{
+.navi-button{
     border:2px solid rgb(36, 7, 7);
     background-color:rgb(36, 7, 7) ;
     color:burlywood;
     padding: 5px;
     border-radius: 20px;
 }
-.navi1:hover{
+.navi-button:hover{
     color:rgb(226, 157, 68)
 }
 .sub-service{
@@ -149,10 +144,11 @@ header{
 
 color:brown;
 }
-.row2b ul li:hover .sub-service ul li:hover{
+/*drop-down starting*/
+.sub-navigate ul li:hover .sub-service ul li:hover{
 font-weight: 1000;
 }
-.row2b ul li:hover .sub-service {
+.sub-navigate ul li:hover .sub-service {
     display: block;
     position: absolute;
     background-color: rgb(231, 228, 223);
@@ -160,29 +156,32 @@ font-weight: 1000;
    margin-left: 0;
 
 }
-.row2b ul li:hover .sub-service ul li{
+.sub-navigate ul li:hover .sub-service ul li{
 
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.row2b ul li:hover .sub-service ul li a{
+.sub-navigate ul li:hover .sub-service ul li a{
     padding-right: 10px;
     font-size: 21px;
     font-weight: 700;
 }
-.row2b ul li:hover .sub-service ul {
+.sub-navigate ul li:hover .sub-service ul {
     padding-bottom: 10px;
     display: block;
     margin:1px;
 }
 .sub-service1.hover{
     display: block;
-/*nav -ending */
-}
-.bgimage{
 
+}
+/*drop-down ends*/
+/*menu-bar ending */
+
+/*bgimg staring */
+.bgimage{
     margin-top: 100px;
     width:100%;
     height:700px;
@@ -204,13 +203,15 @@ font-weight: 1000;
     color:white;
     margin-left: 60px;
 }
-.part1{
+/*bgimg ends*/
+/*restore-here starting*/
+.restore-here{
     display: flex;
     flex-direction:row;
     height: 350px;
     width:100%;
 }
-.part1a,.part1b{
+.restore-furniture,.restore-electronics{
   height:250px;
   width:600px;   
  background-color: rgb(216, 195, 167);
@@ -219,17 +220,17 @@ font-weight: 1000;
  margin-right: 70px;
  margin-bottom: 40px;
 }
-.part1a{
+.restore-furniture{
     transition: 0.5s;
 }
-.part1a:hover{
+.restore-furniture:hover{
     transform: scaleX(1.06);  
 
 }
-.part1b{
+.restore-electronics{
     transition: 0.5s;
 }
-.part1b:hover{
+.restore-electronics:hover{
     transform: scaleX(1.06);  
 
 }
@@ -238,13 +239,9 @@ font-weight: 1000;
     width:600px;  
     position: relative;
     top:20px;
-    left:20px;
-    
-    
+    left:20px;    
 }
-
-
-.repaira{
+.repair-content{
     font-size: 30px;
     border:4px rgb(216, 195, 167) solid;
     height:50px;
@@ -252,9 +249,7 @@ font-weight: 1000;
     background-color:rgb(216, 195, 167);
     position: relative;
     top:-20px;
-    left:200px;
-   
-
+    left:200px;   
 }
 .bglogo{
     height:200px ;
@@ -262,18 +257,10 @@ font-weight: 1000;
     padding-top: 100px;
     margin-left:60px ;
 }
-.subvid{
-    text-align: center;
-}
-.subvid1{
-    width: 100%;
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-evenly;
 
-}
-.part2{
-    
+/*restore-here ends*/
+/*who-we-are starting*/
+.who-we-are{
     height:480px;
     width:95%;
     margin-bottom: 30px;
@@ -284,7 +271,7 @@ font-weight: 1000;
     box-shadow: 10px 10px 20px rgb(220, 185, 132);
     transition: 1s;
 }
-.part2 p{  
+.who-we-are p{  
     padding-left: 30px;
     padding-right: 30px;
     word-spacing: 7px;
@@ -294,16 +281,16 @@ font-weight: 1000;
     text-align: justify;
     text-indent: 70px;
 }
-.part2 h1{
+.who-we-are h1{
     font-size:40px;
     text-align: center;
     padding-top: 35px;
 
 }
-.part2:hover{
+.who-we-are:hover{
       transform:translateX(10px);
 }
-.part2 div{
+.who-we-are div{
     width: 15%;
     height: 4px;
     background: brown;
@@ -315,6 +302,7 @@ font-weight: 1000;
     from{left: 0px;}
     to{left: 20px; }
 }
+/*who-we-are ends*/
 /*video starting*/
 .vid{
     width:100%;
@@ -337,8 +325,15 @@ font-size: 70px;
     height: 790px;
     z-index: -1;
     width: 100%;
-    
-
+}
+.sub-we-have{
+    text-align: center;
+}
+.we-have{
+    width: 100%;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
 }
 .link{
     font-size: 24px;
@@ -361,7 +356,7 @@ font-size: 70px;
     font-size: 25px;
 }
 
-
+/*video ending*/
 
 /*footer starting*/
 

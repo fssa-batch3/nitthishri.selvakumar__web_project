@@ -7,11 +7,20 @@ body{
     font-family: 'Rubik', sans-serif;
     
 }
-/*menu-bar starting*/
 
+.fa-brands{
+    color:black;
+    padding-right: 15px;
+    transition: 0.5s;
+}
+.fa-solid{
+    padding-right: 7px;
+    transition: 0.5s;
+}
 ul{
     list-style: none;
     display: inline-flex;
+    
     margin-top: -15px;
 }
 
@@ -28,7 +37,7 @@ header{
     width:100%;
     
 }
-.communicate-us{
+.row1{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,23 +45,19 @@ header{
     height:60px;
     width:100%;
     font-size: 20px;
+   
+   
+
+
 }
-.sub-communicate-us{
+.row1a{
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
+    
    
 }
-.menu-bar{
+.row1b{
     margin-right: 75px;
-}
-.fa-brands{
-    color:black;
-    padding-right: 15px;
-    transition: 0.5s;
-}
-.fa-solid{
-    padding-right: 7px;
-    transition: 0.5s;
 }
 .fa-brands:hover{
     color:rgb(87, 17, 17);
@@ -80,7 +85,7 @@ header{
 
 
 }
-.navigate{
+.row2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,11 +96,11 @@ header{
     
 
 }
-.sub-logo{
+.row2a{
     margin-left: 55px;
     margin-top: -30px;
 }
-.sub-navigate{
+.row2b{
     margin-right: 45px;
     margin-top: -12px;
 }
@@ -106,7 +111,7 @@ header{
     font-weight: 800;
 }
 
-.sub-navigate ul li .navi:hover{
+.row2b ul li .navi:hover{
     color:rgb(87, 17, 17); 
 
 
@@ -116,7 +121,7 @@ header{
     width:60px;
 
 }
-.navi,.navi-button,.service{
+.navi,.navi1,.service{
     padding-right: 40px;
     font-weight: 600;
     position: static;
@@ -126,14 +131,14 @@ header{
 .service:hover{
     color: brown;
 }
-.navi-button{
+.navi1{
     border:2px solid rgb(36, 7, 7);
     background-color:rgb(36, 7, 7) ;
     color:burlywood;
     padding: 5px;
     border-radius: 20px;
 }
-.navi-button:hover{
+.navi1:hover{
     color:rgb(226, 157, 68)
 }
 .sub-service{
@@ -144,11 +149,10 @@ header{
 
 color:brown;
 }
-/*drop-down starting*/
-.sub-navigate ul li:hover .sub-service ul li:hover{
+.row2b ul li:hover .sub-service ul li:hover{
 font-weight: 1000;
 }
-.sub-navigate ul li:hover .sub-service {
+.row2b ul li:hover .sub-service {
     display: block;
     position: absolute;
     background-color: rgb(231, 228, 223);
@@ -156,29 +160,27 @@ font-weight: 1000;
    margin-left: 0;
 
 }
-.sub-navigate ul li:hover .sub-service ul li{
+.row2b ul li:hover .sub-service ul li{
 
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.sub-navigate ul li:hover .sub-service ul li a{
+.row2b ul li:hover .sub-service ul li a{
     padding-right: 10px;
     font-size: 21px;
     font-weight: 700;
 }
-.sub-navigate ul li:hover .sub-service ul {
+.row2b ul li:hover .sub-service ul {
     padding-bottom: 10px;
     display: block;
     margin:1px;
 }
 .sub-service1.hover{
     display: block;
-
 }
-/*drop-down ends*/
-/*menu-bar ending */
+/*nav -ending */
 
 /*backround image starting*/
 .bg-img{
@@ -207,65 +209,25 @@ h1 span{
 }
 
 /*backround image ends*/
-.specialities{
-   
-    height: 250px;
+
+/*specailities starting*/
+.specialities {
+    height:400px;
     width:100%;
-  display: flex;
-  justify-content: center;
 }
 .specialities p{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-color: rgba(166, 170, 170, 0.45);
-    font-size: 22px;
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    line-height: 39px;
+width:900px;
+
 }
-.practices,.sub-practices{
-    padding:40px;
-    background-color: #f1eded;
-    height:350px;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-}
-.practices img,.sub-practices img{
-    height:350px;
-    width:350px;
-}
-.content ul{
-    display: flex;
-    flex-direction: column;
-}
-.content h1{
-    color:brown;
-    text-align: center;
-}
-.content ul li{
-    list-style: disc;
-    margin-left: 50px;
-    font-size: 22px;
-    text-align: justify;
-padding-bottom: 30px;
-}
-.sub-practices{
-    background-color: #ffffff;
-}
-.content p{
-    word-spacing: 4px;
-    width:900px;
-    margin-right:50px;
-    margin-left: 50px;
-    font-size: 22px;
-    text-align: justify;
-padding-bottom: 30px;
-}
+
+
+/*specaities ends*/
+
 /*footer starting*/
+
 footer{
-    margin-top: 30px;
+    position: relative;
+    bottom:0;
     background-color: #24262b;
     height:300px;
     width:100%;

@@ -43,16 +43,10 @@ header{
     height:60px;
     width:100%;
     font-size: 20px;
-   
-   
-
-
 }
 .row1a{
     display: flex;
-    flex-direction: row;
-    
-   
+    flex-direction: row;   
 }
 .row1b{
     margin-right: 75px;
