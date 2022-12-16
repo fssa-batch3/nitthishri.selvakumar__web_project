@@ -237,12 +237,11 @@ color:brown;
     width:100%;
     margin-top: 150px;
     background-color: rgb(220, 212, 212);
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(91, 27, 27);
 }
-.bg-image{
-  text-align: center;
-  padding-top: 10px;
-  color: rgb(91, 27, 27);
-}
+
 /*table*/
 table{
     width:95%;
@@ -268,12 +267,11 @@ table tbody tr td{
     text-align: center;
     font-size:18px;
     font-weight: 500;
+    padding: 20px;
+background-color:#f5e9d7;
     
 }
-table tbody tr td{
-padding: 20px;
-background-color:#f5e9d7;
-}
+
 .even{
     background-color: rgb(172, 161, 147);
 }

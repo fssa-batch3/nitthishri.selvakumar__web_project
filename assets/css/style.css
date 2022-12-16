@@ -312,6 +312,7 @@ font-weight: 1000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .subvid2 h1,h2:hover{
     -webkit-text-stroke: 2px rgb(238, 216, 216);
@@ -346,9 +347,7 @@ font-size: 70px;
 .link:hover{
     color:rgb(242, 205, 157);
 }
-.vid{
-    text-align: center;
-}
+
 .vid h1{
   font-size: 40px;
 }
