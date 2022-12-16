@@ -198,7 +198,7 @@ font-weight: 1000;
 /*connect-with-us starting*/
 .connect-with-us{
     padding: 40px 40px 100px 40px;
-    background-color: rgb(223, 217, 211);
+    background-color:white;
     display: flex;
     flex-direction: row;
    
