@@ -56,13 +56,13 @@ header{
     transition: 0.5s;
 }
 .fa-brands:hover{
-    color:rgb(87, 17, 17);
+    color:brown;
     font-size: 22px;
     transform:scaleX(1.1);
 
 }
 .fa-solid:hover{
-    color:rgb(87, 17, 17);
+    color:brown;
     transform:scaleX(1.1);
 
 }
@@ -108,7 +108,7 @@ header{
 }
 
 .sub-navigate ul li .navi:hover{
-    color:rgb(87, 17, 17); 
+    color:brown; 
 
 
 }

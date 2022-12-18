@@ -387,7 +387,13 @@ flex-direction: row;
     width: 20%;
     border: 2px solid rgb(25, 23, 23);
     background-color: rgb(244, 241, 238);
-
+transition: 0.5s;
+}
+.outer-box:hover{
+transform:scaleY(1.03);
+box-shadow :10px 10px 20px rgb(120, 113, 113);
+background-color:rgb(243, 189, 114);
+border-color:rgb(225, 148, 40);
 }
 .outer-box p{
     text-align: center;
