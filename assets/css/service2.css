@@ -268,7 +268,7 @@ aside {
 }
 
 .near-aside1 a {
-    margin-left: 250px;
+    margin-left: 280px;
     color: white;
     font-size: 20px;
     background-color: #5c4141;
@@ -283,31 +283,32 @@ aside {
 }
 /*touch-with-us starting*/
 .touch-with-us{
-    background: url("../../assets/images/service2_page/backround-contact.jpg");
+    background-color: rgba(0, 0, 0, 0.725);
 display: flex;
 flex-direction: row;
     height: 100px;
     color:white;
-     background-color: rgb(235, 229, 221);
-     margin-top: 30px;
+     word-spacing: 15px;
+     margin-top: 50px;
      padding-top: 30px;
 }
 .touch-with-us a{
     border-radius: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
     padding:10px 30px 10px 30px;
-    background-color: #e9dada;
+    background-color: #e7ddc8;
     font-size: 20px;
     border:1px solid black;
     height:30px;
-    width:120px;
+    width:130px;
     padding-top: 10px;
     padding-left: 40px;
     padding-bottom: 7px;
     color:rgb(29, 3, 3);
     font-weight: 500;
     margin-top: 15px;
-
+font-weight: 700;
+word-spacing: 4px;
 }
 .touch-with-us h1{
     margin-left: 140px;
@@ -319,7 +320,7 @@ flex-direction: row;
 
 /*communication starting*/
 .memories{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .memories h1{
     text-align: center;
@@ -375,7 +376,7 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+   margin-top: 50px;
 
 }
 .outer-box {

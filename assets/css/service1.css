@@ -236,7 +236,9 @@ aside{
     box-shadow: 20px 20px 30px rgb(183, 182, 182);
  }
  .outer-box:hover{
-    background-color: #d29753e1;
+    background-color: #7c5120e1;
+    border:1px solid #dc8c31e1;  
+    color:white;           
  }
  .furniture-imgs{
    
@@ -318,9 +320,16 @@ aside{
     flex-direction:column;  
     margin-left: 20px;
     margin-right: 20px;
+    transition: 0.5s;
+}
+.service1:hover{
+   transform:scaleY(1.1);
 }
 .service1 h2,.service1 p,.service1 a{
     text-align: center;
+}
+.service1 p{
+    font-size: 22px;
 }
 .services{
     padding-top: 40px;
@@ -368,7 +377,7 @@ aside{
 
 .various-levels:hover{
     transform: scale(1.02);
-    background-color: #e3bc6f;
+    background-color: #c99f4a;
     
 }
 .various-levels ul{
