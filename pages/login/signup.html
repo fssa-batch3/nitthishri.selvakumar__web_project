@@ -21,13 +21,13 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
         <div class="box">
-         <form action="../../index.html">
+         <form action="">
             
-              <input type="text" class="text" placeholder="User Name" required>
-              <input type="email" class="text" placeholder="E-mail" required>
-              <input type="password" class="text" placeholder="Enter password" minlength="8" maxlength="12" required>
+              <input type="text" class="text" placeholder="User Name" id="text" required>
+              <input type="email" class="text" placeholder="E-mail" id="email" required>
+              <input type="password" class="text" placeholder="Enter password" id="password" minlength="8" maxlength="12" required>
         
-            <button type="submit" class="submit">Get started</button>
+            <button type="submit" onclick="submit()" class="submit">Get started</button>
             
         </form>
 
@@ -37,5 +37,21 @@
 
     
 </body>
+<script>
 
+    function submit() {
+
+        const text = (document.getElementById("text").value);
+        const email = (document.getElementById("email").value);
+
+        console.log(text);
+        console.log(email);
+
+
+
+        window.location.href = "../../index.html"
+    }
+
+
+</script>
 </html>

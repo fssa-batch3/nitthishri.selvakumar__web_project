@@ -341,3 +341,164 @@ background-color: #ffffff;
      font-size: 50px;
  }
 /*footer ending*/
+@media screen and (max-width:600px){
+
+    /* start of header */
+
+    header {
+        display: none;
+    }
+
+    .mobile-nav-one, .mobile-nav-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        background-color: burlywood;
+        z-index: 1;
+        
+    }
+
+    .mobile-nav-one {
+        height: 40px;
+    }
+
+    .mobile-nav-two {
+        height: 60px;
+        position: sticky;
+        top: 0;
+        padding: 10px 20px;
+    }
+    /* end of header */
+
+    .bg-img{
+        /* padding: 0;
+        margin: 0; */
+        background-image:linear-gradient(rgb(4,9,34,0.3),rgb(4,9,34,0.3)),url("../../assets/images/Aboutus-page/bg-image1.webp");
+         background-size:cover;
+         background-repeat: no-repeat;
+         height:200px;
+         width:100%;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding-top:60px;
+         /* padding-top: 200px; */
+    }
+    .bg-img h1{
+        padding: 0;
+        font-size: 30px;
+    }
+    .practices,.sub-practices{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+    .content ul{
+        width:auto;
+        /* margin:20px; */
+        margin: 0%;
+        padding: 5px;
+    }
+    .content ul li{
+        margin: 0%;
+        padding:2px;
+    }
+    .practices img,.sub-practices img{
+        height:250px;
+        width:250px;
+        padding: 1px;
+    }
+    .specialities{
+        width:auto;
+        height:auto;
+    }
+    .sub-practices{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-practices .content p{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+    footer{
+        display:none;
+    }
+    .container{
+        display:none;
+    }
+
+    /*drop-down starting*/
+
+    .burger-menu{
+        display: block;
+    }
+
+    .burger-menu input[type=checkbox]{
+        display: none;
+    }
+
+    .burger-menu .burger-menu-mobile {
+        display: none;
+        position: absolute;
+        top: 80px;
+        background-color: white;
+        right: 5px;
+        padding: 0 10px 10px 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .burger-menu input[type=checkbox]:checked ~ .burger-menu-mobile{
+        display: block;
+        transition: .5s ease;
+    }
+    .burger-menu .burger-menu-mobile .side-menu-items{
+        display:none;
+    }
+    .burger-menu .burger-menu-mobile .side-dropdown:hover{
+        font-size: medium;
+    }
+    .burger-menu .burger-menu-mobile .side-menu-items {
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    /*menu-bar ending */
+/*service drop-down*/
+.service-dropdown {
+    display: none;
+    width: 135px;
+background-color: antiquewhite;
+padding:5px;
+position:absolute;
+right:140px;
+top:80px;
+border-radius: 10px;
+
+}
+
+.service-dropdown a {
+    text-align: center;
+}
+
+input[type=checkbox]:checked ~ .service-dropdown{
+    display: block;
+}
+
+
+.side-dropdown:hover .side-menu-items{
+    display:block;
+
+}
+
+}
