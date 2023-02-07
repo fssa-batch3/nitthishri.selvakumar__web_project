@@ -21,14 +21,16 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
         <div class="box">
-        <form action="../../index.html">
-            <input type="text" class="text" placeholder="User Id" required>
-            <input type="password" class="text" placeholder="Enter password" minlength="8" maxlength="12" required>
-            <a class="forgot" href="">forgot password?</a>
-            <button type="submit" class="submit">Login</button>
-            <a class="new-here" href="../../pages/login/signup.html">I'm new here</a>
-        </form>
 
+            <form id="loginform" action="">
+                <input type="email" name="email" id="username" class="text" placeholder="User Id" required>
+                <input type="password" name="password" id="password" class="text" placeholder="Enter password" required>
+
+                <a class="forgot" name="forget_password" href="">forgot password?</a>
+
+                <a class="new-here" name="new_here" href="../../pages/login/signup.html">I'm new here</a>
+                <button type="submit" class="submit">Login</button>
+            </form>
         </div>
 
     </div>
@@ -37,19 +39,48 @@
 </body>
 <script>
 
-    function submit() {
+    // function submit() {
 
-        const username = (document.getElementById("username").value);
-        const password = (document.getElementById("password").value);
+    //     const username = (document.getElementById("username").value);
+    //     const password = (document.getElementById("password").value);
 
-        console.log(username);
-        console.log(password);
+    //     console.log(username);
+    //     console.log(password);
 
 
 
-        window.location.href = "../../index.html"
-    }
+    //     window.location.href = "../../index.html"
+    // }
 
+    const loginpage = document.getElementById("loginform");
+
+        loginpage.onsubmit = e => {
+
+            e.preventDefault();
+
+            const emailInput = loginpage["email"].value;
+            const passwordInput = loginpage["password"].value;
+            let usersdata = JSON.parse(localStorage.getItem("usersList"));
+
+            if (!usersdata) {
+                alert("Login Failure");
+                return;
+            }
+
+            let Success;
+            for (let i = 0; i < usersdata.length; i++) {
+                if ((usersdata[i].emailid === emailInput) && (usersdata[i].password === passwordInput)) {
+                    Success = true;
+                    break;
+                }
+            }
+
+            if (Success) {
+                alert("Login Success");
+            } else {
+                alert("Login Failure");
+            }
+        }
 
 </script>
 </html>

@@ -39,18 +39,43 @@
 </body>
 <script>
 
-    function submit() {
+    const registrationform = document.getElementById("registration");
 
-        const text = (document.getElementById("text").value);
-        const email = (document.getElementById("email").value);
-
-        console.log(text);
-        console.log(email);
+    registrationform.onsubmit = e => {
 
 
+        const nameInput = registrationform["user_name"].value;
+        const emailInput = registrationform["email"].value;
+        const passwordInput = registrationform["password"].value;
 
-        window.location.href = "../../index.html"
+        const usersList = [];
+
+        const user = {};
+
+        user["name"] = nameInput;
+        user["emailid"] = emailInput;
+        user["password"] = passwordInput;
+
+        const users = JSON.parse(localStorage.getItem("usersList")) || usersList;
+
+        users.push(user);
+
+        localStorage.setItem("usersList", JSON.stringify(users));
+
     }
+
+    // function submit() {
+
+    //     const text = (document.getElementById("text").value);
+    //     const email = (document.getElementById("email").value);
+
+    //     console.log(text);
+    //     console.log(email);
+
+
+
+    //     window.location.href = "../../index.html"
+    // }
 
 
 </script>
