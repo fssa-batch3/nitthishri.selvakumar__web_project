@@ -22,15 +22,15 @@
         </div>
         <div class="box">
 
-            <form id="loginform" action="">
+            <form id="loginform" action="../../pages/login/userprofile.html">
                 <input type="email" name="email" id="username" class="text" placeholder="User Id" required>
                 <input type="password" name="password" id="password" class="text" placeholder="Enter password" required>
 
                 <a class="forgot" name="forget_password" href="">forgot password?</a>
 
                 <a class="new-here" name="new_here" href="../../pages/login/signup.html">I'm new here</a>
-                <button type="submit" class="submit">Login</button>
             </form>
+            <button type="submit" class="submit" onclick="loginpage()">Login</button>
         </div>
 
     </div>
@@ -80,6 +80,7 @@
             } else {
                 alert("Login Failure");
             }
+            window.location.href="../../pages/login/userprofile.html"
         }
 
 </script>

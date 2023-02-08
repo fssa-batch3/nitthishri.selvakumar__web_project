@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/profilepage.css">
+</head>
+<body>
+    <!-- profileimage -->
+    <form>
+        <div class="main">
+            <div class="container">
+                <div class="heading">
+                    <h1>MyProfile</h1>
+                </div>
+                <div class="profile_img">
+                    <img src="../assets/image/profile.jpg" alt="image">
+                    <p><button>Edit Profile</button> </p>
+                </div>
+                <div class="user_details">
+                    <label>Name:<input id="u_name" name="user_name" type="text"></label><br><br>
+                    
+                    <label>Email:<input id="email" name="email" type="text"></label><br><br>
+                    <label>Phonenumber:<input id="pnumber" name="phonenumber" type="number"></label><br><br>
+                 
+                    <label>Occupation:<input name="occupation" type="text"></label><br><br>
+                    <label>Address:<input name="address" type="textbox"></label><br><br>
+                    <div class="home">
+                        <a>Back to home</a>
+                    </div>
+                    <div class="next">
+                        <button>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        let users = JSON.parse(localStorage.getItem('usersList'));
+        for (let i = 0; i <= users.length; i++) {
+            document.getElementById("u_name").value = users[i]["name"]; 
+            
+            document.getElementById("email").value = users[i]["emailid"];
+        
+        }
+    </script>
+</body>
+</html>

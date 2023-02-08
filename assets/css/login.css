@@ -100,19 +100,20 @@ body{
     color:rgb(130, 105, 71);
 }
 .new-here{
-    position: relative;
-    top:20px;
-    left:125px;
-    color:white;
-    border:2px solid antiquewhite;
-    text-decoration:none ;
-    padding:10px 30px;
-    height: 50px;
-    width:200px;
-    background: linear-gradient(to right, rgb(42, 5, 5),rgb(246, 199, 122));
    
+    position: relative;
+    top:120px;
+   left:-40px;
+    color:rgb(20, 5, 5);
+    /* border:2px solid antiquewhite; */
+    text-decoration:none ;
+    /* padding:3px; */
+    height: 100px;
+    width:200px;
+    /* background: linear-gradient(to right, rgb(42, 5, 5),rgb(246, 199, 122));
+    */
 }
 .new-here:hover{
-    color:bisque;
+    color:rgb(195, 144, 83);
 }
 

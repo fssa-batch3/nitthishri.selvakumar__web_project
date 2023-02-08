@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="../../assets/css/signup.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="form-box">
         <div class="button-box">
             <h1>Signup</h1>
-            
-            
+
+
         </div>
         <div class="social-media">
             <i class="fa-brands fa-facebook"></i>
@@ -21,48 +23,54 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
         <div class="box">
-         <form action="">
-            
-              <input type="text" class="text" placeholder="User Name" id="text" required>
-              <input type="email" class="text" placeholder="E-mail" id="email" required>
-              <input type="password" class="text" placeholder="Enter password" id="password" minlength="8" maxlength="12" required>
-        
-            <button type="submit" onclick="submit()" class="submit">Get started</button>
-            
-        </form>
+            <!-- <form action=""> -->
+
+            <input type="text" class="text" placeholder="User Name" id="text" required>
+            <input type="email" class="text" placeholder="E-mail" id="email" required>
+            <input type="password" class="text" placeholder="Enter password" id="password" minlength="8" maxlength="12"
+                required>
+
+            <button type="submit" class="submit" onclick="registrationform()">Get started</button>
+
+            <!-- </form> -->
 
         </div>
 
     </div>
 
-    
-</body>
-<script>
+    <script>
+        function registrationform() {
+            const registrationform = document.getElementById("registration");
 
-    const registrationform = document.getElementById("registration");
-
-    registrationform.onsubmit = e => {
+            // registrationform.onclick = e => {
 
 
-        const nameInput = registrationform["user_name"].value;
-        const emailInput = registrationform["email"].value;
-        const passwordInput = registrationform["password"].value;
+            const nameInput = document.getElementById("text").value;
+            const emailInput = document.getElementById("email").value;
+            const passwordInput = document.getElementById("password").value;
 
-        const usersList = [];
+            if (nameInput != "") {
+                const usersList = [];
 
-        const user = {};
+                const user = {};
 
-        user["name"] = nameInput;
-        user["emailid"] = emailInput;
-        user["password"] = passwordInput;
+                user["name"] = nameInput;
+                user["emailid"] = emailInput;
+                user["password"] = passwordInput;
 
-        const users = JSON.parse(localStorage.getItem("usersList")) || usersList;
+                const users = JSON.parse(localStorage.getItem("usersList")) || usersList;
 
-        users.push(user);
+                users.push(user);
 
-        localStorage.setItem("usersList", JSON.stringify(users));
+                localStorage.setItem("usersList", JSON.stringify(users));
 
-    }
+                window.location.href = "login.html"
+            }
+            else {
+                alert("error")
+            }
+
+        }
 
     // function submit() {
 
@@ -78,5 +86,7 @@
     // }
 
 
-</script>
+    </script>
+</body>
+
 </html>
