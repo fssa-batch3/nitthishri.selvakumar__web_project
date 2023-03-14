@@ -1,0 +1,51 @@
+.container{
+    width: 60%;
+    height: 700px;
+    background-color:rgb(241, 213, 177);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div{
+    margin: 5%;
+}
+.inputs{
+    padding: 5%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+   
+}
+.pr_btn{
+    
+    margin: auto;
+    padding: 15px;
+    border: none;
+    background-color:rgb(248, 247, 239);
+    color: rgb(18, 4, 4);
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 40px;
+    
+}
+/* #edit{
+    display: none;
+}
+#delete{
+    display: none;
+} */
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+#high{
+    height: 200px;
+    width: 250px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}

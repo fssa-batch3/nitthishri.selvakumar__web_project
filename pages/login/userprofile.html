@@ -1,50 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/profilepage.css">
+    <link rel="stylesheet" href="../../assets/css/profile.css">
 </head>
+
 <body>
+
+    <div class="changing_background">
+
+        <form action="../index.html">
+
+            <a> <input type="file" name="file" placeholder="change_background"></a>
+
+        </form>
+    </div>
+
     <!-- profileimage -->
     <form>
         <div class="main">
             <div class="container">
-                <div class="heading">
-                    <h1>MyProfile</h1>
-                </div>
+
                 <div class="profile_img">
-                    <img src="../assets/image/profile.jpg" alt="image">
-                    <p><button>Edit Profile</button> </p>
+                    <img class="profile_changing_img" src="../../assets/images/contact_page/working.jpeg" alt="image">
+                    <input type="file" id="file">
+
+                    <label for="file"><img class="camera" src="../../assets/images/index_page/repair2.jpg"
+                            alt="camera"></label>
                 </div>
+
                 <div class="user_details">
-                    <label>Name:<input id="u_name" name="user_name" type="text"></label><br><br>
-                    
-                    <label>Email:<input id="email" name="email" type="text"></label><br><br>
-                    <label>Phonenumber:<input id="pnumber" name="phonenumber" type="number"></label><br><br>
-                 
-                    <label>Occupation:<input name="occupation" type="text"></label><br><br>
-                    <label>Address:<input name="address" type="textbox"></label><br><br>
-                    <div class="home">
-                        <a>Back to home</a>
+                    <div class="user_page_half">
+                        <div class="elements">
+                            <label for="first-name"> First name<i class="fa-solid fa-star-of-life"></i></label><br>
+                            <input type="text" name="first-name" id="first_name" required>
+                        </div>
+                        <div class="elements">
+                            <label for="last-name">Last name<i class="fa-solid fa-star-of-life"></i></label><br>
+                            <input type="text" name="last-name" id="last_name" required>
+                        </div>
+                        <div class="elements">
+                            <label for="email">E-mail<i class="fa-solid fa-star-of-life"></i></label><br>
+                            <input type="email" name="email" id="email" required>
+                        </div>
                     </div>
-                    <div class="next">
-                        <button>Next</button>
+
+                    <div class="user_page_half">
+                        <div class="elements">
+                            <label for="phone-number">Phone number<i class="fa-solid fa-star-of-life"></i></label>
+                            <input type="number" name="phone-number" id="phone_number" minlength="10" maxlength="14"
+                                required>
+                        </div>
+
+                        <div class="area">
+                            <label for="address">Address</label>
+                            <textarea name="address" id="address" col="20" row="10"></textarea>
+
+                        </div>
+
+                        <div class="elements">
+                            <label for="pin_number">Pin Number<i class="fa-solid fa-star-of-life"></i></label>
+                            <input type="number" name="pin_number" id="pin_number" minlength="10" maxlength="14"
+                                required>
+                        </div>
+
+                        <div class="next">
+                            <button id="update">update</button>
+                        </div>
+
+                        <div class="next">
+                            <button id="delete">Delete</button>
+                        </div>
                     </div>
+
                 </div>
+
             </div>
+            <div class="home">
+                <a>Back to home</a>
+            </div>
+
         </div>
     </form>
     <script>
-        let users = JSON.parse(localStorage.getItem('usersList'));
-        for (let i = 0; i <= users.length; i++) {
-            document.getElementById("u_name").value = users[i]["name"]; 
-            
-            document.getElementById("email").value = users[i]["emailid"];
-        
+
+
+
+
+        const img_div = document.querySelector(".profile_img")
+        const profile_real = document.querySelector(".profile_changing_img")
+
+
+        const file = document.querySelector("#file")
+        //   let btn=document.querySelector("button")
+        //   btn.addEventListener("click",()=>{
+        //     console.log(file) // c:/fakepath/filename.jpg
+        //   })
+
+
+        const uploadbtn = document.querySelector("#button")
+        // when we choose file
+        file.addEventListener('change', function () {
+            // this refers to file
+
+            const choosed_file = this.files[0]
+            if (choosed_file) {
+                const reader = new FileReader()
+                // filereader is prdefiden function of js
+
+                reader.addEventListener('load', function () {
+
+                    profile_real.setAttribute("src", reader.result)
+                })
+                reader.readAsDataURL(choosed_file)
+                console.log(reader)
+            }
+
+        })
+
+
+        let user = JSON.parse(localStorage.getItem('user_list'));
+
+        console.log(user)
+
+        const profile_email = localStorage.getItem("logged_in");
+
+        console.log(profile_email);
+
+        // first time showing the values in the input field
+
+        for (let i = 0; i < user.length; i++) {
+
+
+            if (user[i].emailid == profile_email) {
+
+                document.getElementById("first_name").value = user[i]["firstname"];
+                document.getElementById("last_name").value = user[i]["lastname"];
+                document.getElementById("email").value = user[i]["emailid"];
+                document.getElementById("phone_number").value = user[i]["phonenumber"];
+                document.getElementById("address").value = user[i]["addressvalue"];
+                document.getElementById("pin_number").value = user[i]["pin_number"];
+
+                break;
+            }
         }
+
+
+        // document.getElementById("update").addEventListener("click",(e) =>{
+        //    if( document.getElementById("email").value == profile_email){
+        //     e["firstname"]=document.getElementById("first_name").value ;
+        //     e["lastname"]= document.getElementById("last_name").value ;
+        //     e["emailid"]=document.getElementById("email").value ;
+        //     e["addressvalue"]=document.getElementById("address").value ;
+        //     e["pin_number"]= document.getElementById("address").value ;
+        //     localStorage.setItem("user_list",JSON.stringify(user))
+        //    }
+        // })
+
+        document.getElementById("update").addEventListener("click", () => {
+            for (let i = 0; i < user.length; i++) {
+                if (document.getElementById("email").value == user[i]["emailid"]) {
+                    user[i]["firstname"] = document.getElementById("first_name").value;
+                    user[i]["lastname"] = document.getElementById("last_name").value;
+                    user[i]["emailid"] = document.getElementById("email").value;
+                    user[i]["addressvalue"] = document.getElementById("address").value;
+                    user[i]["pin_number"] = document.getElementById("pin_number").value;
+                    user[i]["phone_number"] = document.getElementById("phone_number").value;
+
+                }
+                localStorage.setItem("user_list", JSON.stringify(user))
+
+
+            }
+        })
+
+       
+document.getElementById("delete").addEventListener("click",()=>{
+    document.getElementById("phone_number").removeAttribute("required","")
+
+
+//     for (let i = 0; i < profile_email.length; i++) {
+
+
+//         if(document.getElementById("email").value == user[profile_email]["emailid"]);
+
+//         profile_email.splice(i,1);
+
+//         localStorage.setItem("user_list", JSON.stringify(logged_in));
+
+
+// }
+
+}
+);
+
+        
+        // function edit() {
+        //     let user = JSON.parse(localStorage.getItem("user_list"));
+        //     for (let i = 0; i < user.length; i++) {
+        //         if (document.getElementById("email").value == user[i]["emailId"]) {
+        //             user[i].firstname = document.getElementById("first_name").value
+        //         }
+        //         localStorage.setItem("user_list", JSON.stringify(user))
+        //     }
+        // }
+
+
+       
     </script>
 </body>
+
 </html>

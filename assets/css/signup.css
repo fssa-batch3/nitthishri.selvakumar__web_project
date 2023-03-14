@@ -6,7 +6,7 @@ body{
 }
 .form-box{
     width:380px;
-    height:480px;
+    height:540px;
     position:relative;
     margin: 13% auto;
     background-color: white;
@@ -16,8 +16,9 @@ body{
     padding-left: 50px;
 }
 .button-box{
+    
     border-radius: 20px;
-color: rgb(40, 20, 20);
+    color: rgb(40, 20, 20);
     padding-left: 20px;
     width:220px;
     margin:35px auto;

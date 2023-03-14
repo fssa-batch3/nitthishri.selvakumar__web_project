@@ -1,0 +1,83 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile_img{
+    border:black 2px solid;
+    height:400px;
+    width:300px;
+    margin: 30px;
+    margin-top: -70px;
+    background-color:white;
+    
+    flex-direction: row;
+    justify-content: center;
+}
+.profile_img img{
+    height: 200px;
+    width:200px;
+    border-radius:50% ;
+   margin-top:30px;
+}
+#file{
+    display: none;
+}
+.camera{
+    height:40px;
+    width: 40px;
+
+
+ 
+}
+.changing_background{
+    background-image:linear-gradient( rgba(7, 7, 7, 0.517),rgba(239, 199, 129, 0.779)), url("../../assets/images/contact_page/header-bg.webp");
+    height: 250px;
+    width: 100%;
+    text-align: center;
+   
+}
+.changing_background a{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    border-radius: 15px;
+  
+}
+.user_details{
+    height: auto;
+    width:600px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    margin:30px;
+    margin-top: -70px;
+    background-color:white;
+}
+.element{
+    margin-bottom: 40px;
+}
+input{
+    height:30px;
+    width:250px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.area{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+.area textarea{
+    font-size: 20px;
+    height: 100px;
+    width: 300px;
+}

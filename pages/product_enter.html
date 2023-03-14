@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/productenter.css">
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div>
+        <p>Product Name</p><input type="text" class="inputs" id="pr_name">
+      </div>
+      <div>
+        <p>About product</p><input type="text" class="inputs" id="about_product">
+      </div>
+      <div>
+        <p>product price </p><input type="number" class="inputs" id="product_price">
+      </div>
+      <div>
+        <p>rating </p><input type="number" class="inputs" id="rating">
+      </div>
+
+      <div class="product-img">
+        <div>
+          <p>Upload image urls</p><input type="url" class="inputs" id="pr_img_1">
+        </div>
+        <div><input type="url" class="inputs" id="pr_img_2"></div>
+        <div><input type="url" class="inputs" id="pr_img_3"></div>
+        <div><input type="url" class="inputs" id="pr_img_4"></div>
+      </div>
+      <div>
+        <p>Highlights</p><input type="text" id="high">
+      </div>
+
+      <div class="buttons">
+
+        <button type="button" class="pr_btn" id="sub">SUBMIT</button>
+
+        <button type="button" class="pr_btn" id="edit">EDIT</button>
+
+        <button type="button" class="pr_btn" id="delete">DELETE</button>
+
+      </div>
+    </div>
+
+
+  </form>
+  <script>
+
+
+    const submitbut = document.getElementById("sub")
+
+    XPathResult
+
+    submitbut.addEventListener("click", function (e) {
+
+      e.preventDefault();
+
+      const product_name = document.getElementById("pr_name").value;
+      const about_product = document.getElementById("about_product").value
+      const product_price = document.getElementById("product_price").value
+      const pr_img_1 = document.getElementById("pr_img_1").value
+      const pr_img_2 = document.getElementById("pr_img_2").value
+      const pr_img_3 = document.getElementById("pr_img_3").value
+      const pr_img_4 = document.getElementById("pr_img_4").value
+      const highlights = document.getElementById("high").value
+      const rating = document.getElementById("rating").value
+      let productid = Math.floor(Math.random() * 100)
+      // let product_arr = []
+      let product_arr = JSON.parse(localStorage.getItem("product_detail")) ?? []
+
+
+      product_arr.push({
+
+        "productid": productid,
+        "product_name": product_name,
+        "about_product": about_product,
+        "product_price": product_price,
+        "pr_img_1": pr_img_1,
+        "pr_img_2": pr_img_2,
+        "pr_img_3": pr_img_3,
+        "pr_img_4": pr_img_4,
+        "highlights": highlights,
+        "rating": rating
+
+      })
+      localStorage.setItem("product_detail", JSON.stringify(product_arr));
+
+      
+
+      // 
+    })
+
+
+
+    function delete_product() {
+      let get_array = JSON.parse(localStorage.getItem("product_detail"));
+      for (let i = 0; i < product_arr.length; i++) {
+        if (document.getElementById("product_name").value == [i]["product_name"]) {
+          get_array.splice(i, 1)
+          localStorage.setItem("product_detail", JSON.stringify(product_arr));
+        }
+      }
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>

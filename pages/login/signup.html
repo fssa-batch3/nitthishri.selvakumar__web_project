@@ -23,67 +23,112 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
         <div class="box">
-            <!-- <form action=""> -->
 
-            <input type="text" class="text" placeholder="User Name" id="text" required>
-            <input type="email" class="text" placeholder="E-mail" id="email" required>
-            <input type="password" class="text" placeholder="Enter password" id="password" minlength="8" maxlength="12"
-                required>
+            <form id="register_form" type="submit">
 
-            <button type="submit" class="submit" onclick="registrationform()">Get started</button>
+                <input type="text" class="text" placeholder="First Name" id="first_name"
+                    title="Name shouldn't contain spaces and Number" pattern="[A-Za-z]+"
+                    title="First name cannot contain spaces" required="true">
 
-            <!-- </form> -->
+                <input type="text" class="text" placeholder="Last Name" id="last_name" pattern="[A-za-z]+"
+                    required="true">
+
+                <input type="email" class="text" placeholder="E-mail" id="email" required="true">
+
+                <input type="password" class="text" placeholder="Enter password" id="password" required="true">
+
+                <button type="submit" class="submit">Get started</button>
+
+            </form>
 
         </div>
 
     </div>
 
     <script>
-        function registrationform() {
-            const registrationform = document.getElementById("registration");
-
-            // registrationform.onclick = e => {
 
 
-            const nameInput = document.getElementById("text").value;
-            const emailInput = document.getElementById("email").value;
-            const passwordInput = document.getElementById("password").value;
 
-            if (nameInput != "") {
-                const usersList = [];
+        const form = document.getElementById("register_form");
 
-                const user = {};
+        const first_name = document.getElementById("first_name");
 
-                user["name"] = nameInput;
-                user["emailid"] = emailInput;
-                user["password"] = passwordInput;
+        const last_name = document.getElementById("last_name");
 
-                const users = JSON.parse(localStorage.getItem("usersList")) || usersList;
+        const email_id = document.getElementById("email");
+ 
+        const password = document.getElementById("password");
 
-                users.push(user);
 
-                localStorage.setItem("usersList", JSON.stringify(users));
 
-                window.location.href = "login.html"
+        const formValidation = () => {
+
+            const firstnamevalue = first_name.value.trim();
+
+            const lastnamevalue = last_name.value.trim();
+
+            const emailvalue = email_id.value.trim();
+
+            const passwordvalue = password.value.trim();
+
+
+            const usersList = [];
+
+            const user = {};
+
+            user["firstname"] = firstnamevalue;
+            user["lastname"] = lastnamevalue;
+            user["emailid"] = emailvalue;
+            user["password"] = passwordvalue
+
+            let user_Details = JSON.parse(localStorage.getItem('user_list')) ?? usersList;
+            
+
+
+            let success = true;
+
+            if (user_Details != null) {
+
+                for (let i = 0; i < user_Details.length; i++) {
+
+                    if (user_Details[i].emailid == emailvalue) {
+
+                        alert("Already Have a account");
+
+                        success = false;
+
+                        break;
+                    }
+
+                }
             }
+
+            if (success) {
+
+                user_Details.push(user);
+
+                localStorage.setItem("user_list", JSON.stringify(user_Details));
+
+                alert("Account created Successfully");
+
+                window.location.href = "login.html";
+            }
+
             else {
-                alert("error")
+                alert("Already Have a account");
             }
 
         }
 
-    // function submit() {
 
-    //     const text = (document.getElementById("text").value);
-    //     const email = (document.getElementById("email").value);
+        form.addEventListener('submit', e => {
 
-    //     console.log(text);
-    //     console.log(email);
+            e.preventDefault();
 
+            formValidation();
 
-
-    //     window.location.href = "../../index.html"
-    // }
+            // console.log("working");
+        });
 
 
     </script>
