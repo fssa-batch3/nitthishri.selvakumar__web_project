@@ -79,11 +79,11 @@
                         <div class="side">
                             <div class="elements">
                                 <label for="first-name"> First name<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="text" name="first-name" id="first-name" required>
+                                <input type="text" name="first-name" id="first_name" required>
                             </div>
                             <div class="elements">
                                 <label for="last-name">Last name<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="text" name="last-name" id="last-name" required>
+                                <input type="text" name="last-name" id="last_name" required>
                             </div>
                             <div class="elements">
                                 <label for="email">E-mail<i class="fa-solid fa-star-of-life"></i></label>
@@ -91,14 +91,14 @@
                             </div>
                             <div class="elements">
                                 <label for="phone-number">Phone number<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="number" name="phone-number" id="phone-number" minlength="10" maxlength="14"
+                                <input type="number" name="phone-number" id="phone_number" minlength="10" maxlength="14"
                                     required>
                             </div>
 
                             <div class="elements">
                                 <label for="categorys">category of item<i class="fa-solid fa-star-of-life"></i></label>
                                 <input list="category" name="category" id="categorys">
-                                <datalist id="category">
+                                <select id="category">
                                     <option value="home-furniture">
                                     <option value="Radio">
                                     <option value="Camera">
@@ -116,8 +116,8 @@
                                     <option value="Bettermass-light">
                                     <option value="Fan">
                                     <option value="others">
-                                </datalist>
-
+                                    </select>
+                    
                             </div>
                             <div class="elements">
                                 <label for="height">Dimension(height)<i class="fa-solid fa-star-of-life"></i></label>
@@ -207,6 +207,7 @@
 
 
     </main>
+    
 </body>
 
 </html>
