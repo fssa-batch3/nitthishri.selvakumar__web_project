@@ -77,7 +77,25 @@ padding: 10px;
 .descripition1 p{
    text-align: justify;
 }
-
+.review_box{
+    /* border: 2px solid black; */
+    height:800px;
+    width:100%;
+  }
+  .review_box p{
+    text-align: center;
+    color:#D70F64;
+    font-size:20px;
+    text-transform: uppercase;
+  }
+  .review_box h2{
+  padding-top: 50px;
+    text-align: center;
+    color:#D70F64;
+    font-size:24px;
+    /* border: 2px solid black; */
+    text-transform: uppercase;
+  }
 
 
 

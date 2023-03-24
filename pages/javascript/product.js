@@ -36,7 +36,7 @@ function productCard(item) {
 
 
     let anchor_1 = document.createElement("a");
-    anchor_1.setAttribute("href", "../product/product_detail.html?name=" + item["productid"]);
+    anchor_1.setAttribute("href", "../product/product_detail.html?prod_id=" + item["productid"]);
     gallery_box.append(anchor_1);
 
     let gallery_imgs = document.createElement("img")
