@@ -49,3 +49,20 @@
     border: none;
     border-radius: 20px;
 }
+
+#allproducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+#allproducts th {
+margin-top:500px;
+
+color:rgb(30, 27, 27);
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 12px;
+    text-align: center;
+    
+  
+  }
