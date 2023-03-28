@@ -50,8 +50,7 @@
 // }
 
 
-let product_detail = [
-     {
+let product_detail = [{
         "productid": 34,
         "product_name": "camera",
         "about_product": "antique piece(300 years old",
