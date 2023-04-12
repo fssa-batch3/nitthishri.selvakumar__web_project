@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Caveat&family=Heebo:wght@300&family=Rubik:wght@300&display=swap');
 
-body {
+body{
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
-
-
 }
 
 /*menu-bar starting*/
@@ -17,6 +15,7 @@ ul {
     list-style: none;
     display: inline-flex;
     margin-top: -15px;
+
 }
 
 a {
@@ -45,8 +44,8 @@ header {
     height: 80px;
     width: 100%;
     margin-top: 40px;
-    font-size: 22px;
-
+    font-size: 22px; 
+    
 }
 
 .sub-logo {
@@ -123,8 +122,6 @@ header {
     background-color: rgb(231, 228, 223);
     margin-top: 1px;
     margin-left: 0;
-
-
 }
 
 .sub-navigate ul li:hover .sub-service ul li {
@@ -162,15 +159,18 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-margin-top: 80px;
+margin-top: 10px;
 margin-left: 60px;
 }
 
 a .gallery_imgs{ 
-    height:270px;
-    width:265px; 
-margin-top: 15px;
-margin-left: 18px;
+    height:260px;
+    width:265px;
+    position: relative; 
+    top: 2px;
+    left:4px;
+   
+border: 0.5px solid rgb(133, 130, 130);
 
 }
 
@@ -178,7 +178,7 @@ margin-left: 18px;
     background-color: white;
     margin-top: 30px;
     margin-left: 35px;
-    height:420px;
+    height:460px;
     width:300px;
     transition: 0.5s;
     border: black 1px solid;
@@ -200,12 +200,17 @@ margin-left: 20px;
     box-shadow: 10px 10px 20px rgb(230, 224, 224);
 transform: scaleY(1.05);
 }
-.gallery_box a h3{
-   text-align: center;
-   text-transform: uppercase;
+.gallery_box h2{
+   margin-left: 20px;
+margin-top: 20px;
   
 }
-.gallery_box a .rating{
+.detail{
+ margin-top: -10px;
+
+    margin-left: 20px;
+}
+.gallery_box  .rating{
     
 margin-left:20px;
 margin-top:-10px;
@@ -213,10 +218,72 @@ margin-top:-10px;
 .gallery_box a .rating i{
     color: red;
 }
-.gallery_box a .price{
+.gallery_box  .price{
 margin-left:20px;
+font-size: 20px;
 color: black;
 }
+#add_to_card{
+    height: 30px;
+  width:150px;
+  font-size: larger;
+  background-color: rgb(235, 195, 146);
+  border-color: rgb(235, 195, 146);
+  border:solid 2px rgb(235, 195, 146);
+  border-radius: 7px;
+  margin-left: 70px;
+  position: relative;
+  top:-15px
+
+}
+#cart-count{
+position:relative;
+top:-10px;
+left:20px
+
+}
+#shopping{
+    position:relative;
+    top: -17px;
+    left:15px
+}
+ #pic{
+    position: relative; 
+    top: 15px;
+    left:16px;
+    height:250px;
+    width:265px; 
+    overflow: hidden;
+}  
+#product_img:hover {
+    transform:scale(1.5);
+}
+#product_img{
+  
+    overflow-y: hidden;
+   transition: 0.4s;
+}
+
 /*gallery-end*/
+/* search_box starting */
+.search_box{
+    height: 80px;
+    width:500px;
+    border:gray 1px solid;
+    margin-top: 100px;
+  margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+align-items: center;
+}
+#search{
+    
+    height: 40px;
+    width:200px;
+
+}
+/* search_box_ending */
+
 
 

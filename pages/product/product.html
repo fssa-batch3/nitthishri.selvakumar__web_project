@@ -17,7 +17,7 @@
 
     <header>
 
-<!-- header starts -->
+        <!-- header starts -->
         <!--  communicate-us ends -->
 
 
@@ -56,6 +56,11 @@
                     <li><a class="navi" href="../../pages/track/track.html">track request</a></li>
                     <li><a class="navi" href="../../pages/login/login.html">Login</a></li>
                     <li><a class="navi-button" href="../../pages/request.html">Request a quote</a>
+                    <li>
+                        <div id="cart-count">0</div>
+                        <i class="fa-solid fa-cart-shopping" id="shopping"></i>
+                    </li>
+
                 </ul>
             </div>
 
@@ -65,15 +70,19 @@
 
 
     </header>
+    <div class="search_box">
+        <input type="text" id="search" placeholder="search">
+    </div>
 
     <div class="product_page">
 
         <!-- 
-        <a  href="../product_detail.html">
+      
         <div class="gallery_box">
+              <a  href="../product_detail.html" id="pic">
             <img class="gallery_imgs" src="../../assets/images/service1_page/before1.png" alt="antique">
-            
-            <h2 class="product_name">chair</h2>
+              </a> 
+             <h2 class="product_name">chair</h2>
             <p class="detail">This is 200 years old</p>
             <div class="rating">
 
@@ -87,13 +96,12 @@
             <p class="price">&#8377; 23,000</p> 
 
         </div> -->
-    <!-- </a> -->
+
 
 
     </div>
     <script src="../javascript/product.js">
 
-        
 
     </script>
 </body>

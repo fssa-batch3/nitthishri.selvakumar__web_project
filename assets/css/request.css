@@ -278,5 +278,17 @@ font-weight: 1000;
     color:white
 }
 
+#category{
+    color:black
+}
+select {
+    height: 40px;
+    width: 360px;
+    color:black;
+    
+}
+option{
+margin:10px;
+}
 /*request-box ending*/
 
