@@ -24,7 +24,6 @@ for (let i = 0; i < products.length; i++) {
 
     if (products[i].status) {
 
-        alert("hi");
 
         list_product(products[i]);
     }
@@ -91,6 +90,7 @@ function list_product(item) {
         stars += "⭐";
     }
     icon.append(stars);
+    
 
     //     ratings_div = document.createElement("div");
     // ratings_div.setAttribute("class", "product-ratings");
