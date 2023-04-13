@@ -20,8 +20,6 @@ const form = document.getElementById("loginform");
                 success = true;
 
                 break;
-
-
             }
         }
 

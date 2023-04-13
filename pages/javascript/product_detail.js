@@ -15,7 +15,7 @@ products.find(function (e) {
     if ((e["productid"] == id) && (e.status)) {
 
         product_details(e);
-        l
+
     }
 
 })
@@ -50,3 +50,49 @@ function product_details(selected) {
 
 }
 
+
+
+
+let reviewer_email = localStorage.getItem("logged_in")
+console.log(reviewer_email)
+
+let reviewer_matching = JSON.parse(localStorage.getItem("user_list"));
+let separating;
+let match = reviewer_matching.find(function (e) {
+    if (e["emailid"] == reviewer_email) {
+        return separate = e
+    }
+})
+
+let review_form = document.getElementById("review_form");
+document.getElementById("btn").addEventListener("submit", e => {
+    e.preventDefault();
+    const review_box = document.getElementById("experience").value;
+
+})
+
+// let review_output = document.querySelector(".boxer");
+// document.getElementById("sub-form").addEventListener("submit", e => {
+//     e.preventDefault();
+//     const input = document.getElementById("experience").value;
+//     const commentes = document.getElementById("vendors_review").value;
+//    const name_of_reviewer=re["user_name"]
+//     if ((input !== "") && (commentes !== "")) {
+//         let user_rev = {
+//             "input": input,
+//             "comments": commentes,
+//             "artists_name": name,
+//             "reviewer_name":name_of_reviewer
+//         }
+//         artist_reviews.push(user_rev);
+//         localStorage.setItem("artistreviews", JSON.stringify(artist_reviews));
+//         alert("done");
+//         output = " ";
+//         review_list();
+//     }
+//     else {
+//         alert("not done");
+//     }
+// }
+
+// )

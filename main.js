@@ -142,3 +142,35 @@ if (localStorage.getItem("product_detail")) {
     localStorage.setItem("product_detail", JSON.stringify(product_detail));
     console.log("yes");
 }
+
+
+
+
+if (localStorage.getItem("user_List")) {
+    //   return;
+  } else {
+    localStorage.setItem(
+      "user_list",
+      JSON.stringify([
+        [{"firstname":"Hemanath","lastname":"s","emailid":"hemanathm4@gmail.com","password":"12345678"}
+        ,{"firstname":"nitthishri","lastname":"M","emailid":"nitthishris@gmail.com","password":"12345678"},
+        {"firstname":"Nitthi","lastname":"shri","emailid":"nitthisris@gmail.com","password":"1234567"},
+        {"firstname":"nithi","lastname":"shri","emailid":"nithisris@gmail.com","password":"123456"},
+        {"firstname":"jaleela","lastname":"s","emailid":"jaleela@gmail.com","password":"123456","addressvalue":"","pin_number":""}
+        ,{"firstname":"pradeep","lastname":"s","emailid":"pradeep@gmail.com","password":"123456","addressvalue":"wertyuiop","pin_number":"2345678","phone_number":""},
+        {"firstname":"niki","lastname":"n","emailid":"nikitha@gmail.com","password":"Nikitah@123","addressvalue":"undefined","pin_number":"","phone_number":""}]
+      ])
+    );
+  }
+
+  
+if (localStorage.getItem("logged_in")) {
+    //   return;
+  } else {
+    localStorage.setItem(
+      "logged_in",
+      JSON.stringify([
+
+      ])
+    );
+  }
