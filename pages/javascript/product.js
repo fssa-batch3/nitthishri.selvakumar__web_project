@@ -130,8 +130,14 @@ searchbox.addEventListener("input", (e) => {
     //     e.preventDefault();
     //   }
     let filteredList = products.filter((item) => {
-        return item.product_name.toLowerCase().includes(searchQuery)
-    })
+
+        if (item.status) {
+
+            return item.product_name.toLowerCase().includes(searchQuery);
+        }
+
+
+    });
     const parentHtmlDiv = document.querySelector(".product_page");
     parentHtmlDiv.innerHTML = "";
 
