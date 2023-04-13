@@ -23,22 +23,26 @@ Expected Result:
 The user is redirected to the login page.
 
 
-Create an account(completed ✅)
+### Create an account(completed ✅)
 Scenario 1: Successfully login in to account
-Steps:
-Navigate to the login page.
-Fill the required information such as username,email and password.
-Click the "login" button.
-Expected Result:
+ ### Steps:
+#Navigate to the login page.
+#Fill the required information such as username,email and password.
+#Click the "login" button.
+### Expected Result:
 The user is redirected to the user profile page.
-View products(completed ✅)
+
+_______________________________________________________
+### View products(completed ✅)
 Scenario 1: Successfully view products
-Steps:
+### Steps:
 Log in as a buyer.
 Navigate to the product listing page.
 View the list of available products.
-Expected Result:
+### Expected Result:
 The user can view the list of products available.
+
+_____________________________________________________________
 View product details(completed ✅)
 Scenario 1: Successfully view product details
 Steps:
