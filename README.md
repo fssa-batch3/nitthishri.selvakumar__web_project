@@ -16,10 +16,12 @@ github-link:https://nitthishri-0104.github.io/blackwoodalley/
 
 ### Create an account(completed ✅)
 Steps:
-Navigate to the sign-up page.
-Fill the required information such as firstname,lastname, email,password and conform password.
-Click the "submit" button.
-Expected Result:
+#Navigate to the sign-up page.
+
+#Fill the required information such as firstname,lastname, email,password and conform password.
+
+#Click the "submit" button.
+### Expected Result:
 The user is redirected to the login page.
 
 
