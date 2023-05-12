@@ -75,10 +75,11 @@
                 <h1>Get In Touch</h1>
                 <p class="para">Please fill out the quick form and we will be in touch with lightning speed</p>
                 <form action="../index.html">
+                    <input type="number" id="book_id" placeholder="booking_id" disabled><br>
                     <input type="text" id="name" placeholder="Name" required> <br>
                     <input type="text" id="email" placeholder="Email" required> <br>
                     <textarea id="message" name="message" rows="6" cols="75" placeholder="Message"></textarea> <br>
-                    <button>Submit</button>
+                    <button id="sub">Submit</button>
                 </form>
             </div>
 
@@ -170,6 +171,10 @@
         </form>
         </div>
     </footer>
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./../pages/javascript/query.js"></script>
 </body>
 
 </html>

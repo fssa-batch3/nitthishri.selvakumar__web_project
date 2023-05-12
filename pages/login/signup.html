@@ -35,7 +35,7 @@
 
                 <input type="email" class="text" placeholder="E-mail" id="email" required="true">
 
-                <input type="password" class="text" placeholder="Enter password" id="password" required="true">
+                <input type="password" class="text" placeholder="Enter password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="UpperCase, LowerCase, Number/SpecialChar and min 8 Chars" required="true">
 
                 <button type="submit" class="submit">Get started</button>
 

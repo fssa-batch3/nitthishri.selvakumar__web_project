@@ -123,7 +123,11 @@ header{
     position: static;
 }
 
-
+.man {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 .service:hover{
     color: brown;
 }

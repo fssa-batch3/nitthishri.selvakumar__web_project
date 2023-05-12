@@ -28,10 +28,13 @@ const formValidation = () => {
     user["firstname"] = firstnamevalue;
     user["lastname"] = lastnamevalue;
     user["emailid"] = emailvalue;
-    user["password"] = passwordvalue
+    user["password"] = passwordvalue;
+    user["count"] = "";
+    user["favourite_count"]=""
+    
 
     let user_Details = JSON.parse(localStorage.getItem('user_list')) ?? usersList;
-    
+
 
 
     let success = true;
@@ -61,9 +64,7 @@ const formValidation = () => {
         alert("Account created Successfully");
 
         window.location.href = "login.html";
-    }
-
-    else {
+    } else {
         alert("Already Have a account");
     }
 

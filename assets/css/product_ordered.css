@@ -6,9 +6,8 @@ body{
     padding:0;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
+    
 }
-
-
 /*menu-bar starting*/
 
 ul{
@@ -79,6 +78,8 @@ header{
     background-color: black;
     position: relative;
     top:-40px;
+
+
 }
 .navigate{
     display: flex;
@@ -180,201 +181,39 @@ font-weight: 1000;
 /*drop-down ends*/
 /*menu-bar ending */
 
-.bgimage{
-
-    
-    width:100%;
-    height:700px;
-    background-image:url("../images/index_page/timer.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    
-}
-.bgimage h1{
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size:55px;
-    color:rgb(245, 237, 237);
-    
-    margin-left: 60px;
-}
-.bgimage p{
-    font-size:20px;
-    color:white;
-    margin-left: 60px;
-}
-.part1{
-    display: flex;
-    flex-direction:row;
-    height: 350px;
-    width:100%;
-}
-.part1a,.part1b{
-  height:250px;
-  width:600px;   
- background-color: rgb(216, 195, 167);
- margin-top: 40px;
- margin-left: 70px;
- margin-right: 70px;
- margin-bottom: 40px;
-}
-.repair{
-    height:250px;
-    width:600px;  
-    position: relative;
-    top:20px;
-    left:20px;
-}
-
-.repair:hover{
-    height:230px;
-    width:580px;  
-
-}
-.repaira{
-    font-size: 30px;
-    border:4px rgb(216, 195, 167) solid;
-    height:50px;
-    width:450px;
-    background-color:rgb(216, 195, 167);
-    position: relative;
-    top:-20px;
-    left:200px;
-
-}
-.bglogo{
-    height:200px ;
-    width: 200px;
-    padding-top: 200px;
-    margin-left:60px ;
-}
-.subvid{
-    text-align: center;
-}
-.subvid1{
-    width: 100%;
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-evenly;
-}
-/*nav ends*/
-.bg-image{
-    height: 100px;
-    width:100%;
-    margin-top: 150px;
-    background-color: rgb(220, 212, 212);
-    text-align: center;
-    padding-top: 10px;
-    color: rgb(91, 27, 27);
-}
-
-
-.full_box{
-    /* margin-top:180px; */
-    margin-left: 100px;
-    display: flex;
-    flex-direction:row;
-    height:300px;
-    width:740px;
-border:1px solid black;
-box-shadow: 10px 10px 20px grey;
-
-}
-#booker_image{
-    margin-left:20px;
-    margin-top:20px;
-    height:260px;
-    width:310px;
-    border:1px solid black;
-
-}
-
-#detail_box{
-    margin-left:40px;
-    margin-top:20px
-}
-#book_name{
-    margin-left: 60px;
-}
-#book_category{
-    margin-left: 75px;
-
-}
-#book_category_item{
-    margin-left:23px
-}
-#book_height{
-    margin-left: 95px;
-
-}
-#book_width{
-    margin-left: 105px;
-
-}
-#detail_box p{
-    font-size: 22px;
-}
-#full_detail_box{
-    margin-top:20px
-}
-#whole_full_box{
-    display: flex;
-    flex-direction:column;
-}
-#track_report{
-    /* margin-top:180px; */
-    margin-left: 70px;
-    height:260px;
-    width:440px;
-    border:solid 1px black;
-    box-shadow: 10px 10px 20px grey;
-    padding:20px
-
-}
-
-#whole_full_box{
-    margin-top: 180px;
-}
-#underprocess{
-    font-size: 25px;
-    color:blue;
-    text-align: center;
-}
-#both_box{
+.last-cont-main {
+    height: 500px;
+    margin-top: 10em;
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
 }
-#para_track_report{
-    
-    font-size:22px;
+
+.last-cont-main .last-cont-content {
     text-align: center;
-    
+
 }
-#status{
-    text-align: center;
-    font-size:30px;
+
+.last-cont-content p {
+    font-size: 2rem;
+    font-weight: 600;
 }
-#accepted{
+
+.last-cont-content i {
+    font-size: 90px;
     color: green;
-    text-align: center;
-    font-size:25px;
-
+    position: relative;
+    animation: mymove 2s infinite;
+    
 }
-#rejected{
-    color:red;
-    text-align: center;
-    font-size:25px;
 
-}
-#track_report a{
-    color:white;
-   position:relative;
-   top:30px;
-   left:140px;
-    border:1px solid black;
-    font-size: 20px;
-    padding:5px;
-    background-color: rgb(95, 33, 33);
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
 
+    to {
+        left: 20px;
+    }
 }

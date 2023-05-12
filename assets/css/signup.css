@@ -90,5 +90,17 @@ body{
 .submit:hover{
  color:antiquewhite
 }
+/* 
+
+input:valid
+{
+  border:none;
+  outline: 2px solid rgb(19, 206, 19);
 
 
+} */
+input:invalid
+{
+    border:none;
+  outline: 2px solid rgb(238, 11, 11);
+}

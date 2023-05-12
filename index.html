@@ -16,7 +16,7 @@
 <body>
     <header>
         <!-- menu-bar starting -->
-        11 <!--  communicate-us starting -->
+        <!--  communicate-us starting -->
 
         <div class="communicate-us">
 
@@ -36,6 +36,7 @@
 
         </div>
 
+        
         <!--  communicate-us ends -->
 
 
@@ -45,33 +46,60 @@
 
         <div class="navigate">
             <div class="sub-logo">
-                <img class="logo" src="assets/images/index_page/logo.png" alt="logo_for_webpage">
-            </div>
+                <a class="navi" href="./index.html"><img class="logo" src="assets/images/index_page/logo.png"
+                        alt="logo_for_webpage">
+            </div></a>
             <div class="sub-navigate">
-                <ul>
-                    <li><a class="navi" href="./index.html">Home</a></li>
-                    <li><a class="navi" href="./pages/about.html">About</a></li>
+                <ul id="whole_nav">
+
+                    <li><a class="service" href="">About</a>
+                        <div class="sub-service">
+
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/about.html">About us</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/restore/restore.html">How we restore</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
                     <li><a class="service" href="">Service</a>
                         <div class="sub-service">
                             <ul>
-                                <li><a class="sub-service1" href="./pages/service/service2.html">repair electronics</a>
+                                <li><a class="sub-service1" href="./pages/service/service2.html">Repair electronics</a>
                                 </li>
-                                <li><a class="sub-service1" href="./pages/service/service1.html">repair furniture</a>
+                                <li><a class="sub-service1" href="./pages/service/service1.html">Repair furniture</a>
                                 </li>
+                                <li><a class="sub-service1" href="./pages/product/product.html">Buy</a></li>
 
                             </ul>
 
                         </div>
                     </li>
-                    <li><a class="navi" href="./pages/restore/restore.html">how we restore</a></li>
-                    <li><a class="navi" href="./pages/contact.html">contact us</a></li>
-                    <li><a class="navi" href="./pages/track/track.html">track request</a></li>
-                    <li><a class="navi" href="./pages/login/login.html">Login</a></li>
-                    <li><a class="navi" href="./pages/product/product.html">product</a></li>
-                    <li><a class="navi" href="./pages/login/userprofile.html">profile</a>
-                        <li><a class="navi" href="./pages/product_enter.html">product_enter</a>
-                    <li><a class="navi-button" href="./pages/request.html">Request a quote</a>
-                     
+                    <li><a class="navi" href="./pages/contact.html">Contact us</a></li>
+                    <li><a class="navi" href="./pages/track/track.html">Track request</a></li>
+                    <li id="insert_login"></li>
+                    <!-- <li><a class="navi" href="./pages/request.html">Restore</a></li> -->
+                    <li id="admin">
+                        <!-- <a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div> -->
+                    </li>
+                    <li id="insert_profile"></li>
+                    <li id="login"></li>
+
+
+
                 </ul>
             </div>
         </div>
@@ -212,6 +240,61 @@
     </footer>
 
     <script src="main.js"></script>
+
+    <script>
+        let insert;
+        // let login_insert;
+        const last_email = localStorage.getItem("logged_in")
+        console.log(last_email);
+        let login = document.getElementById("login")
+        login.addEventListener("click", event => {
+            event.preventDefault();
+            if(last_email=='[]'){
+                 login.innerHTML=`<a class="navi" href="./pages/login/login.html">LogIn<i
+                                class="fa-solid fa-arrow-right-from-bracket"></i></a>`
+            }
+            localStorage.removeItem("logged_in")
+            login.innerHTML = 'LogOut<i class="fa-solid fa-arrow-right-to-bracket"></i>'
+        }
+        )
+        const insert_login = document.getElementById("insert_login")
+        const insert_profile=document.getElementById("insert_profile")
+        let login_insert;
+        console.log(whole_nav)
+        if (last_email =="[]") {
+            console.log("ok")
+            login_insert = ` <a class="navi" href="./pages/login/login.html">Login</a>`
+            insert_login.innerHTML = login_insert
+            insert_profile.innerHTML=''
+        }
+        else{
+            insert_login.innerHTML=''
+            insert_profile.innerHTML=`<a class="navi" href="./pages/login/userprofile.html"><img class="man"
+                                src="./assets/images/index_page/blank_profile.webp"></a>`
+        }
+
+
+        //  const last_email = localStorage.getItem("logged_in")
+        
+        let include = document.getElementById("admin");
+        if (last_email == "blackwood@gmail.com") {
+            insert = ` <li><a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li> `
+
+            include.innerHTML = insert
+
+        }
+    </script>
 
 </body>
 

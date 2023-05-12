@@ -117,3 +117,8 @@ body{
     color:rgb(195, 144, 83);
 }
 
+input:invalid
+{
+    border:none;
+  outline: 2px solid rgb(238, 11, 11);
+}

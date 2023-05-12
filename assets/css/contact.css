@@ -186,10 +186,10 @@ header {
     width: 50%;
     font-size: 22px;
 }
-.para, #name,#email,#message,.right-side h2, .right-side p{
+.para, #name,#email,#message,#book_id,.right-side h2, .right-side p{
     margin-top: 20px;
 }
-#name,#email,#message{
+#name,#email,#message,#book_id{
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/product_detail.css">
 </head>
+
 <body>
     <div class="product-detail-box">
         <div class="products">
-            <img id="main_pic" src=""  alt="engine image" class="engine">
-            <ul>
-                <li><img id="side_pic1" src="" alt="antique"></li>
-                <li><img id="side_pic2" src="" alt="antique"></li>
-                <li><img id="side_pic3" src="" alt="antique"></li>
+            <div class="mainimage">
+            <div class="mainimages">
+            
+                <img id="main_pic" src="" alt=" image">
+               
+    
+            </div>
+            </div>
+            <ul class="">
+                <li class="img"><a href="#" data-id="1"><img id="side_pic1" src="" alt="antique"></a></li>
+                <li class="img"><a href="#" data-id="2"><img id="side_pic2" src="" alt="antique"></a></li>
+                <li class="img"><a href="#" data-id="3"><img id="side_pic3" src="" alt="antique"></a></li>
             </ul>
         </div>
         <div class="product-detail">
             <h2 id="product_name"></h2>
             <span id="rupee" class="fa-solid fa-indian-rupee-sign"></span>
             <p id="highlights"></p>
-            <div class="star">
-                <span  id="rating" class="fa-solid fa-star"></span>
+            <div class="star_rate">
+                <span id="rating" class="fa-solid fa-star"></span>
             </div>
             <div class="list-btn">
-                <a href="../../Page/Accesssories/admin.html"><button id="add_to_cart"><span
-                            class="fa-sharp fa-solid fa-cart-shopping"></span>Add to card</button></a>
-                <a href="../../Page/Accesssories/admin.html"><button id="buy_now"><span
+                <!-- <a href=""><button id="add_to_cart"><span
+                            class="fa-sharp fa-solid fa-cart-shopping"></span>Add to card</button></a> -->
+                <a href="" id="buy_now"><button id="buy_now"><span
                             class="fa-sharp fa-solid fa-bag-shopping"></span>Buy Now</button></a>
             </div>
             <div class="descripition1">
@@ -36,10 +45,10 @@
             </div>
         </div>
     </div>
-     <!-- Review box starting -->
+    <!-- Review box starting -->
     <div class="review_box">
         <h2>
-            Review 
+            Review
         </h2>
         <br>
         <br>
@@ -48,62 +57,64 @@
         </p>
         <form id="review_form">
             <div class="check">
-                <input type="checkbox" id="rev">
-                <input type="checkbox" id="rev">
-                <input type="checkbox" id="rev">
-                <input type="checkbox" id="rev">
-                <input type="checkbox" id="rev">
-                <br>
+
+                <p class="review_star"> &#9734;</p>
+                <p class="review_star">&#9734;</p>
+                <p class="review_star">&#9734;</p>
+                <p class="review_star">&#9734;</p>
+                <p class="review_star">&#9734;</p>
             </div>
-            <textarea  placeholder="Tell us about your experience" id="experience"></textarea> 
+            <p class="current_rating"></p>
+           
+
+            <textarea placeholder="Tell us about your experience" id="experience"></textarea>
             <br><br>
-            
+
             <br><br>
             <button id="btn" type="submit">submit review</button>
         </form>
- </div>
-
- <div class="testimonial">
-
-    <div class="box">
-
-       <p> My piano was over 20 years old and it was restored to new after traveling with the military.
-         It looks brand new and I really appreciate all the hard and effort that went into its 
-         restoration. Thank you again!!</p>
-       <p> RENEE BOYD</p>
-       
-       <i class="fa-sharp fa-solid fa-star"></i>
-       <i class="fa-sharp fa-solid fa-star"></i>
-       <i class="fa-sharp fa-solid fa-star"></i>
-       <i class="fa-sharp fa-solid fa-star"></i>
-       <i class="fa-sharp fa-solid fa-star"></i>
-       <i class="fa-sharp fa-solid fa-star"></i>
-    
-
     </div>
-    <div class="box">
 
-        <p> My piano was over 20 years old and it was restored to new after traveling with the military.
-          It looks brand new and I really appreciate all the hard and effort that went into its 
-          restoration. Thank you again!!</p>
-        <p> RENEE BOYD</p>
+    <div class="testimonial">
+
+        <div class="box">
+
+            <p> My piano was over 20 years old and it was restored to new after traveling with the military.
+                It looks brand new and I really appreciate all the hard and effort that went into its
+                restoration. Thank you again!!</p>
+            <p> RENEE BOYD</p>
+            <div class="star_rating">
+                &#9733;&#9733;&#9733;&#9733;
+               
+                
         
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-     
- 
-     </div>
+            </div>
+
+
+        </div>
+        <div class="box">
+
+            <p> My piano was over 20 years old and it was restored to new after traveling with the military.
+                It looks brand new and I really appreciate all the hard and effort that went into its
+                restoration. Thank you again!!</p>
+            <p> RENEE BOYD</p>
+<!-- <p id="star_rating"> -->
+    <div class="star_rating">
+
+        
 
     </div>
-     <!-- Review box ending -->
+
+        <!-- </p> -->
+        </div>
+
+    </div>
+    <!-- Review box ending -->
 
     <script src="../javascript/product_detail.js">
 
-    </script>
-</body>
-</html>
 
+    </script>  
+</body>
+
+</html>

@@ -47,14 +47,12 @@ submitbut.addEventListener("click", function (e) {
 
 });
 
-
-
 function list_create_products(item) {
 
   output += `<tr>
   
   <td>${item.productid}</td>
-  <td><img src="${item.pr_img_1}"</td>
+  <td><img src="${item.pr_img_1}"></td>
   <td>${item.product_name}</td>
   <td>${item.product_price}</td>
   <td><button onclick="avail_stock_yes(${item.productid})">Yes</button></td>
@@ -89,7 +87,6 @@ function updateitem(id) {
 }
 
 function updatenew() {
-
 
   let product_name = document.getElementById("pr_name").value;
   let about_product = document.getElementById("about_product").value;
@@ -127,7 +124,7 @@ function updatenew() {
 }
 
 function avail_stock_yes(id) {
-
+  console.log("nitthi", id)
   product_arr.find(function (obj) {
 
     if (obj.productid == id) {

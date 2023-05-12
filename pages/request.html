@@ -12,14 +12,14 @@
 
 <body>
     <header>
-    
+
 
         <!--  communicate-us ends -->
 
 
         </div>
 
-        
+
 
         </div>
 
@@ -73,13 +73,15 @@
                 your goals and vision for your piece(s). We look forward to connecting with you!</p>
             <h2>Request a quote</h2>
 
-            <form action="../../pages/track/track.html" method="get">
+            <form id="request_form" method="get">
+
                 <div class="full-form">
                     <div class="both-side">
                         <div class="side">
                             <div class="elements">
                                 <label for="first-name"> First name<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="text" name="first-name" id="first_name" required>
+                                <input type="text" name="first-name" id="first_name" 
+                                     required>
                             </div>
                             <div class="elements">
                                 <label for="last-name">Last name<i class="fa-solid fa-star-of-life"></i></label>
@@ -87,12 +89,12 @@
                             </div>
                             <div class="elements">
                                 <label for="email">E-mail<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" required disabled>
                             </div>
                             <div class="elements">
                                 <label for="phone-number">Phone number<i class="fa-solid fa-star-of-life"></i></label>
-                                <input type="number" name="phone-number" id="phone_number" minlength="10" maxlength="14"
-                                    required>
+                                <input type="number" name="phone-number" id="phone_number" pattern="[0-9]{10}"
+                                    title="PLease enter 10 digit number" required>
                             </div>
 
                             <div class="elements">
@@ -117,11 +119,12 @@
                                     <option value="Bettermass-light">Bettermass-light</option>
                                     <option value="Fan">Fan</option>
                                     <option value="others">Others</option>
-                                    </select>
-                    
+                                </select>
+
                             </div>
                             <div class="elements">
-                                <label for="height">Dimension(height)<i class="fa-solid fa-star-of-life"></i></label>
+                                <label for="height">when did the product got repaired last time<i
+                                        class="fa-solid fa-star-of-life"></i></label>
                                 <input type="text" name="height" id="height" required>
                             </div>
 
@@ -130,34 +133,35 @@
                         <div class="side1">
 
                             <div class="elements">
-                                <label for="width">Dimension(width)<i class="fa-solid fa-star-of-life"></i></label>
+                                <label for="width">How old the product is<i class="fa-solid fa-star-of-life"></i></label>
                                 <input type="text" name="width" id="width" required>
                             </div>
 
                             <div class="elements">
                                 <label for="reason">REASON FOR RESTORATION INQUIRY</label>
 
-                                <div dclass="reason">
-                                    <input type="radio" name="reason" id="sentimental">
+                                <div class="reason">
+                                    <input type="radio" name="reason" class="sentimental"
+                                        value="I am sentimental about it.">
                                     <label class="why" for="sentimental">I am sentimental about it.</label>
-                                      
-
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="quality">
-                                    <label class="why" for="quality"> My furniture/item
+                                    <input type="radio" name="reason" class="sentimental">
+                                    <label class="why" for="quality" value="My furniture/item
+                                    is high-end/good quality."> My furniture/item
                                         is high-end/good quality.</label>
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="like">
+                                    <input type="radio" name="reason" class="sentimental" value="I really like the style and I don't want to replace
+                                    it.">
                                     <label class="why" for="like"> I really like the style and I don't want to replace
                                         it.</label>
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="others">
+                                    <input type="radio" name="reason" id="others" value="Others">
                                     <label class="why" for="others">Others</label>
                                 </div>
                             </div>
@@ -176,41 +180,32 @@
                                 </div>
 
                                 <div class="reason">
-                                    <input type="radio" name="reason" id="valuable">
+                                    <input type="radio" name="quote" id="valuable">
                                     <label class="why" for="valuable"> I want to know more about your services</label>
                                 </div>
 
                                 <div class="elements">
-                                    <label for="file">Photo</label>
-                                    <input type="file" name="file" id="file" >
+                                    <label for="file">Photo_url<i
+                                        class="fa-solid fa-star-of-life"></i></label>
+                                    <input type="text" name="file" id="file" required>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <div class="area">
-                        <label for="description">Description</label>
+                        <label for="description">Description about the problem of your product:</label>
                         <textarea name="description" id="description" col="20" row="50"></textarea>
 
                     </div>
-                    <button id="request_submit">submit</button>
+                    <button id="request_submit" type="submit">submit</button>
 
             </form>
-
-
-
-
-
-
-
         </div>
-
-
-
     </main>
 
     <script src="./javascript/request.js"></script>
-    
+
 </body>
 
 </html>

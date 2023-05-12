@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +29,8 @@
 
             <form id="loginform">
 
-                <input type="email" name="email" id="emailid" class="text" placeholder="User Id" required>
-                <input type="password" name="password" id="password" class="text" placeholder="Enter password" required>
+                <input type="email" name="email" id="emailid" class="text" placeholder="Email_id" required>
+                <input type="password" name="password" id="password" class="text" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="UpperCase, LowerCase, Number/SpecialChar and min 8 Chars" placeholder="Enter password" required>
 
                 <a class="forgot" name="forget_password" href="">forgot password?</a>
 
