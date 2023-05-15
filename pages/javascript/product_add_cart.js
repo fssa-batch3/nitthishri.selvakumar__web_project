@@ -1,24 +1,20 @@
-let wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
-let user_detail = JSON.parse(localStorage.getItem("user_list"));
-let product_information = JSON.parse(localStorage.getItem("product_detail"));
+const wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
+const user_detail = JSON.parse(localStorage.getItem("user_list"));
+const product_information = JSON.parse(localStorage.getItem("product_detail"));
 
 let output = "";
 let order_count = 0;
 let total = 0;
-let last_email = localStorage.getItem("logged_in");
+const last_email = localStorage.getItem("logged_in");
 // console.log(last_email);
 
-
-wishlist_arr.forEach(element => {
-    product_information.forEach(item => {
-        if (item.productid == element.productid) {
-            // console.log("ppapa")
-            if ((element.status) && (element.wishlist_email == last_email)) {
-
-
-
-                order_count++
-                output += `<div class="gallery_box">
+wishlist_arr.forEach((element) => {
+  product_information.forEach((item) => {
+    if (item.productid == element.productid) {
+      // console.log("ppapa")
+      if (element.status && element.wishlist_email == last_email) {
+        order_count++;
+        output += `<div class="gallery_box">
     <a href="../product_detail.html" id="pic">
         <img class="gallery_imgs" src="${element.pr_img_1}">
        
@@ -34,7 +30,7 @@ wishlist_arr.forEach(element => {
 
 
     <div class="add_cart_box">
-        <p class="price">₹ ${element["product_price"]}</p>
+        <p class="price">₹ ${element.product_price}</p>
     </div>
     <div class="add_cart_box">
         <h3 id="stock">stock In</h3>
@@ -45,55 +41,46 @@ wishlist_arr.forEach(element => {
     </div>
 
     <div class="add_cart_box">
-        <p><i id="trash" onclick="delete_wishlist(${element["productid"]})" class="fa-solid fa-trash"></i></p>
+        <p><i id="trash" onclick="delete_wishlist(${element.productid})" class="fa-solid fa-trash"></i></p>
     </div>
     
-</div>`
+</div>`;
 
-                total += Number(element.product_price);
+        total += Number(element.product_price);
 
-                document.querySelector(".product_page").innerHTML = output;
-            }
-
-        }
-    });
-
-})
+        document.querySelector(".product_page").innerHTML = output;
+      }
+    }
+  });
+});
 
 // console.log(order_count);
 
 // console.log(total)
-const total_amount = document.getElementById("total_amount")
-total_amount.innerHTML ="Total product price:"+ "  "+" "+ total
-const order_amount=document.getElementById("order_amount")
-order_amount.innerHTML="Order price:"+ "  "+"  "+ total
-
+const total_amount = document.getElementById("total_amount");
+total_amount.innerHTML = `Total product price:` + `  ` + ` ${total}`;
+const order_amount = document.getElementById("order_amount");
+order_amount.innerHTML = `Order price:` + `  ` + `  ${total}`;
 
 function delete_wishlist(id) {
+  wishlist_arr.find((obj) => {
+    if (obj.productid == id) {
+      obj.status = false;
+      // console.log(obj.status)
 
-    wishlist_arr.find(function (obj) {
-
-
-        if (obj.productid == id) {
-
-            obj.status = false;
-            // console.log(obj.status)
-
-            localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
-        }
-    })
+      localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
+    }
+  });
 }
 
-user_detail.forEach(obj => {
-    if (last_email == obj.emailid) {
-        obj.count = order_count
+user_detail.forEach((obj) => {
+  if (last_email == obj.emailid) {
+    obj.count = order_count;
 
-
-        localStorage.setItem("user_list", JSON.stringify(user_detail));
-        // console.log(user_detail)
-    }
-})
-
+    localStorage.setItem("user_list", JSON.stringify(user_detail));
+    // console.log(user_detail)
+  }
+});
 
 // function wishlist_details(selected) {
 
@@ -118,7 +105,7 @@ user_detail.forEach(obj => {
 
 // }
 
-let checkOut = document.getElementById("check_out")
-checkOut.addEventListener("click", function () {
-    window.location.href = " ../product/product_buynow.html?last_email=" + last_email;
-})
+const checkOut = document.getElementById("check_out");
+checkOut.addEventListener("click", () => {
+  window.location.href = ` ../product/product_buynow.html?last_email=${last_email}`;
+});

@@ -1,54 +1,46 @@
-let submitbut = document.getElementById("sub")
+const submitbut = document.getElementById("sub");
 
-let product_arr = JSON.parse(localStorage.getItem("product_detail")) || [];
+const product_arr = JSON.parse(localStorage.getItem("product_detail")) || [];
 
 let output = "";
 
-product_arr.forEach(item => {
-
+product_arr.forEach((item) => {
   list_create_products(item);
-
 });
 
-submitbut.addEventListener("click", function (e) {
-
+submitbut.addEventListener("click", (e) => {
   e.preventDefault();
 
-  let product_name = document.getElementById("pr_name").value;
-  let about_product = document.getElementById("about_product").value;
-  let product_price = document.getElementById("product_price").value
-  let pr_img_1 = document.getElementById("pr_img_1").value;
-  let pr_img_2 = document.getElementById("pr_img_2").value;
-  let pr_img_3 = document.getElementById("pr_img_3").value;
-  let pr_img_4 = document.getElementById("pr_img_4").value;
-  let highlights = document.getElementById("high").value;
-  let description = document.getElementById("description").value;
-  let rating = document.getElementById("rating").value;
-
+  const product_name = document.getElementById("pr_name").value;
+  const about_product = document.getElementById("about_product").value;
+  const product_price = document.getElementById("product_price").value;
+  const pr_img_1 = document.getElementById("pr_img_1").value;
+  const pr_img_2 = document.getElementById("pr_img_2").value;
+  const pr_img_3 = document.getElementById("pr_img_3").value;
+  const pr_img_4 = document.getElementById("pr_img_4").value;
+  const highlights = document.getElementById("high").value;
+  const description = document.getElementById("description").value;
+  const rating = document.getElementById("rating").value;
 
   product_arr.push({
-
-    "productid": product_arr.length,
-    "product_name": product_name,
-    "about_product": about_product,
-    "product_price": product_price,
-    "pr_img_1": pr_img_1,
-    "pr_img_2": pr_img_2,
-    "pr_img_3": pr_img_3,
-    "pr_img_4": pr_img_4,
-    "highlights": highlights,
-    "rating": rating,
-    "description": description,
-    "status": true
-
+    productid: product_arr.length,
+    product_name,
+    about_product,
+    product_price,
+    pr_img_1,
+    pr_img_2,
+    pr_img_3,
+    pr_img_4,
+    highlights,
+    rating,
+    description,
+    status: true,
   });
 
   localStorage.setItem("product_detail", JSON.stringify(product_arr));
-
 });
 
 function list_create_products(item) {
-
   output += `<tr>
   
   <td>${item.productid}</td>
@@ -59,17 +51,14 @@ function list_create_products(item) {
   <td><button onclick="avail_stock_no(${item.productid})">No</button></td>
   <td><button onclick="updateitem(${item.productid})">Update</button></td>
 
-  </tr>`
+  </tr>`;
 
   document.querySelector(".table_rows").innerHTML = output;
-
 }
 
-
 function updateitem(id) {
-  product_arr.find(function (e) {
+  product_arr.find((e) => {
     if (e.productid == id) {
-
       document.getElementById("pr_name").value = e.product_name;
       document.getElementById("about_product").value = e.about_product;
       document.getElementById("product_price").value = e.product_price;
@@ -80,30 +69,24 @@ function updateitem(id) {
       document.getElementById("high").value = e.highlights;
       document.getElementById("description").value = e.description;
       document.getElementById("rating").value = e.rating;
-
-
     }
   });
 }
 
 function updatenew() {
+  const product_name = document.getElementById("pr_name").value;
+  const about_product = document.getElementById("about_product").value;
+  const product_price = document.getElementById("product_price").value;
+  const pr_img_1 = document.getElementById("pr_img_1").value;
+  const pr_img_2 = document.getElementById("pr_img_2").value;
+  const pr_img_3 = document.getElementById("pr_img_3").value;
+  const pr_img_4 = document.getElementById("pr_img_4").value;
+  const highlights = document.getElementById("high").value;
+  const description = document.getElementById("description").value;
+  const rating = document.getElementById("rating").value;
 
-  let product_name = document.getElementById("pr_name").value;
-  let about_product = document.getElementById("about_product").value;
-  let product_price = document.getElementById("product_price").value
-  let pr_img_1 = document.getElementById("pr_img_1").value;
-  let pr_img_2 = document.getElementById("pr_img_2").value;
-  let pr_img_3 = document.getElementById("pr_img_3").value;
-  let pr_img_4 = document.getElementById("pr_img_4").value;
-  let highlights = document.getElementById("high").value;
-  let description = document.getElementById("description").value;
-  let rating = document.getElementById("rating").value;
-
-
-  product_arr.find(function (ob) {
-
+  product_arr.find((ob) => {
     if (product_name == ob.product_name) {
-
       ob.product_name = product_name;
       ob.about_product = about_product;
       ob.product_price = product_price;
@@ -114,41 +97,31 @@ function updatenew() {
       ob.highlights = highlights;
       ob.description = description;
       ob.rating = rating;
-
     }
-
   });
 
   localStorage.setItem("product_detail", JSON.stringify(product_arr));
-
 }
 
 function avail_stock_yes(id) {
-  console.log("nitthi", id)
-  product_arr.find(function (obj) {
-
+  console.log("nitthi", id);
+  product_arr.find((obj) => {
     if (obj.productid == id) {
-
       obj.status = true;
 
       localStorage.setItem("product_detail", JSON.stringify(product_arr));
     }
-  })
-
+  });
 }
 
 function avail_stock_no(id) {
-
-  product_arr.find(function (obj) {
-
+  product_arr.find((obj) => {
     if (obj.productid == id) {
-
       obj.status = false;
 
       localStorage.setItem("product_detail", JSON.stringify(product_arr));
     }
-  })
-
+  });
 }
 
 // function delete_product() {

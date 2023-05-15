@@ -8,74 +8,60 @@ const email_id = document.getElementById("email");
 
 const password = document.getElementById("password");
 
-
-
 const formValidation = () => {
+  const firstnamevalue = first_name.value.trim();
 
-    const firstnamevalue = first_name.value.trim();
+  const lastnamevalue = last_name.value.trim();
 
-    const lastnamevalue = last_name.value.trim();
+  const emailvalue = email_id.value.trim();
 
-    const emailvalue = email_id.value.trim();
+  const passwordvalue = password.value.trim();
 
-    const passwordvalue = password.value.trim();
+  const usersList = [];
 
+  const user = {};
 
-    const usersList = [];
+  user.firstname = firstnamevalue;
+  user.lastname = lastnamevalue;
+  user.emailid = emailvalue;
+  user.password = passwordvalue;
+  user.count = "";
+  user.favourite_count = "";
 
-    const user = {};
+  const user_Details =
+    JSON.parse(localStorage.getItem("user_list")) ?? usersList;
 
-    user["firstname"] = firstnamevalue;
-    user["lastname"] = lastnamevalue;
-    user["emailid"] = emailvalue;
-    user["password"] = passwordvalue;
-    user["count"] = "";
-    user["favourite_count"]=""
-    
+  let success = true;
 
-    let user_Details = JSON.parse(localStorage.getItem('user_list')) ?? usersList;
-
-
-
-    let success = true;
-
-    if (user_Details != null) {
-
-        for (let i = 0; i < user_Details.length; i++) {
-
-            if (user_Details[i].emailid == emailvalue) {
-
-                alert("Already Have a account");
-
-                success = false;
-
-                break;
-            }
-
-        }
-    }
-
-    if (success) {
-
-        user_Details.push(user);
-
-        localStorage.setItem("user_list", JSON.stringify(user_Details));
-
-        alert("Account created Successfully");
-
-        window.location.href = "login.html";
-    } else {
+  if (user_Details != null) {
+    for (let i = 0; i < user_Details.length; i++) {
+      if (user_Details[i].emailid == emailvalue) {
         alert("Already Have a account");
+
+        success = false;
+
+        break;
+      }
     }
+  }
 
-}
+  if (success) {
+    user_Details.push(user);
 
+    localStorage.setItem("user_list", JSON.stringify(user_Details));
 
-form.addEventListener('submit', e => {
+    alert("Account created Successfully");
 
-    e.preventDefault();
+    window.location.href = "login.html";
+  } else {
+    alert("Already Have a account");
+  }
+};
 
-    formValidation();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    // console.log("working");
+  formValidation();
+
+  // console.log("working");
 });

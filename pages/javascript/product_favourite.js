@@ -1,23 +1,19 @@
-let favourite_arr = JSON.parse(localStorage.getItem("favourite"));
-let user_detail = JSON.parse(localStorage.getItem("user_list"));
-let product_information=JSON.parse(localStorage.getItem("product_detail"));
+const favourite_arr = JSON.parse(localStorage.getItem("favourite"));
+const user_detail = JSON.parse(localStorage.getItem("user_list"));
+const product_information = JSON.parse(localStorage.getItem("product_detail"));
 
 let output = "";
 let fav_count = 0;
 
-let last_email = localStorage.getItem("logged_in");
+const last_email = localStorage.getItem("logged_in");
 // console.log(last_email);
 
-   
-favourite_arr.forEach(element => {
-product_information.forEach(item=>{
-    if(item.productid == element.productid){
-// console.log("ppapa")
-    if ((element.status) && (element.favourite_email == last_email) ) {
-
-
-       
-       fav_count++
+favourite_arr.forEach((element) => {
+  product_information.forEach((item) => {
+    if (item.productid == element.productid) {
+      // console.log("ppapa")
+      if (element.status && element.favourite_email == last_email) {
+        fav_count++;
         output += `<div class="gallery_box">
     <a href="../product_detail.html" id="pic">
         <img class="gallery_imgs" src="${element.pr_img_1}">
@@ -31,7 +27,7 @@ product_information.forEach(item=>{
 
 
     <div class="add_cart_box">
-        <p class="price">₹${element["product_price"]}</p>
+        <p class="price">₹${element.product_price}</p>
     </div>
     <div class="add_cart_box">
         <h3 id="stock">stock In</h3>
@@ -41,17 +37,14 @@ product_information.forEach(item=>{
 
     
     
-</div>`
-        
+</div>`;
 
         document.querySelector(".product_page").innerHTML = output;
+      }
     }
-
-    }
+  });
+  console.log(fav_count);
 });
-console.log(fav_count)
-
-})
 
 // console.log(order_count);
 
@@ -60,7 +53,6 @@ console.log(fav_count)
 // function delete_wishlist(id) {
 
 //     wishlist_arr.find(function (obj) {
-
 
 //         if (obj.productid == id) {
 
@@ -72,15 +64,11 @@ console.log(fav_count)
 //     })
 // }
 
-user_detail.forEach(obj =>{
-    if(last_email==obj.emailid){
-        
-        obj.favourite_count=fav_count
-       
-        
-        localStorage.setItem("user_list", JSON.stringify(user_detail));
-        // console.log(user_detail)
-    }
-})
+user_detail.forEach((obj) => {
+  if (last_email == obj.emailid) {
+    obj.favourite_count = fav_count;
 
-
+    localStorage.setItem("user_list", JSON.stringify(user_detail));
+    // console.log(user_detail)
+  }
+});

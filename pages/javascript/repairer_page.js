@@ -1,92 +1,89 @@
-let booking_items = JSON.parse(localStorage.getItem("restore_item_detail")) || []
+const booking_items =
+  JSON.parse(localStorage.getItem("restore_item_detail")) || [];
 
 // let output = "";
 
 booking_items.forEach((item) => {
-      // console.log("bri")
-      //   booking_detail(item);
+  // console.log("bri")
+  //   booking_detail(item);
 
-      // function booking_detail(item) {
-      let whole_box = document.createElement("tr")
-      whole_box.setAttribute("id", "whole_rows")
+  // function booking_detail(item) {
+  const whole_box = document.createElement("tr");
+  whole_box.setAttribute("id", "whole_rows");
 
-      let td1 = document.createElement("td")
-      td1.innerText = item.booking_id;
-      whole_box.append(td1)
+  const td1 = document.createElement("td");
+  td1.innerText = item.booking_id;
+  whole_box.append(td1);
 
-      let td2 = document.createElement("td")
-      td2.innerText = item.first_name;
-      whole_box.append(td2)
+  const td2 = document.createElement("td");
+  td2.innerText = item.first_name;
+  whole_box.append(td2);
 
-      let td3 = document.createElement("td")
-      td3.innerText = item.email;
-      whole_box.append(td3)
+  const td3 = document.createElement("td");
+  td3.innerText = item.email;
+  whole_box.append(td3);
 
-      let td4 = document.createElement("td")
-      td4.innerText = item.phonenumber;
-      whole_box.append(td4)
+  const td4 = document.createElement("td");
+  td4.innerText = item.phonenumber;
+  whole_box.append(td4);
 
-      let td5 = document.createElement("td")
-      td5.innerText = item.category;
-      whole_box.append(td5)
+  const td5 = document.createElement("td");
+  td5.innerText = item.category;
+  whole_box.append(td5);
 
-      let td6 = document.createElement("td")
-      td6.innerText = item.height;
-      whole_box.append(td6)
+  const td6 = document.createElement("td");
+  td6.innerText = item.height;
+  whole_box.append(td6);
 
-      let td7 = document.createElement("td")
-      whole_box.append(td7)
+  const td7 = document.createElement("td");
+  whole_box.append(td7);
 
-      let rep_img = document.createElement("img")
-      rep_img.setAttribute("src", item.image)
-      td7.append(rep_img)
+  const rep_img = document.createElement("img");
+  rep_img.setAttribute("src", item.image);
+  td7.append(rep_img);
 
-      const td8 = document.createElement('td');
-      whole_box.append(td8)
+  const td8 = document.createElement("td");
+  whole_box.append(td8);
 
-      const button = document.createElement('button');
-      button.id = 'acc_button';
-      button.textContent = 'Accepted';
-      td8.appendChild(button);
+  const button = document.createElement("button");
+  button.id = "acc_button";
+  button.textContent = "Accepted";
+  td8.appendChild(button);
 
-      const td9 = document.createElement('td');
-      whole_box.append(td9)
+  const td9 = document.createElement("td");
+  whole_box.append(td9);
 
-      const button1 = document.createElement('button');
-      button1.id = 'rej_button';
-      button1.textContent = 'Rejected';
-      td9.appendChild(button1);
+  const button1 = document.createElement("button");
+  button1.id = "rej_button";
+  button1.textContent = "Rejected";
+  td9.appendChild(button1);
 
-      const td10 = document.createElement('td');
-      td10.id = 'reason';
-      whole_box.append(td10)
+  const td10 = document.createElement("td");
+  td10.id = "reason";
+  whole_box.append(td10);
 
-      const textarea = document.createElement('textarea');
-      textarea.placeholder = 'Tell us about your experience';
-      if (item.reject_reason != null) {
-            textarea.value = item.reject_reason;
-      }
-      textarea.classList.add('text_reason');
-      textarea.id = 'problem';
-      td10.appendChild(textarea);
+  const textarea = document.createElement("textarea");
+  textarea.placeholder = "Tell us about your experience";
+  if (item.reject_reason != null) {
+    textarea.value = item.reject_reason;
+  }
+  textarea.classList.add("text_reason");
+  textarea.id = "problem";
+  td10.appendChild(textarea);
 
-      document.querySelector(".table_row").append(whole_box)
+  document.querySelector(".table_row").append(whole_box);
 
+  button.addEventListener("click", () => {
+    item.status = true;
+    localStorage.setItem("restore_item_detail", JSON.stringify(booking_items));
+  });
 
-      button.addEventListener('click', function () {
-            item.status = true;
-            localStorage.setItem("restore_item_detail", JSON.stringify(booking_items));
-      });
-
-
-      button1.addEventListener('click', function () {
-            // console.log(problem_textbox.value)
-            item.status = false;
-            item.reject_reason = problem_textbox.value;
-            localStorage.setItem("restore_item_detail", JSON.stringify(booking_items))
-
-      });
-
+  button1.addEventListener("click", () => {
+    // console.log(problem_textbox.value)
+    item.status = false;
+    item.reject_reason = problem_textbox.value;
+    localStorage.setItem("restore_item_detail", JSON.stringify(booking_items));
+  });
 });
 
 // output += `<tr>
@@ -104,7 +101,6 @@ booking_items.forEach((item) => {
 //    <td id="reason"><textarea placeholder="Tell us about your experience" class="text_reason" id="problem"></textarea> </td>
 
 //    </tr>`
-
 
 // document.querySelector(".table_row").innerHTML = output;
 // }
@@ -143,8 +139,6 @@ booking_items.forEach((item) => {
 //       // row_insert.style.display = "block";
 //       // row_insert.setAttribute("disabled","")
 
-
-
 //       let problem_textbox = document.querySelectorAll(".text_reason");
 
 //       for (let i = 0; i < problem_textbox.length; i++) {
@@ -165,9 +159,6 @@ booking_items.forEach((item) => {
 //   })
 
 // }
-
-
-
 
 // function accept_item(id) {
 //   console.log("nitthi", id)
