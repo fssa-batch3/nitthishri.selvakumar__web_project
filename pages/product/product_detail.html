@@ -5,11 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blackwoodalley</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/product_detail.css">
 </head>
 
 <body>
+    <header>
+
+        <!-- header starts -->
+        <!--  communicate-us ends -->
+
+        </div>
+
+        </div>
+
+        <div class="navigate">
+            <div class="sub-logo">
+                <a href="../../index.html"><img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage"></a>
+            </div>
+            <div class="sub-navigate">
+                <ul>
+
+                    <li>
+                        <a class="service" href="">About</a>
+                        <div class="sub-service">
+
+                            <ul>
+                                <li>
+                                    <a class="sub-service1" href="./pages/about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="./pages/restore/restore.html">How we restore</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a class="service" href="">Service</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li>
+                                    <a class="sub-service1" href="./pages/service/service2.html">Repair electronics</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="./pages/service/service1.html">Repair furniture</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="./pages/product/product.html">Buy</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a class="navi" href="./pages/contact.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="./pages/track/track.html">Track request</a>
+                    </li>
+                    <li id="insert_login"></li>
+                    <!-- <li><a class="navi" href="./pages/request.html">Restore</a></li> -->
+                    <li id="admin">
+                        <!-- <a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div> -->
+                    </li>
+                    <li id="insert_profile"></li>
+                    <li id="login"></li>
+                    <li>
+<!-- <a class="navi-button" href="../../pages/request.html">Request a quote</a> -->
+                    <li class="icons">
+                        <a href="../../pages/product/product_add_cart.html">
+                            <div id="cart_count">0</div>
+                            <i class="fa-solid fa-cart-shopping" id="shopping"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="../../pages/product/product_favourite.html">
+                            <div id="fav_count">0</div>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="../../pages/product/order_history.html">
+                            <!-- <div id="fav_count">0</div> -->
+                            <i class="fa-solid fa-clock-rotate-left" id="history_icon"
+                            ></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- menu-bar ends -->
+
+    </header>
+
     <div class="product-detail-box">
         <div class="products">
             <div class="mainimage">
@@ -19,7 +126,7 @@
     
             </div>
             </div>
-            <ul class="">
+            <ul class="sub-images">
                 <li class="img">
 <a href="#" data-id="1">
 <img id="side_pic1" src="" alt="antique">
@@ -39,16 +146,16 @@
         </div>
         <div class="product-detail">
             <h2 id="product_name"></h2>
-            <span id="rupee" class="fa-solid fa-indian-rupee-sign"></span>
+            <span id="rupee" ></span>
             <p id="highlights"></p>
             <div class="star_rate">
-                <span id="rating" class="fa-solid fa-star"></span>
+                <span id="rating" ></span>
             </div>
             <div class="list-btn">
                 <!-- <a href=""><button id="add_to_cart"><span
                             class="fa-sharp fa-solid fa-cart-shopping"></span>Add to card</button></a> -->
                 <a href="" id="buy_now">
-<button id="buy_now">
+<button id="shop_now">
 <span
                             class="fa-sharp fa-solid fa-bag-shopping"></span>Buy Now</button></a>
             </div>
@@ -69,6 +176,7 @@
             Rate this product
         </p>
         <form id="review_form">
+        
             <div class="check">
 
                 <p class="review_star"> &#9734;</p>
@@ -77,9 +185,10 @@
                 <p class="review_star">&#9734;</p>
                 <p class="review_star">&#9734;</p>
             </div>
+
             <p class="current_rating"></p>
 
-            <textarea placeholder="Tell us about your experience" id="experience"></textarea>
+            <textarea placeholder="Tell us about your experience" id="experience" required="true"></textarea>
             <br>
 <br>
 

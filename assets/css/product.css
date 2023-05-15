@@ -159,8 +159,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-margin-top: 10px;
+margin-top: 100px;
 margin-left: 60px;
+margin-bottom: 50px;
 }
 
 a .gallery_imgs{ 
@@ -249,6 +250,7 @@ left:20px
 }
 .icons{
     margin-right: 30px;
+    color:brown;
 }
  #pic{
     position: relative; 
@@ -269,19 +271,12 @@ left:20px
 
 /*gallery-end*/
 /* search_box starting */
-.search_box{
-    height: 80px;
-    width:500px;
-    border:gray 1px solid;
-    margin-top: 100px;
-    margin-left: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+
 #search{
-    
+    position:fixed;
+    top:20px;
+    left:500px;
+    z-index: 4;
     height: 40px;
     width:200px;
 
@@ -308,4 +303,91 @@ left:20px
   #favourite:checked + .favourite_symbol {
     color: #f00;
   }
+/* icons */
+#shopping,#liked,#history_icon,#cart_count,#fav_count{
+    color:brown;
+}
+#history_icon{
+    position: relative;
+    top:5px;
+    left:5px
+}
+/*footer starting*/
 
+footer{
+    position: relative;
+    bottom:0;
+    background-color: #24262b;
+    height:300px;
+    width:100%;
+}
+
+footer .row{
+    display: flex;
+    flex-direction: row;
+}
+footer ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+}
+.footer{
+background-color: #24262b;
+padding: 70px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col p{
+
+font-size: 27px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
+
+
+footer ul li{
+    font-size: 23px;
+    margin-bottom: 20px;
+    
+}
+.footer-col ul li a{
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+margin-left: -40px;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+.arrow{
+    position :relative;
+    position:sticky;
+    left:1400px;
+    bottom:100px;
+     color:#bbbbbb;
+     font-size: 50px;
+ }
+/*footer ending*/

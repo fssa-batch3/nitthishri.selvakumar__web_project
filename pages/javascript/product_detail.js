@@ -95,7 +95,7 @@ const match = reviewer_matching.find((user) => user.emailid == reviewer_email);
 
 const experience = document.getElementById("experience");
 
-document.getElementById("btn").addEventListener("click", (e) => {
+document.getElementById("review_form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   const experiencevalue = experience.value;
