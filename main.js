@@ -223,14 +223,16 @@ const user_records = [
   },
 ];
 
-// if (localStorage.getItem("user_List")) {
-//     //   return;
-// } else {
-//     localStorage.setItem("user_list", JSON.stringify(user_records));
-// }
+if (localStorage.getItem("user_List")) {
+    //   return;
+    alert("")
+  } else {
+    localStorage.setItem("user_list", JSON.stringify(user_records));
+    alert("updated")
+}
 
 if (localStorage.getItem("logged_in")) {
-  //   return;
+    // return;
 } else {
   localStorage.setItem("logged_in", JSON.stringify([]));
 }

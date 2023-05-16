@@ -4,6 +4,13 @@ const logginid = localStorage.getItem("logged_in");
 const repair_request = JSON.parse(localStorage.getItem("restore_item_detail"))
 console.log(logginid);
 
+const url = window.location.search;
+
+const urls = new URLSearchParams(url);
+
+const id = urls.get("booking_id");
+console.log(id)
+
 console.log(repair_request,"loosi")
 
 const shipping_arr = JSON.parse(localStorage.getItem("pickup_detail")) || [];
@@ -30,7 +37,7 @@ email.value = logginid;
 repair_request.forEach(element => {
 
     if (logginid == element.email) {
- console.log("patiy")
+//  console.log("patiy")
 
         console.log(element,"nitthi")
         username.value = element.first_name 
@@ -42,30 +49,33 @@ repair_request.forEach(element => {
 
 shipping_form.addEventListener("submit", (e) => {
     e.preventDefault();
-    receivedata()
+    receive()
 })
 
 function receive() {
-    const user_address = address.value;
-    const user_landmark = landmark.value;
-    const user_pincode = pincode.value;
-    const request_date = date.value;
-    const request_time = time.value;
+    // const user_address = address.value;
+    // const user_landmark = landmark.value;
+    // const user_pincode = pincode.value;
+    // const request_date = date.value;
+    // const request_time = time.value;
+    // console.log(request_date)
+    // console.log(request_time)
 
     shipping_arr.push({
+        book_id:id,
         pick_uping_id: pick_up_id,
         user_name: username.value,
         number:number.value,
         email: email.value,
-        request_landmark: user_landmark,
-        request_address: user_address.value,
-        request_pincode: user_pincode.value,
-        request_date: request_date.value,
-        request_time: request_time.value
+        request_landmark: landmark.value,
+        request_address: address.value,
+        request_pincode: pincode.value,
+        request_date: date.value,
+        request_time: time.value
 
     });
-    localStorage.setItem("request_pickup",JSON.stringify(shipping_arr))
-     window.location.href ="../../pages/track/last.html"
+    localStorage.setItem("pickup_detail",JSON.stringify(shipping_arr))
+     window.location.href =`../../pages/track/last.html?booking_id=${id}`
 }
 
 
@@ -79,7 +89,7 @@ shipping_form.addEventListener("submit", (e) => {
         To: logginid,
         From: "nitthishris@gmail.com",
         Subject: "This is the message from the contact form",
-        Body: `My booking id is`
+        Body: `Thanks for choosing us to restore your valuable item`+`Your itmes will be picked up on ${date.value},${"  "}${time.value}  at  ${address.value}`
         `  ${localStorage.getItem("logged_in")}`
 
     }).then((message) => alert(message));
