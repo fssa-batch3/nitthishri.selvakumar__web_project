@@ -228,7 +228,7 @@ if (localStorage.getItem("user_List")) {
     alert("")
   } else {
     localStorage.setItem("user_list", JSON.stringify(user_records));
-    alert("updated")
+    
 }
 
 if (localStorage.getItem("logged_in")) {
