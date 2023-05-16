@@ -171,7 +171,7 @@ const product_detail = [
     description:
       "Antique Vintage Gramophone Player Original Working Gramophone Original Gramophone White Piller Gramophone",
     status: true,
-  },
+  }
 ];
 if (localStorage.getItem("product_detail")) {
   console.log("obj");
