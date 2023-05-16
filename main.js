@@ -223,7 +223,7 @@ const user_records = [
   }
 ];
 
-if (localStorage.getItem("user_List")) {
+if (localStorage.getItem("user_list")) {
     //   return;
     alert("")
   } else {
