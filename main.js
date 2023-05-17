@@ -233,7 +233,7 @@ if (localStorage.getItem("user_list")) {
 if (localStorage.getItem("logged_in")) {
     // return;
 } else {
-  localStorage.setItem("logged_in", JSON.stringify());
+  localStorage.setItem("logged_in", JSON.stringify([]));
 }
 
 const restore_item_arr = 

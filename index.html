@@ -118,8 +118,13 @@
                         </div> -->
                     </li>
                     <li id="insert_profile"></li>
-                    <li id="login"></li>
-
+                    <li id="login">
+                        <a class="navi" href="./pages/login/login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="./pages/login/userprofile.html"><img class="man"
+                                src="./assets/images/index_page/blank_profile.webp"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -291,38 +296,39 @@
         let insert;
         // let login_insert;
         const last_email = localStorage.getItem("logged_in")
-        console.log(last_email);
-        const login = document.getElementById("login")
-        login.addEventListener("click", event => {
-            event.preventDefault();
-            if (last_email == '[]') {
-                login.innerHTML = `<a class="navi" href="./pages/login/login.html">LogIn<i
-                                class="fa-solid fa-arrow-right-from-bracket"></i></a>`
-            }
-            localStorage.removeItem("logged_in")
-            login.innerHTML = 'LogOut<i class="fa-solid fa-arrow-right-to-bracket"></i>'
-        }
-        )
-        const insert_login = document.getElementById("insert_login")
-        const insert_profile = document.getElementById("insert_profile")
-        let login_insert;
-        console.log(whole_nav)
-        if (last_email == "[]") {
-            console.log("ok")
-            login_insert = ` <a class="navi" href="./pages/login/login.html">Login</a>`
-            insert_login.innerHTML = login_insert
-            insert_profile.innerHTML = ''
-        }
-        else {
-            insert_login.innerHTML = ''
-            insert_profile.innerHTML = `<a class="navi" href="./pages/login/userprofile.html"><img class="man"
-                                src="./assets/images/index_page/blank_profile.webp"></a>`
-        }
+        // console.log(last_email);
+        // const login = document.getElementById("login")
+        // login.addEventListener("click", event => {
+        //     event.preventDefault();
+        //     if (last_email == '[]') {
+        //         login.innerHTML = `<a class="navi" href="./pages/login/login.html">LogIn<i
+        //                         class="fa-solid fa-arrow-right-from-bracket"></i></a>`
+        //     }
+        //     localStorage.removeItem("logged_in")
+        //     login.innerHTML = 'LogOut<i class="fa-solid fa-arrow-right-to-bracket"></i>'
+        // }
+        // )
+        // const insert_login = document.getElementById("insert_login")
+        // const insert_profile = document.getElementById("insert_profile")
+        // let login_insert;
+        // console.log(whole_nav)
+        // if (last_email == "[]") {
+        //     console.log("ok")
+        //     login_insert = ` <a class="navi" href="./pages/login/login.html">Login</a>`
+        //     insert_login.innerHTML = login_insert
+        //     insert_profile.innerHTML = ''
+        // }
+        // else {
+        //     insert_login.innerHTML = ''
+        //     insert_profile.innerHTML = `<a class="navi" href="./pages/login/userprofile.html"><img class="man"
+        //                         src="./assets/images/index_page/blank_profile.webp"></a>`
+        // }
 
         //  const last_email = localStorage.getItem("logged_in")
 
         const include = document.getElementById("admin");
         if (last_email == "blackwood@gmail.com") {
+
             insert = ` <li><a class="service" href="">Admin</a>
                         <div class="sub-service">
                             <ul>
