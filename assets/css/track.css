@@ -288,7 +288,9 @@ box-shadow: 10px 10px 20px grey;
     border:1px solid black;
 
 }
-
+#book_email{
+    margin-left: 110px;
+}
 #detail_box{
     margin-left:40px;
     margin-top:20px

@@ -91,9 +91,6 @@ function booking_detail(item) {
   span3.innerText = `:${item.antique_name}`;
   p3.append(span3);
 
-
- 
-
   const track_report = document.createElement("div");
   track_report.setAttribute("id", "track_report");
   both_box.append(track_report);

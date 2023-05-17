@@ -9,41 +9,35 @@ const last_email = localStorage.getItem("logged_in");
 // console.log(last_email);
 
 history_arr.forEach((element) => {
-  product_information.forEach((item) => {
-    if (item.productid == element.productid) {
-      // console.log("ppapa")
-      if (element.status && element.order_email == last_email) {
-        fav_count++;
-        output += `<div class="gallery_box">
-    <a href="../product_detail.html" id="pic">
-        <img class="gallery_imgs" src="${element.pr_img_1}">
-       
-    </a>
-    <div class="side2">
-        <h2 class="product_name">${element.product_name}</h2>
-       <p class="about">${element.highlights}</p>
 
-    </div>
+  // console.log("ppapa")
+  if (element.status && element.order_email == last_email) {
+    fav_count++;
+    output += `<div class="gallery_box">
+  <a href="../product_detail.html" id="pic">
+      <img class="gallery_imgs" src="${element.pr_img_1}">
+     
+  </a>
+  <div class="side2">
+      <h2 class="product_name">${element.product_name}</h2>
+     <p class="about">${element.highlights}</p>
+
+  </div>
 
 
-    <div class="add_cart_box">
-        <p class="price">₹${element.product_price}</p>
-    </div>
-    <div class="add_cart_box">
-        <h3 id="stock">stock In</h3>
-    </div>
-
-   
-
-    
-    
+  <div class="add_cart_box">
+      <p class="price">₹${element.product_price}</p>
+  </div>
+  <div class="add_cart_box">
+      <h3 id="stock">stock In</h3>
+  </div>
+  
 </div>`;
 
-        document.querySelector(".product_page").innerHTML = output;
-      }
-    }
-  });
-  console.log(fav_count);
+    document.querySelector(".product_page").innerHTML = output;
+  }
+
+
 });
 
 // console.log(order_count);

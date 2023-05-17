@@ -26,27 +26,39 @@
 
         <div class="navigate">
             <div class="sub-logo">
-                <img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage">
+                <a href="../../index.html"><img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage"></a>
             </div>
             <div class="sub-navigate">
                 <ul>
+
                     <li>
-<a class="navi" href="../../index.html">Home</a>
-</li>
+                        <a class="service" href="">About</a>
+                        <div class="sub-service">
+
+                            <ul>
+                                <li>
+                                    <a class="sub-service1" href="./pages/about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="./pages/restore/restore.html">How we restore</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
                     <li>
-<a class="navi" href="../../pages/about.html">About</a>
-</li>
-                    <li>
-<a class="service" href="">Service</a>
+                        <a class="service" href="">Service</a>
                         <div class="sub-service">
                             <ul>
                                 <li>
-<a class="sub-service1" href="../../pages/service/service2.html">repair
-                                        electronics</a>
+                                    <a class="sub-service1" href="./pages/service/service2.html">Repair electronics</a>
                                 </li>
                                 <li>
-<a class="sub-service1" href="../../pages/service/service1.html">repair
-                                        furniture</a>
+                                    <a class="sub-service1" href="./pages/service/service1.html">Repair furniture</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="./pages/product/product.html">Buy</a>
                                 </li>
 
                             </ul>
@@ -54,19 +66,30 @@
                         </div>
                     </li>
                     <li>
-<a class="navi" href="../../pages/restore/restore.html">how we restore</a>
-</li>
+                        <a class="navi" href="./pages/contact.html">Contact us</a>
+                    </li>
                     <li>
-<a class="navi" href="../../pages/contact.html">contact us</a>
-</li>
+                        <a class="navi" href="./pages/track/track.html">Track request</a>
+                    </li>
+                    <li id="insert_login"></li>
+                    <!-- <li><a class="navi" href="./pages/request.html">Restore</a></li> -->
+                    <li id="admin">
+                        <!-- <a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div> -->
+                    </li>
+                    <li id="insert_profile"></li>
+                    <li id="login"></li>
                     <li>
-<a class="navi" href="../../pages/track/track.html">track request</a>
-</li>
-                    <li>
-<a class="navi" href="../../pages/login/login.html">Login</a>
-</li>
-                    <li>
-<a class="navi-button" href="../../pages/request.html">Request a quote</a>
+<!-- <a class="navi-button" href="../../pages/request.html">Request a quote</a> -->
                     <li class="icons">
                         <a href="../../pages/product/product_add_cart.html">
                             <div id="cart_count">0</div>
@@ -80,11 +103,13 @@
                         </a>
                     </li>
                     <li class="icons">
-                        <a href="../../pages/product/product_favourite.html">
+                        <a href="../../pages/product/order_history.html">
                             <!-- <div id="fav_count">0</div> -->
-                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <i class="fa-solid fa-clock-rotate-left" id="history_icon"
+                            ></i>
                         </a>
                     </li>
+
                 </ul>
             </div>
 

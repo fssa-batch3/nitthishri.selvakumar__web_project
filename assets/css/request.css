@@ -292,3 +292,17 @@ margin:10px;
 }
 /*request-box ending*/
 
+.request_book:valid{
+    border-style: solid;
+ border-color: #09c372;
+}
+.request_book:invalid{
+    border-style: solid;
+    border-color:#d19ca7;
+}
+
+#request_submit{
+   margin-left:450px;
+   margin-top:30px;
+   
+}

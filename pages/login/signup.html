@@ -26,13 +26,13 @@
             <form id="register_form" type="submit">
 
                 <input type="text" class="text" placeholder="First Name" id="first_name"
-                    title="Name shouldn't contain spaces and Number" pattern="[A-Za-z]+"
+                    title="Name shouldn't contain spaces and Number" pattern="[A-Za-z]{3,32}"
                     title="First name cannot contain spaces" required="true">
 
-                <input type="text" class="text" placeholder="Last Name" id="last_name" pattern="[A-za-z]+"
+                <input type="text" class="text" placeholder="Last Name" id="last_name" pattern="[A-Za-z]{3,32}"
                     required="true">
 
-                <input type="email" class="text" placeholder="E-mail" id="email" required="true">
+                <input type="email" class="text"   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$" placeholder="E-mail" id="email" required="true">
 
                 <input type="password" class="text" placeholder="Enter password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="UpperCase, LowerCase, Number/SpecialChar and min 8 Chars" required="true">
 

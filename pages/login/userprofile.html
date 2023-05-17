@@ -22,119 +22,126 @@
             <input type="file" id="file">
 
             <label for="file">
-<img id="camera" src="../../assets/images/restore_page/camera1.jpeg" alt="camera">
-</label>
+                <img id="camera" src="../../assets/images/restore_page/camera1.jpeg" alt="camera">
+            </label>
 
             <div class="side-menu">
                 <ul>
                     <li>
                         <a href="" class="active">
-<span class="fa-solid fa-circle-user"></span>
+                            <span class="fa-solid fa-circle-user"></span>
                             <span>My Profile</span>
-</a>
+                        </a>
                     </li>
                     <li>
                         <a href="../product/product_wishlist.html" class="active">
-<span
-                                class="fa-solid fa-bag-shopping"></span>
+                            <span class="fa-solid fa-bag-shopping"></span>
                             <span>Orders</span>
-</a>
+                        </a>
                     </li>
 
                     <li>
                         <a href="" class="active">
-<span class="fa-solid fa-bookmark"></span>
+                            <span class="fa-solid fa-bookmark"></span>
                             <span>Wishlist</span>
-</a>
+                        </a>
                     </li>
 
                     <li>
 
                         <button id="log" class="active">
-<span class="fa-solid fa-right-from-bracket"></span>
+                            <span class="fa-solid fa-right-from-bracket"></span>
                             <span>Logout</span>
-</button>
+                        </button>
                     </li>
                     <li>
                         <a href="../../index.html" class="active">
-<span class="fa-solid fa-left-long"></span>
+                            <span class="fa-solid fa-left-long"></span>
                             <span>Home</span>
-</a>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <!-- profile update section-->
-        <div class="user-container">
+        <form id="form_user"><!-- profile update section-->
+            <div class="user-container">
 
-            <div class="information">
-                <div id="form">
+                <div class="information">
+                    <div id="form">
 
-                    <div class="detail">
-                    <!-- First name  -->
-                    <div class="side1">
-                    <div class="first-name" id="align-num">
-                        <label class="more"> First Name</label>
-                        <input class="name" id="first_name" type="text" pattern="[A-Za-z]{1,32}" name="user name"
-                            title="First name connot contain spaces" placeholder="First Name" value="" required="true"
-                            >
-                    </div>
-                    <!-- Last name  -->
-                    <div class="last-name" id="align-num">
-                        <label class="more"> Last Name</label>
-                        <input class="name" id="last_name" type="text" name="user name" pattern="[A-Za-z]{1,32}"
-                            placeholder="Last Name" value="" title="Last name connot contain spaces" required="true"
-                        >
-                    </div>
-                    <!--  email input  -->
-                    <div class="email" id="align-num">
-                        <label class="more"> Email</label>
-                        <input class="name" id="email" type="email" name="user email" placeholder="name@gmail.com"
-                            value="" required="true" title="First name connot contain spaces" disabled>
-                    </div>
-                    </div>
-                    <!--  mobile number -->
-                    <div class="side2">
-                    <div class="number" id="align-num">
-                        <label class="more"> Number</label>
-                        <input class="name" id="phone_number" type="text" pattern="[0-9]{10,25}" name="user mobile"
-                            placeholder="+91 8923456789" required="true">
-                    </div>
-                    <!-- district -->
-                    <div class="address" id="align-num">
-                        <label class="more"> Address</label>
-                        <input class="name" id="address" type="text" pattern="[A-za-z0-9]{6,90}" name="user address"
-                            placeholder="Add Address" required="true">
-                    </div>
-                    <!--Address input  -->
-                    <div class="address" id="align-num">
-                        <label class="more"> Pincode</label>
-                        <input class="name" id="pin_number" type="text" pattern="[A-za-z0-9]{6,90}" name="user address"
-                            placeholder="Pincode" required="true">
-                    </div>
-                </div>
-                </div>
-                    <!--update button -->
+                        <div class="detail">
+                            <!-- First name  -->
+                            <div class="side1">
+                                <div class="first-name" id="align-num">
+                                    <label class="more"> First Name</label>
+                                    <input class="name" id="first_name" type="text" pattern="[A-Za-z]{3,32}"
+                                        name="user name" title="First name connot contain spaces"
+                                        placeholder="First Name" value="" required="true">
+                                </div>
+                                <!-- Last name  -->
+                                <div class="last-name" id="align-num">
+                                    <label class="more"> Last Name</label>
+                                    <input class="name" id="last_name" type="text" name="user name"
+                                        pattern="[A-Za-z]{3,32}" placeholder="Last Name" value=""
+                                        title="Last name connot contain spaces" required="true">
+                                </div>
+                                <!--  email input  -->
+                                <div class="email" id="align-num">
+                                    <label class="more"> Email</label>
+                                    <input class="name" id="email"
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$" type="email"
+                                        name="user email" placeholder="name@gmail.com" required="true"
+                                        title="First name connot contain spaces" disabled>
+                                </div>
+                            </div>
+                            <!--  mobile number -->
+                            <div class="side2">
+
+                                <div class="number" id="align-num">
+                                    <label class="more"> Number</label>
+                                    <input class="name" id="phone_number" type="tel" pattern="^[6-9][0-9]{9}$"
+                                        name="user mobile" placeholder="+91 8923456789" minlength="10" maxlength="10"
+                                        required="true">
+                                </div>
+                                <!-- district -->
+                                <div class="address" id="align-num">
+                                    <label class="more"> Address</label>
+                                    <input class="name" id="address" type="text" name="user address"
+                                        placeholder="Add Address" required="true">
+                                </div>
+                                <!--Address input  -->
+                                <div class="address" id="align-num">
+                                    <label class="more"> Pincode</label>
+                                    <input class="name" id="pin_number" type="text" pattern="^6\d{5}$"
+                                        name="user address" placeholder="Pincode" required="true" maxlength="6"
+                                        minlength="6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--update button -->
                         <!-- <button type="button" id="button" class="name">Edit</button> -->
                         <div class="buttons">
-                            <button id="btnn" class="form-control custom-input">
-                             Edit
+                            <!-- <button id="btnn" class="form-control custom-input">
+                                Edit
+                            </button> -->
+                            <button id="update" type="submit" class="form-control custom-input">
+                                Update
                             </button>
-                            <button id="update" class="form-control custom-input">
-                             Update
-                            </button>
-                           
-                         </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                       
             </div>
-        </div>
+        </form>
     </div>
     </div>
     </div>
     <script src="../javascript/userprofile.js">
-       
+
     </script>
 </body>
 
@@ -200,5 +207,5 @@
      </script>
  </body>
  </html>  -->
- 
- Message Madhubala Esakkipandi
+
+Message Madhubala Esakkipandi

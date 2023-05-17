@@ -9,11 +9,12 @@ const restore_item_arr =
   JSON.parse(localStorage.getItem("restore_item_detail")) || [];
 
 const firstname = document.getElementById("first_name");
-const antique_name = document.getElementById("last_name");
+const antique_name = document.getElementById("product_name");
 const phonenumber = document.getElementById("phone_number");
 const category = document.getElementById("category");
-const height = document.getElementById("height");
-const width = document.getElementById("width");
+const lastrepair = document.getElementById("last_repair");
+const howold = document.getElementById("how_old");
+
 const sentimental = document.querySelector(".sentimental");
 const reason = document.querySelector('input[name="reason"]:checked');
 const other_reason = document.getElementById("reason-others");
@@ -45,16 +46,15 @@ function getdata(){
   const first_name = firstname.value;
   console.log(first_name);
   const thing_name = antique_name.value;
-  console.log(last_name);
   console.log(email);
   const phone_number = phonenumber.value;
   console.log(phone_number);
   const cate_gory = category.value;
   console.log(cate_gory);
-  const hei_ght = height.value;
-  console.log(hei_ght);
-  const wid_th = width.value;
-  console.log(wid_th);
+  const last_repair = lastrepair.value;
+  
+  const how_old = howold.value;
+  
   const senti_mental = sentimental.value;
   console.log(senti_mental);
   // let rea_son = reason.value
@@ -75,8 +75,8 @@ function getdata(){
     email: email.value,
     phonenumber: phone_number,
     category: cate_gory,
-    height: hei_ght,
-    width: wid_th,
+    height: last_repair,
+    width: how_old,
     sentimental: senti_mental,
     // "reason": rea_son,
     image: images,

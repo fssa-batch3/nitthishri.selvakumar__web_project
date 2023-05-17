@@ -1,5 +1,6 @@
 const img_div = document.querySelector(".profile_img");
 const profile_real = document.querySelector(".profile_changing_img");
+const profile_form = document.getElementById("form_user");
 
 const file = document.querySelector("#file");
 //   let btn=document.querySelector("button")
@@ -76,23 +77,56 @@ for (let i = 0; i < user.length; i++) {
     document.getElementById("last_name").value = user[i].lastname;
     document.getElementById("email").value = user[i].emailid;
 
+    if (user[i].phone_number !== undefined && user[i].addressvalue !== undefined && user[i].pin_number !== undefined) {
+      document.getElementById("phone_number").value = user[i].phone_number;
+      document.getElementById("address").value = user[i].addressvalue;
+      document.getElementById("pin_number").value = user[i].pin_number;
+    }
     break;
   }
 }
 
-document.getElementById("btnn").addEventListener("click", (e) => {
-  if (document.getElementById("email").value == profile_email) {
-    e.firstname = document.getElementById("first_name").value;
-    e.lastname = document.getElementById("last_name").value;
-    e.emailid = document.getElementById("email").value;
-    e.addressvalue = document.getElementById("address").value;
-    e.pin_number = document.getElementById("address").value;
-    localStorage.setItem("user_list", JSON.stringify(user));
-  }
-});
+profile_form.addEventListener("submit", function (obj) {
 
-document.getElementById("update").addEventListener("click", () => {
+  obj.preventDefault();
+
+  user.find(function (e) {
+
+    if (document.getElementById("email").value == e.emailid) {
+      alert("finding");
+      e.firstname = document.getElementById("first_name").value;
+      e.lastname = document.getElementById("last_name").value;
+      e.emailid = document.getElementById("email").value;
+      e.addressvalue = document.getElementById("address").value;
+      e.pin_number = document.getElementById("pin_number").value;
+      localStorage.setItem("user_list", JSON.stringify(user));
+    }
+  })
+  
+})
+
+
+// profile_form.addEventListener("sumbit", (e) => {
+
+//   e.preventDefault();
+
+//   alert("how");
+
+//   if (document.getElementById("email").value == profile_email) {
+//     e.firstname = document.getElementById("first_name").value;
+//     e.lastname = document.getElementById("last_name").value;
+//     e.emailid = document.getElementById("email").value;
+//     e.addressvalue = document.getElementById("address").value;
+//     e.pin_number = document.getElementById("address").value;
+//     localStorage.setItem("user_list", JSON.stringify(user));
+//   }
+
+// });
+
+function validation() {
+
   for (let i = 0; i < user.length; i++) {
+
     if (document.getElementById("email").value == user[i].emailid) {
       user[i].firstname = document.getElementById("first_name").value;
       user[i].lastname = document.getElementById("last_name").value;
@@ -100,23 +134,28 @@ document.getElementById("update").addEventListener("click", () => {
       user[i].addressvalue = document.getElementById("address").value;
       user[i].pin_number = document.getElementById("pin_number").value;
       user[i].phone_number = document.getElementById("phone_number").value;
-      localStorage.setItem("user_list", JSON.stringify(user));
+      // localStorage.setItem("user_list", JSON.stringify(user));
     }
   }
-});
-
-
+};
 
 const login = document.getElementById("log")
-        login.addEventListener("click", event => {
-            // event.preventDefault();
-            if (profile_email !== '[]') {
-              localStorage.removeItem("logged_in")
-            }
-            
-            location.reload()
-        }
-        )
+login.addEventListener("click", event => {
+  // event.preventDefault();
+  if (profile_email !== '[]') {
+    localStorage.removeItem("logged_in")
+  }
+
+  location.reload()
+})
+
+const form_con = document.createElement("form_user");
+form_con.addEventListener("submit", event => {
+  event.preventDefault();
+  validation()
+})
+
+
 // document.getElementById("delete").addEventListener("submit", () => {
 //     document.getElementById("phone_number").removeAttribute("required", "")
 
