@@ -75,7 +75,7 @@ function receive() {
 
     });
     localStorage.setItem("pickup_detail",JSON.stringify(shipping_arr))
-     window.location.href =`../../pages/track/last.html?booking_id=${id}`
+    //  window.location.href =`../../pages/track/last.html?booking_id=${id}`
 }
 
 
@@ -90,7 +90,7 @@ shipping_form.addEventListener("submit", (e) => {
         From: "nitthishris@gmail.com",
         Subject: "This is the message from the contact form",
         Body: `Thanks for choosing us to restore your valuable item`+`Your itmes will be picked up on ${date.value},${"  "}${time.value}  at  ${address.value}`
-        `  ${localStorage.getItem("logged_in")}`
+        // `  ${localStorage.getItem("logged_in")}`
 
     }).then((message) => alert(message));
 });

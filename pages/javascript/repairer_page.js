@@ -77,11 +77,11 @@ booking_items.forEach((item) => {
     item.status = true;
     localStorage.setItem("restore_item_detail", JSON.stringify(booking_items));
   });
-
+// let problem_textbox=document.getElementById("problem")
   button1.addEventListener("click", () => {
-    // console.log(problem_textbox.value)
+    console.log(textarea.value)
     item.status = false;
-    item.reject_reason = problem_textbox.value;
+    item.reject_reason = textarea.value;
     localStorage.setItem("restore_item_detail", JSON.stringify(booking_items));
   });
 });

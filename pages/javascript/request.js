@@ -5,8 +5,6 @@ const submit_button = document.getElementById("request_submit");
 const logginid = localStorage.getItem("logged_in");
 console.log(logginid);
 
-
-
 const restore_item_arr =
   JSON.parse(localStorage.getItem("restore_item_detail")) || [];
 
@@ -34,9 +32,7 @@ const description = document.getElementById("description").value;
 // }
 const email = document.getElementById("email");
 console.log(email);
-if(email==[]){
-  alert("please login to book the request")
-}
+
 email.value = logginid;
 
 request_form.addEventListener("submit", (e) => {
@@ -44,7 +40,8 @@ request_form.addEventListener("submit", (e) => {
   getdata();
 });
 
-function getdata() {
+
+function getdata(){
   const first_name = firstname.value;
   console.log(first_name);
   const thing_name = antique_name.value;

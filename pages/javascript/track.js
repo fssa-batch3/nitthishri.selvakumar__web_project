@@ -40,6 +40,27 @@ function booking_detail(item) {
   detail_box.setAttribute("id", "detail_box");
   full_box.append(detail_box);
 
+  const p5 = document.createElement("p");
+  p5.setAttribute("id", "booker_name");
+  p5.innerText = "Name";
+  detail_box.append(p5);
+  
+  const p4 = document.createElement("p");
+  p4.setAttribute("id", "booker_email");
+  p4.innerText = "Email";
+  detail_box.append(p4);
+
+  const span4 = document.createElement("span");
+  span4.setAttribute("id", "book_email");
+  span4.innerText = `:${last_email}`;
+  p4.append(span4);
+  
+
+  const span5 = document.createElement("span");
+  span5.setAttribute("id", "book_name");
+  span5.innerText = `:${item.first_name}`;
+  p5.append(span5);
+
   const p1 = document.createElement("p");
   p1.setAttribute("id", "booker_name");
   p1.innerText = "Booking Id";
@@ -70,25 +91,8 @@ function booking_detail(item) {
   span3.innerText = `:${item.antique_name}`;
   p3.append(span3);
 
-  const p4 = document.createElement("p");
-  p4.setAttribute("id", "booker_height");
-  p4.innerText = "Height";
-  detail_box.append(p4);
 
-  const span4 = document.createElement("span");
-  span4.setAttribute("id", "book_height");
-  span4.innerText = `:${item.height}`;
-  p4.append(span4);
-
-  const p5 = document.createElement("p");
-  p5.setAttribute("id", "booker_width");
-  p5.innerText = "Width";
-  detail_box.append(p5);
-
-  const span5 = document.createElement("span");
-  span5.setAttribute("id", "book_width");
-  span5.innerText = `:${item.width}`;
-  p5.append(span5);
+ 
 
   const track_report = document.createElement("div");
   track_report.setAttribute("id", "track_report");
@@ -140,7 +144,9 @@ function booking_detail(item) {
       div_track.innerText = "Rejected";
     }
   }
-
+  if(!item.status){
+    link.style.marginLeft="110px"
+  }
   // let user_detail = JSON.parse(localStorage.getItem("user_list"));
   // let product_information=JSON.parse(localStorage.getItem("product_detail"));
   // let last_email = localStorage.getItem("logged_in");

@@ -171,7 +171,7 @@ const product_detail = [
     description:
       "Antique Vintage Gramophone Player Original Working Gramophone Original Gramophone White Piller Gramophone",
     status: true,
-  },
+  }
 ];
 if (localStorage.getItem("product_detail")) {
   console.log("obj");
@@ -223,9 +223,8 @@ const user_records = [
   }
 ];
 
-if (localStorage.getItem("user_List")) {
+if (localStorage.getItem("user_list")) {
     //   return;
-    alert("")
   } else {
     localStorage.setItem("user_list", JSON.stringify(user_records));
     
@@ -237,4 +236,24 @@ if (localStorage.getItem("logged_in")) {
   localStorage.setItem("logged_in", JSON.stringify());
 }
 
-const restore_item_arr = [];
+const restore_item_arr = 
+  [
+    {
+        "booking_id": 0,
+        "first_name": "nikitha",
+        "antique_name": "camera",
+        "email": "niki@gmail.com",
+        "phonenumber": "234567890",
+        "category": "Head-phone",
+        "height": "100",
+        "width": "100",
+        "sentimental": "I am sentimental about it.",
+        "image": "https://iili.io/HNp66dl.jpg"
+    }
+];
+if (localStorage.getItem("restore_item_detail")) {
+  console.log("obj");
+} else {
+  localStorage.setItem("restore_item_detail", JSON.stringify(restore_item_arr));
+  console.log("yes");
+}
