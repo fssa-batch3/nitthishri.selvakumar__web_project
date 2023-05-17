@@ -105,6 +105,18 @@ document.getElementById("update").addEventListener("click", () => {
   }
 });
 
+
+
+const login = document.getElementById("log")
+        login.addEventListener("click", event => {
+            // event.preventDefault();
+            if (profile_email !== '[]') {
+              localStorage.removeItem("logged_in")
+            }
+            
+            location.reload()
+        }
+        )
 // document.getElementById("delete").addEventListener("submit", () => {
 //     document.getElementById("phone_number").removeAttribute("required", "")
 
