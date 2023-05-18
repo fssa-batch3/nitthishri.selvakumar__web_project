@@ -75,7 +75,7 @@ function receive() {
 
     });
     localStorage.setItem("pickup_detail",JSON.stringify(shipping_arr))
-    //  window.location.href =`../../pages/track/last.html?booking_id=${id}`
+     window.location.href =`../../pages/track/last.html?booking_id=${id}`
 }
 
 

@@ -271,15 +271,16 @@ font-weight: 1000;
 
 .full_box{
     /* margin-top:180px; */
-    margin-left: 100px;
+    margin-left:50px;
     display: flex;
     flex-direction:row;
     height:300px;
-    width:740px;
+    width:840px;
 border:1px solid black;
 box-shadow: 10px 10px 20px grey;
 
 }
+
 #booker_image{
     margin-left:20px;
     margin-top:20px;
@@ -289,7 +290,9 @@ box-shadow: 10px 10px 20px grey;
 
 }
 #book_email{
-    margin-left: 110px;
+    margin-left: 40px;
+   font-size: 1.1rem;
+    display: inline-block;
 }
 #detail_box{
     margin-left:40px;
