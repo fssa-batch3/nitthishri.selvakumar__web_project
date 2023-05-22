@@ -15,7 +15,6 @@
         <div class="button-box">
             <h1>Log In</h1>
 
-
         </div>
         <div class="social-media">
             <i class="fa-brands fa-facebook"></i>
@@ -26,8 +25,8 @@
 
             <form id="loginform">
 
-                <input type="email" name="email" id="emailid" class="text" placeholder="User Id" required>
-                <input type="password" name="password" id="password" class="text" placeholder="Enter password" required>
+                <input type="email" name="email" id="emailid" class="text" placeholder="Email_id" required>
+                <input type="password" name="password" id="password" class="text" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="UpperCase, LowerCase, Number/SpecialChar and min 8 Chars" placeholder="Enter password" required>
 
                 <a class="forgot" name="forget_password" href="">forgot password?</a>
 
@@ -39,62 +38,8 @@
 
     </div>
 
-
 </body>
-<script>
-
-    const form = document.getElementById("loginform");
-
-    const log_email = document.getElementById("emailid");
-
-    const log_password = document.getElementById("password");
-
-    const user_records = JSON.parse(localStorage.getItem("user_list"));
-
-    loginvalidation = () => {
-
-        const emailvalue = log_email.value.trim();
-        const passwordvalue = log_password.value.trim();
-
-        let success = false;
-
-        for (let i = 0; i < user_records.length; i++) {
-
-            if ((user_records[i].emailid == emailvalue) && (user_records[i].password == passwordvalue)) {
-
-                success = true;
-
-                break;
-
-
-            }
-        }
-
-        if (success) {
-
-            const logged_in = emailvalue;
-
-            localStorage.setItem("logged_in", logged_in);
-
-            alert("Login Success");
-
-            window.location.href = "userprofile.html";
-        }
-
-        else {
-
-            alert("Invalid User Credentials");
-
-        }
-
-    }
-
-    form.addEventListener('submit', e => {
-
-        e.preventDefault();
-
-        loginvalidation();
-    })
+<script src="../javascript/login.js">
 
 </script>
 

@@ -49,3 +49,52 @@
     border: none;
     border-radius: 20px;
 }
+
+#allproducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+#allproducts th {
+margin-top:500px;
+
+color:rgb(30, 27, 27);
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 12px;
+    text-align: center;
+    
+  
+  }
+
+table{
+    margin-top: 7em;
+    margin-left: 65px;
+}
+
+  table tbody tr td img {
+    width: 100px;
+
+  }
+
+  table thead tr th{
+    background-color:#f5ba76;
+    height:50px;
+    font-size:25px;
+    padding: 12px;
+    padding-left: 50px;
+    padding-right:50px
+    
+    
+    }
+    table tbody tr td{
+        text-align: center;
+        font-size:18px;
+        font-weight: 500;
+        padding: 20px;
+    background-color:#f5e9d7;
+    padding-left: 50px;
+    padding-right:50px
+
+        
+    }

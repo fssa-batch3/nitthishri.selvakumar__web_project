@@ -19,23 +19,34 @@
         <div class="communicate-us">
 
             <div class="sub-communicate-us">
-                <a class="connect" href="tel:+9876543210"><i class="fa-solid fa-phone"></i> 9876543210</a>
-                <a class="connect" href="mailto:blackwoodalley@gmail.com"> <i
-                        class="fa-solid fa-envelope"></i>blackwoodalley@gmail.com</a>
+                <a class="connect" href="tel:+9876543210">
+                    <i class="fa-solid fa-phone"></i> 9876543210
+                </a>
+                <a class="connect" href="mailto:blackwoodalley@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>blackwoodalley@gmail.com</a>
             </div>
 
             <div class="menu-bar">
-                <a href="https://twitter.com" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://facebook.com" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://pinterest.com" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="https://instagram.com" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://youtube.com" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com" aria-label="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" aria-label="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://pinterest.com" aria-label="pinterest">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="https://instagram.com" aria-label="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" aria-label="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
             </div>
 
         </div>
 
         <!--  communicate-us ends -->
-
 
         <div class="line">
 
@@ -47,87 +58,109 @@
             </div>
             <div class="sub-navigate">
                 <ul>
-                    <li><a class="navi" href="../../index.html">Home</a></li>
-                    <li><a class="navi" href="../../pages/about.html">About</a></li>
-                    <li><a class="service" href="">Service</a>
+                    <li>
+                        <a class="navi" href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="service" href="">Service</a>
                         <div class="sub-service">
                             <ul>
-                                <li><a class="sub-service1" href="../../pages/service/service2.html">repair electronics</a>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service2.html">repair
+                                        electronics</a>
                                 </li>
-                                <li><a class="sub-service1" href="../../pages/service/service1.html">repair furniture</a>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service1.html">repair
+                                        furniture</a>
                                 </li>
 
                             </ul>
 
                         </div>
                     </li>
-                    <li><a class="navi" href="../../pages/restore/restore.html">how we restore</a></li>
-                    <li><a class="navi" href="../../pages/contact.html">contact us</a></li>
-                    <li><a class="navi" href="../../pages/track/track.html">track request</a></li>
-                    <li><a class="navi" href="../../pages/login/login.html">Login</a></li>
-                    <li><a class="navi-button" href="../../pages/request.html">Request a quote</a>
+                    <li>
+                        <a class="navi" href="../../pages/restore/restore.html">how we restore</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/contact.html">contact us</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/track/track.html">track request</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/login/login.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="navi-button" href="../../pages/request.html">Request a quote</a>
                 </ul>
             </div>
         </div>
         <!-- menu-bar ends -->
-        
+
     </header>
 
     <main>
         <div class="full-page">
             <div class="verification">
-                <h1>Pick-up details</h1>
-                <form action="../../pages/track/last.html">
+                <h1>Request pickup</h1>
+                <form  id="shipping_form">
                     <div class="full-side">
                         <div class="side">
                             <div class="column">
-                                <label for="request-id">Request Id</label>
-                                <input type="number" name="requset-id" id="request-id" maxlength="5" minlength="5">
+                                <label for="name">Name</label>
+                                <input type="name" name="name" id="name" required="true" disabled>
                             </div>
-
                             <div class="column">
                                 <label for="number">Phone Number</label>
-                                <input type="number" name="number" id="number">
+                                <input type="number" name="number" id="number" required="true" disabled>
                             </div>
-
                             <div class="column">
-                                <label for="name">Name</label>
-                                <input type="name" name="name" id="name">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email-id" required="true" disabled>
                             </div>
                             <div class="column">
                                 <label for="address">Address </label>
-                                <input type="text" name="address" id="address">
+                                <input type="text" name="address" id="address" required>
                             </div>
+
                         </div>
                         <div class="side">
                             <div class="column">
                                 <label for="landmark">Landmark</label>
-                                <input type="text" name="landmark" id="landmark">
+                                <input type="text" name="landmark" id="landmark" required>
                             </div>
 
                             <div class="column">
                                 <label for="pin-code">Pincode </label>
-                                <input type="number" name="pin-code" id="pin-code">
+                                <input type="number" name="pin-code" id="pin-code" required>
                             </div>
 
                             <div class="column">
-                                <label for="pick-up">Pick-up location</label>
-                                <input type="text" name="pick-up" id="pick-up">
+                                <label for="date">Date</label>
+                                <input type="date" name="date" id="date" required>
                             </div>
 
                             <div class="column">
-                                <label for="otp">OTP</label>
-                                <input name="otp" id="otp" maxlength="10" minlength="10">
+                                <label for="time">Time</label>
+                                <input type="time" name="time" id="time" required>
                             </div>
                         </div>
                     </div>
-                    <textarea id="message" name="message" rows="6" cols="75" placeholder="Message"></textarea> <br>
-                    <button>submit</button>
+                    <textarea id="message" name="message" rows="6" cols="75" placeholder="Message"></textarea>
+                    <br>
+                    <button id="pickup_submit">submit</button>
 
                 </form>
 
             </div>
         </div>
+
+        <script src="../javascript/shipping.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
     </main>
 </body>
 

@@ -17,62 +17,120 @@
 
     <header>
 
-
+        <!-- header starts -->
         <!--  communicate-us ends -->
 
-
-
-
         </div>
-
-
 
         </div>
 
         <div class="navigate">
             <div class="sub-logo">
-                <img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage">
+                <a href="../../index.html"><img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage"></a>
             </div>
             <div class="sub-navigate">
                 <ul>
-                    <li><a class="navi" href="../../index.html">Home</a></li>
-                    <li><a class="navi" href="../../pages/about.html">About</a></li>
-                    <li><a class="service" href="">Service</a>
+
+                    <li>
+                        <a class="service" href="">About</a>
+                        <div class="sub-service">
+
+                            <ul>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/restore/restore.html">How we restore</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a class="service" href="">Service</a>
                         <div class="sub-service">
                             <ul>
-                                <li><a class="sub-service1" href="../../pages/service/service2.html">repair
-                                        electronics</a>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service2.html">Repair electronics</a>
                                 </li>
-                                <li><a class="sub-service1" href="../../pages/service/service1.html">repair
-                                        furniture</a>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service1.html">Repair furniture</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/product/product.html">Buy</a>
                                 </li>
 
                             </ul>
 
                         </div>
                     </li>
-                    <li><a class="navi" href="../../pages/restore/restore.html">how we restore</a></li>
-                    <li><a class="navi" href="../../pages/contact.html">contact us</a></li>
-                    <li><a class="navi" href="../../pages/track/track.html">track request</a></li>
-                    <li><a class="navi" href="../../pages/login/login.html">Login</a></li>
-                    <li><a class="navi-button" href="../../pages/request.html">Request a quote</a>
+                    <li>
+                        <a class="navi" href="../../pages/contact.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/track/track.html">Track request</a>
+                    </li>
+                    <li id="insert_login"></li>
+                    <!-- <li><a class="navi" href="./pages/request.html">Restore</a></li> -->
+                    <li id="admin">
+                        <!-- <a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div> -->
+                    </li>
+                    <li id="insert_profile"></li>
+                    <li id="login"></li>
+                    <li>
+<!-- <a class="navi-button" href="../../pages/request.html">Request a quote</a> -->
+                    <li class="icons">
+                        <a href="../../pages/product/product_add_cart.html">
+                            <div id="cart_count">0</div>
+                            <i class="fa-solid fa-cart-shopping" id="shopping"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="../../pages/product/product_favourite.html">
+                            <div id="fav_count">0</div>
+                            <i class="fa-solid fa-heart" id="liked"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="../../pages/product/order_history.html">
+                            <!-- <div id="fav_count">0</div> -->
+                            <i class="fa-solid fa-clock-rotate-left" id="history_icon"
+                            ></i>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
-
 
         </div>
         <!-- menu-bar ends -->
 
-
     </header>
+
+
+        <input type="search" id="search" placeholder="search">
+
 
     <div class="product_page">
 
         <!-- 
+      
         <div class="gallery_box">
+              <a  href="../product_detail.html" id="pic">
             <img class="gallery_imgs" src="../../assets/images/service1_page/before1.png" alt="antique">
-            
-            <h2 class="product_name">chair</h2>
+              </a> 
+             <h2 class="product_name">chair</h2>
             <p class="detail">This is 200 years old</p>
             <div class="rating">
 
@@ -84,97 +142,84 @@
 
             </div>
             <p class="price">&#8377; 23,000</p> 
-
+<label>
+            <input type="checkbox" class="favourite" />
+            <span class="favourite_symbol">&#10084;</span>
+          </label>
         </div> -->
 
-
     </div>
-    <script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <p>company</p>
+                    <ul>
+                        <li>
+                            <a href="./pages/about.html">about us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/service/service1.html">our services</a>
+                        </li>
 
-        // const div_1 = document.createElement("div")
-        // div_1.setAttribute("class","outer-box")
-        // document.querySelector(".furniture-imgs").prepend(div_1)
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p>get help</p>
+                    <ul>
+                        <li>
+                            <a href="./pages/contact.html#faqs">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./pages/request.html">Request a quote</a>
+                        </li>
 
-        // const a =document.createElement("anchor")
-        // a.setAttribute("href","../../pages/request.html")
-        // document.querySelector(".outer-box").append(a)
+                    </ul>
+                </div>
 
-        // const img = document.createElement("img")
-        // img.setAttribute("src",data[i]["image"]["src"])
-        // img.setAttribute("class","furniture")
-        // img.setAttribute("alt","antique")
-        // document.querySelector("anchor").append(img)
+                <div class="footer-col">
+                    <p>contact us</p>
+                    <ul>
+                        <li>
+                            <a href="./pages/contact.html">Phone us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contact.html">Email us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contact.html">Reach us directly</a>
+                        </li>
 
-        // const h3 = document.createElement("h3")
-        // h3.innerText = data[i]["h3"]
-        // document.querySelector("anchor").append(h3)
+                    </ul>
+                </div>
 
-        // for(let i=0; i<products)
-
-        let products = JSON.parse(localStorage.getItem("product_detail"))
-
-        
- products.forEach(e => {
-    productCard(e);
- });
-
-function productCard(item){
-        const gallery_box = document.createElement("div")
-        gallery_box.setAttribute("class", "gallery_box")
-        document.querySelector(".product_page").prepend(gallery_box)
-
-        const gallery_imgs = document.createElement("img")
-        gallery_imgs.setAttribute("class", "gallery_imgs")
-        gallery_imgs.setAttribute("src", item["pr_img_1"])
-        gallery_imgs.setAttribute("alt", "antique")
-        document.querySelector(".gallery_box").append(gallery_imgs)
-
-        const heading_2 = document.createElement("h2")
-        heading_2.setAttribute("class", "product_name")
-        heading_2.innerText =  item["product_name"]
-        document.querySelector(".gallery_box").append(heading_2)
-
-        const paragraph_1 = document.createElement("p")
-        paragraph_1.setAttribute("class", "detail")
-        paragraph_1.innerText =  item["highlights"]
-        document.querySelector(".gallery_box").append(paragraph_1)
-
-        const rating = document.createElement("div")
-        rating.setAttribute("class", "rating")
-        document.querySelector(".gallery_box").append(rating)
-
-        
-        const icon = document.createElement("div")
-        icon.setAttribute("class","star")
-        document.querySelector(".rating").append(icon)
-    
-        let products_star = item
-        let rating_round = Math.round(products_star.rating);
-        let stars = "";
-        for (let j = 0; j < rating_round ; j++) {
-            stars += "⭐";
-        }
-        icon.append(stars);
-
-    //     ratings_div = document.createElement("div");
-    // ratings_div.setAttribute("class", "product-ratings");
-    // product_card_div.append(ratings_div);
-    //     let products_star = products[i];
-    // let rating_round = Math.round(products_star.ratings);
-    // let stars = "";
-    // for (let j = 0; j < rating_round; j++) {
-    //     stars += ":star:";
-    // }
-    // ratings_div.append(stars);
-
-        const paragraph_2 = document.createElement("p")
-        paragraph_2.innerText = "₹ " + item["product_price"]
-        paragraph_2.setAttribute("class", "price")
-        document.querySelector(".gallery_box").append(paragraph_2)
-    }
-
+                <div class="footer-col">
+                    <p>follow us</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" aria-label="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" aria-label="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" aria-label="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://pinterest.com" aria-label="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="arrow" aria-label="down-arrow">
+            <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+        </a>
+    </footer>
+    <script src="../javascript/product.js">
 
     </script>
+
 </body>
 
 </html>

@@ -5,213 +5,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Live On - Too Fast Too Quick</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/Icons/live-on.png">
     <link rel="stylesheet" href="../../assets/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
+    <!-- This is profile-section -->
+    <div class="profile-section">
+        <div class="side-bar">
 
-    <div class="changing_background">
+            <img class="profile_changing_img" src="../../assets/images/contact_page/header-bg.webp" alt="image">
+            <input type="file" id="file">
 
-        <form action="../index.html">
+            <label for="file">
+                <img id="camera" src="../../assets/images/restore_page/camera1.jpeg" alt="camera">
+            </label>
 
-            <a> <input type="file" name="file" placeholder="change_background"></a>
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <span class="fa-solid fa-circle-user"></span>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../product/product_wishlist.html" class="active">
+                            <span class="fa-solid fa-bag-shopping"></span>
+                            <span>Orders</span>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="" class="active">
+                            <span class="fa-solid fa-bookmark"></span>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <button id="log" class="active">
+                            <span class="fa-solid fa-right-from-bracket"></span>
+                            <span>Logout</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="../../index.html" class="active">
+                            <span class="fa-solid fa-left-long"></span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <form id="form_user"><!-- profile update section-->
+            <div class="user-container">
+
+                <div class="information">
+                    <div id="form">
+
+                        <div class="detail">
+                            <!-- First name  -->
+                            <div class="side1">
+                                <div class="first-name" id="align-num">
+                                    <label class="more"> First Name</label>
+                                    <input class="name" id="first_name" type="text" pattern="[A-Za-z]{3,32}"
+                                        name="user name" title="First name connot contain spaces"
+                                        placeholder="First Name" value="" required="true">
+                                </div>
+                                <!-- Last name  -->
+                                <div class="last-name" id="align-num">
+                                    <label class="more"> Last Name</label>
+                                    <input class="name" id="last_name" type="text" name="user name"
+                                        pattern="[A-Za-z]{3,32}" placeholder="Last Name" value=""
+                                        title="Last name connot contain spaces" required="true">
+                                </div>
+                                <!--  email input  -->
+                                <div class="email" id="align-num">
+                                    <label class="more"> Email</label>
+                                    <input class="name" id="email"
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$" type="email"
+                                        name="user email" placeholder="name@gmail.com" required="true"
+                                        title="First name connot contain spaces" disabled>
+                                </div>
+                            </div>
+                            <!--  mobile number -->
+                            <div class="side2">
+
+                                <div class="number" id="align-num">
+                                    <label class="more"> Number</label>
+                                    <input class="name" id="phone_number" type="tel" pattern="^[6-9][0-9]{9}$"
+                                        name="user mobile" placeholder="+91 8923456789" minlength="10" maxlength="10"
+                                        required="true">
+                                </div>
+                                <!-- district -->
+                                <div class="address" id="align-num">
+                                    <label class="more"> Address</label>
+                                    <input class="name" id="address" type="text" name="user address"
+                                        placeholder="Add Address" required="true">
+                                </div>
+                                <!--Address input  -->
+                                <div class="address" id="align-num">
+                                    <label class="more"> Pincode</label>
+                                    <input class="name" id="pin_number" type="text" pattern="^6\d{5}$"
+                                        name="user address" placeholder="Pincode" required="true" maxlength="6"
+                                        minlength="6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--update button -->
+                        <!-- <button type="button" id="button" class="name">Edit</button> -->
+                        <div class="buttons">
+                            <!-- <button id="btnn" class="form-control custom-input">
+                                Edit
+                            </button> -->
+                            <button id="update" type="submit" class="form-control custom-input">
+                                Update
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </form>
     </div>
+    </div>
+    </div>
+    <script src="../javascript/userprofile.js">
 
-    <!-- profileimage -->
-    <form>
-        <div class="main">
-            <div class="container">
-
-                <div class="profile_img">
-                    <img class="profile_changing_img" src="../../assets/images/contact_page/working.jpeg" alt="image">
-                    <input type="file" id="file">
-
-                    <label for="file"><img class="camera" src="../../assets/images/index_page/repair2.jpg"
-                            alt="camera"></label>
-                </div>
-
-                <div class="user_details">
-                    <div class="user_page_half">
-                        <div class="elements">
-                            <label for="first-name"> First name<i class="fa-solid fa-star-of-life"></i></label><br>
-                            <input type="text" name="first-name" id="first_name" required>
-                        </div>
-                        <div class="elements">
-                            <label for="last-name">Last name<i class="fa-solid fa-star-of-life"></i></label><br>
-                            <input type="text" name="last-name" id="last_name" required>
-                        </div>
-                        <div class="elements">
-                            <label for="email">E-mail<i class="fa-solid fa-star-of-life"></i></label><br>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-                    </div>
-
-                    <div class="user_page_half">
-                        <div class="elements">
-                            <label for="phone-number">Phone number<i class="fa-solid fa-star-of-life"></i></label>
-                            <input type="number" name="phone-number" id="phone_number" minlength="10" maxlength="14"
-                                required>
-                        </div>
-
-                        <div class="area">
-                            <label for="address">Address</label>
-                            <textarea name="address" id="address" col="20" row="10"></textarea>
-
-                        </div>
-
-                        <div class="elements">
-                            <label for="pin_number">Pin Number<i class="fa-solid fa-star-of-life"></i></label>
-                            <input type="number" name="pin_number" id="pin_number" minlength="10" maxlength="14"
-                                required>
-                        </div>
-
-                        <div class="next">
-                            <button id="update">update</button>
-                        </div>
-
-                        <div class="next">
-                            <button id="delete">Delete</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="home">
-                <a>Back to home</a>
-            </div>
-
-        </div>
-    </form>
-    <script>
-
-
-
-
-        const img_div = document.querySelector(".profile_img")
-        const profile_real = document.querySelector(".profile_changing_img")
-
-
-        const file = document.querySelector("#file")
-        //   let btn=document.querySelector("button")
-        //   btn.addEventListener("click",()=>{
-        //     console.log(file) // c:/fakepath/filename.jpg
-        //   })
-
-
-        const uploadbtn = document.querySelector("#button")
-        // when we choose file
-        file.addEventListener('change', function () {
-            // this refers to file
-
-            const choosed_file = this.files[0]
-            if (choosed_file) {
-                const reader = new FileReader()
-                // filereader is prdefiden function of js
-
-                reader.addEventListener('load', function () {
-
-                    profile_real.setAttribute("src", reader.result)
-                })
-                reader.readAsDataURL(choosed_file)
-                console.log(reader)
-            }
-
-        })
-
-
-        let user = JSON.parse(localStorage.getItem('user_list'));
-
-        console.log(user)
-
-        const profile_email = localStorage.getItem("logged_in");
-
-        console.log(profile_email);
-
-        // first time showing the values in the input field
-
-        for (let i = 0; i < user.length; i++) {
-
-
-            if (user[i].emailid == profile_email) {
-
-                document.getElementById("first_name").value = user[i]["firstname"];
-                document.getElementById("last_name").value = user[i]["lastname"];
-                document.getElementById("email").value = user[i]["emailid"];
-                document.getElementById("phone_number").value = user[i]["phonenumber"];
-                document.getElementById("address").value = user[i]["addressvalue"];
-                document.getElementById("pin_number").value = user[i]["pin_number"];
-
-                break;
-            }
-        }
-
-
-        // document.getElementById("update").addEventListener("click",(e) =>{
-        //    if( document.getElementById("email").value == profile_email){
-        //     e["firstname"]=document.getElementById("first_name").value ;
-        //     e["lastname"]= document.getElementById("last_name").value ;
-        //     e["emailid"]=document.getElementById("email").value ;
-        //     e["addressvalue"]=document.getElementById("address").value ;
-        //     e["pin_number"]= document.getElementById("address").value ;
-        //     localStorage.setItem("user_list",JSON.stringify(user))
-        //    }
-        // })
-
-        document.getElementById("update").addEventListener("click", () => {
-            for (let i = 0; i < user.length; i++) {
-                if (document.getElementById("email").value == user[i]["emailid"]) {
-                    user[i]["firstname"] = document.getElementById("first_name").value;
-                    user[i]["lastname"] = document.getElementById("last_name").value;
-                    user[i]["emailid"] = document.getElementById("email").value;
-                    user[i]["addressvalue"] = document.getElementById("address").value;
-                    user[i]["pin_number"] = document.getElementById("pin_number").value;
-                    user[i]["phone_number"] = document.getElementById("phone_number").value;
-
-                }
-                localStorage.setItem("user_list", JSON.stringify(user))
-
-
-            }
-        })
-
-       
-document.getElementById("delete").addEventListener("click",()=>{
-    document.getElementById("phone_number").removeAttribute("required","")
-
-
-//     for (let i = 0; i < profile_email.length; i++) {
-
-
-//         if(document.getElementById("email").value == user[profile_email]["emailid"]);
-
-//         profile_email.splice(i,1);
-
-//         localStorage.setItem("user_list", JSON.stringify(logged_in));
-
-
-// }
-
-}
-);
-
-        
-        // function edit() {
-        //     let user = JSON.parse(localStorage.getItem("user_list"));
-        //     for (let i = 0; i < user.length; i++) {
-        //         if (document.getElementById("email").value == user[i]["emailId"]) {
-        //             user[i].firstname = document.getElementById("first_name").value
-        //         }
-        //         localStorage.setItem("user_list", JSON.stringify(user))
-        //     }
-        // }
-
-
-       
     </script>
 </body>
 
 </html>
+
+<!-- 
+      </div>
+ </div>
+     <script>
+         const img_div =document.querySelector(".profile")
+         const profile_real =document.querySelector("#prof-img")
+         const file=document.querySelector("#file")
+         const uploadbtn=document.querySelector("#button")
+         // when we choose file
+         file.addEventListener('change',function(){
+             // this refers to file
+             const choosed_file = this.files[0]
+             if(choosed_file) {
+                 const reader= new FileReader()
+        // filereader is prdefiden function of js
+                 reader.addEventListener('load',function(){
+                  profile_real.setAttribute("src",reader.result)
+              })
+              reader.readAsDataURL(choosed_file)
+             }
+         })
+            let user_profile_data = JSON.parse(localStorage.getItem("data"));
+            let  user_pp= localStorage.getItem("profile");
+            let res;
+         //    console.log(user_pp["email"])
+            user_profile_data.find(  // parameterized function 'a'
+             e =>{
+                 if(e["user_email"]==user_pp){
+                      return res=e
+                 }
+             }
+             )
+ console.log(res)
+         document.getElementById("newname").value =res["user_name"];
+     document.getElementById("newemail").value = res["user_email"];
+     document.getElementById("bio").value=res["user_bio"]
+     document.getElementById("number").value=res["user_number"]
+     document.getElementById("city").value=res["user_city"]
+     document.getElementById("address").value=res["user_address"]
+ // -------------------------
+             document.getElementById("update").addEventListener("click",e=>{
+                 e.preventDefault();
+             res["user_name"]= document.getElementById("newname").value
+             res["user_bio"]= document.getElementById("bio").value
+             res["user_number"]= document.getElementById("number").value
+             res["user_city"]= document.getElementById("city").value
+             res["user_address"]= document.getElementById("address").value
+  localStorage.setItem("data",JSON.stringify(user_profile_data));
+  console.log(res);
+             })
+     // -----------------------------------
+             document.getElementById("delete").addEventListener("click",event=>{
+              event.preventDefault();
+             localStorage.removeItem("profile");
+             })
+             // let showing_approved_details = JSON.parse(localStorage.getItem("records_booking_clients"));
+             // console.log(showing_approved_details)
+     </script>
+ </body>
+ </html>  -->
+
+Message Madhubala Esakkipandi

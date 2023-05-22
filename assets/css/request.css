@@ -278,5 +278,31 @@ font-weight: 1000;
     color:white
 }
 
+#category{
+    color:black
+}
+select {
+    height: 40px;
+    width: 360px;
+    color:black;
+    
+}
+option{
+margin:10px;
+}
 /*request-box ending*/
 
+.request_book:valid{
+    border-style: solid;
+ border-color: #09c372;
+}
+.request_book:invalid{
+    border-style: solid;
+    border-color:#d19ca7;
+}
+
+#request_submit{
+   margin-left:450px;
+   margin-top:30px;
+   
+}

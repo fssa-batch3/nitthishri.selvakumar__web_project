@@ -12,57 +12,114 @@
 
 <body>
     <header>
-        <div class="row1">
+        <!-- menu-bar starting -->
+        <!-- communicate-us starting -->
 
-            <div class="row1a">
-                <a class="connect" href=""><i class="fa-solid fa-phone"></i> 9876543210</a>
-                <a class="connect" href=""> <i class="fa-solid fa-envelope"></i>blackwoodalley@gmail.com</a>
+        <div class="communicate-us">
+
+            <div class="sub-communicate-us">
+                <a class="connect" href="tel:+9876543210">
+                    <i class="fa-solid fa-phone"></i> 9876543210
+                </a>
+                <a class="connect" href="mailto:blackwoodalley@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>blackwoodalley@gmail.com</a>
             </div>
-            <div class="row1b">
-                <a href="https://twitter.com" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://facebook.com" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://pinterest.com" aria-label="pinterest"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="https://instagram.com" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://youtube.com" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+
+            <div class="menu-bar">
+                <a href="https://twitter.com" aria-label="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" aria-label="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://pinterest.com" aria-label="pinterest">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="https://instagram.com" aria-label="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" aria-label="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
             </div>
 
         </div>
+
+        <!--  communicate-us ends -->
 
         <div class="line">
 
         </div>
+        <div class="navigate">
+            <div class="sub-logo">
+                <a class="navi" href="../../index.html">
+                    <img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage">
+            </div></a>
+            <div class="sub-navigate">
+                <ul id="whole_nav">
 
-        <div class="row2">
-            <div class="row2a">
-                <img class="logo" src="../../assets/images/index_page/logo.png" alt="logo_for_webpage">
-            </div>
-            <div class="row2b">
-                <ul>
-                    <li><a class="navi" href="../../index.html">Home</a></li>
-                    <li><a class="navi" href="../../pages/about.html">About</a></li>
-                    <li><a class="service" href="">Service</a>
+                    <li>
+                        <a class="service" href="">About</a>
+                        <div class="sub-service">
+
+                            <ul>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/restore/restore.html">How we restore</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a class="service" href="">Service</a>
                         <div class="sub-service">
                             <ul>
-                                <li><a class="sub-service1" href="../../pages/service/service2.html">repair
-                                        electronics</a></li>
-                                <li><a class="sub-service1" href="../../pages/service/service1.html">repair
-                                        furniture</a></li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service2.html">Repair electronics</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/service/service1.html">Repair furniture</a>
+                                </li>
+                                <li>
+                                    <a class="sub-service1" href="../../pages/product/product.html">Buy</a>
+                                </li>
 
                             </ul>
 
                         </div>
                     </li>
-                    <li><a class="navi" href="../../pages/restore/restore.html">how we restore</a></li>
-                    <li><a class="navi" href="../../pages/contact.html">contact us</a></li>
-                    <li><a class="navi" href="../../pages/track/track.html">track request</a></li>
-                    <li><a class="navi" href="../../pages/login/login.html">Login</a></li>
-                    <li><a class="navi1" href="../../pages/request.html">Request a quote</a>
+                    <li>
+                        <a class="navi" href="../../pages/contact.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="navi" href="../../pages/track/track.html">Track request</a>
+                    </li>
+                    <li id="insert_login"></li>
+                    <!-- <li><a class="navi" href="./pages/request.html">Restore</a></li> -->
+                    <li id="admin">
+                        <!-- <a class="service" href="">Admin</a>
+                        <div class="sub-service">
+                            <ul>
+                                <li><a class="sub-service1" href="./pages/product_enter.html">product enter</a>
+                                </li>
+                                <li><a class="sub-service1" href="./pages/repairer_page.html">repairer page</a>
+                                </li>
+
+                            </ul>
+
+                        </div> -->
+                    </li>
+                    <li id="insert_profile"></li>
+                    <li id="login"></li>
+
                 </ul>
             </div>
-
-
         </div>
-
+        <!-- menu-bar ends -->
     </header>
     <main>
         <div class="full-body">
@@ -75,12 +132,19 @@
                         <h4>Antique furniture:</h4>
 
                         <ul>
-                            
-                                <li><a href="">home furnitures</a></li>
-                                <li><a href="">instrumental furniture</a></li>
-                                <li><a href="">furniture painting</a></li>
-                            
+
+                            <li>
+                                <a href="">home furnitures</a>
+                            </li>
+                            <li>
+                                <a href="">instrumental furniture</a>
+                            </li>
+                            <li>
+                                <a href="">furniture painting</a>
+                            </li>
+
                         </ul>
+                        
                     </div>
 
                     <div class="sub2-aside">
@@ -88,7 +152,7 @@
                         <h4>Antique electronics:</h4>
 
                         <ul>
-                           
+
                             <li>Radio</li>
                             <li>Camera</li>
                             <li>Voice recorder</li>
@@ -121,8 +185,11 @@
                         <img class="electronics" src="../../assets/images/service2_page/phone.jpeg" alt="antique">
                         <div class="near-aside2">
 
-                            <p>Send us a your photo by clicking <span>request a quote</span> buttom in order to evaluate
-                                your antique electronic, your electronics will be assessed by our technician.You can check your
+                            <p>
+                                Send us a your photo by clicking <span>request a quote</span> buttom in order to
+                                evaluate
+                                your antique electronic, your electronics will be assessed by our technician.You can
+                                check your
                                 status in track request page in our website.
                                 Also we send a mail to you.If we accept your request we can collect your electronics
                                 directly in your place.
@@ -138,7 +205,6 @@
                         <a href="../../pages/contact.html">Get in Touch</a>
                     </div>
 
-
                     <div class="memories">
                         <h1>RESTORE YOUR FAMILY MEMORIES</h1>
                         <div class="line"></div>
@@ -147,16 +213,18 @@
                             Here
                             are three ways we can help you now:</p>
                         <div class="communicate">
-                            <a class="sub-communicate" href="../../pages/request.html"><i class="fa-solid fa-image"></i>send a photo</a>
-                            <a class="sub-communicate" href="../../pages/contact.html"><i class="fa-solid fa-phone"></i>call us (or) <span><i
-                                        class="fa-solid fa-envelope"></i> e-mail us</span></a>
-                            <a class="sub-communicate" href="../../pages/contact.html"><i class="fa-solid fa-building"></i>bring it to our
+                            <a class="sub-communicate" href="../../pages/request.html">
+                                <i class="fa-solid fa-image"></i>send a photo
+                            </a>
+                            <a class="sub-communicate" href="../../pages/contact.html">
+                                <i class="fa-solid fa-phone"></i>
+                                call us (or) <span>
+                                    <i class="fa-solid fa-envelope"></i> e-mail us</span></a>
+                            <a class="sub-communicate" href="../../pages/contact.html">
+                                <i class="fa-solid fa-building"></i>bring it to our
                                 office</a>
                         </div>
                     </div>
-
-
-
 
                 </div>
             </div>
@@ -165,86 +233,81 @@
         <div class="photos">
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/radio.jpeg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/radio.jpeg" alt="antique">
                 <p>Radio</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/camera.webp"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/camera.webp" alt="antique">
                 <p>camera</p>
             </div>
 
-
-
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/recorder.jpeg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/recorder.jpeg" alt="antique">
                 <p>Voice recorder</p>
             </div>
 
-
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/video-recorder.webp"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/video-recorder.webp" alt="antique">
                 <p>video recorder</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/switch.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/switch.jpg" alt="antique">
                 <p>vintage switch</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/walkman.jpeg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/walkman.jpeg" alt="antique">
                 <p>Walkman</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/gramophone.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/gramophone.jpg" alt="antique">
                 <p>gramophone</p>
             </div>
 
-
-
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/amplifier.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/amplifier.jpg" alt="antique">
                 <p>amplifier</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/calculator.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/calculator.jpg" alt="antique">
                 <p>calculator</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/TV.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/TV.jpg" alt="antique">
                 <p>television</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/headphone.webp"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/headphone.webp" alt="antique">
                 <p>headphone</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/phone.jpeg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/phone.jpeg" alt="antique">
                 <p>Telephone</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/computer.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/computer.jpg" alt="antique">
                 <p>computer</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/tailoring.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/tailoring.jpg" alt="antique">
                 <p>Tailoring machine</p>
             </div>
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/bettermass-light.webp"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/bettermass-light.webp" alt="antique">
                 <p>Bettermass light</p>
             </div>
 
             <div class="outer-box">
-                <img class="electronics" src="../../assets/images/service2_page/gramophone.jpg"  alt="antique">
+                <img class="electronics" src="../../assets/images/service2_page/gramophone.jpg" alt="antique">
                 <p>Fan</p>
             </div>
 
@@ -256,41 +319,65 @@
                     <div class="footer-col">
                         <p>company</p>
                         <ul>
-                            <li><a href="../../pages/about.html">about us</a></li>
-                            <li><a href="../../pages/service/service1.html">our services</a></li>
-    
+                            <li>
+                                <a href="../../pages/about.html">about us</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/service/service1.html">our services</a>
+                            </li>
+
                         </ul>
                     </div>
                     <div class="footer-col">
                         <p>get help</p>
                         <ul>
-                            <li><a href="../../pages/contact.html#faqs">FAQ</a></li>
-                            <li><a href="../../pages/request.html">Request a quote</a></li>
-    
+                            <li>
+                                <a href="../../pages/contact.html#faqs">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/request.html">Request a quote</a>
+                            </li>
+
                         </ul>
                     </div>
-    
+
                     <div class="footer-col">
                         <p>contact us</p>
                         <ul>
-                            <li><a href="../../pages/contact.html">Phone us</a></li>
-                            <li><a href="../../pages/contact.html">Email us</a></li>
-                            <li><a href="../../pages/contact.html">Reach us directly</a></li>
+                            <li>
+                                <a href="../../pages/contact.html">Phone us</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/contact.html">Email us</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/contact.html">Reach us directly</a>
+                            </li>
                         </ul>
                     </div>
-    
+
                     <div class="footer-col">
                         <p>follow us</p>
                         <div class="social-links">
-                            <a href="https://facebook.com" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://instagram.com" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://pinterest.com" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://facebook.com" aria-label="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com" aria-label="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" aria-label="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://pinterest.com" aria-label="linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="" class="arrow" aria-label="down-arrow"> <i class="fa-sharp fa-solid fa-circle-chevron-up"></i></a>
+            <a href="" class="arrow" aria-label="down-arrow">
+                <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+            </a>
         </footer>
 </body>
 

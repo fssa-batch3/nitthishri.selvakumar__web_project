@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Caveat&family=Heebo:wght@300&family=Rubik:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Caveat&family=Heebo:wght@300&family=Rubik:wght@300&display=swap'); */
 body{
     height: 100%;
     width: 100%;
@@ -79,8 +79,6 @@ header{
     background-color: black;
     position: relative;
     top:-40px;
-
-
 }
 .navigate{
     display: flex;
@@ -270,40 +268,126 @@ font-weight: 1000;
     color: rgb(91, 27, 27);
 }
 
-/*table*/
-table{
-    width:95%;
-    margin-top: 30px;
-    margin-left:40px ;
-    
-}
 
-table caption {
-    display: none;
-}
-
-table thead tr th{
-background-color:#f5ba76;
-height:50px;
-font-size:25px;
-padding: 12px;
-
-
+.full_box{
+    /* margin-top:180px; */
+    margin-left:50px;
+    display: flex;
+    flex-direction:row;
+    height:300px;
+    width:840px;
+border:1px solid black;
+box-shadow: 10px 10px 20px grey;
 
 }
-table tbody tr td{
+
+#booker_image{
+    margin-left:20px;
+    margin-top:20px;
+    height:260px;
+    width:310px;
+    border:1px solid black;
+
+}
+#book_email{
+    margin-left: 40px;
+   font-size: 1.1rem;
+    display: inline-block;
+}
+#detail_box{
+    margin-left:40px;
+    margin-top:20px
+}
+#book_name{
+    margin-left: 60px;
+}
+#book_category{
+    margin-left: 75px;
+
+}
+#book_category_item{
+    margin-left:23px
+}
+#book_height{
+    margin-left: 95px;
+
+}
+#book_width{
+    margin-left: 105px;
+
+}
+#detail_box p{
+    font-size: 22px;
+}
+#full_detail_box{
+    margin-top:20px
+}
+#whole_full_box{
+    display: flex;
+    flex-direction:column;
+}
+#track_report{
+    /* margin-top:180px; */
+    margin-left: 70px;
+    height:260px;
+    width:440px;
+    border:solid 1px black;
+    box-shadow: 10px 10px 20px grey;
+    padding:20px
+
+}
+
+#whole_full_box{
+    margin-top: 180px;
+}
+#underprocess{
+    font-size: 25px;
+    color:blue;
     text-align: center;
-    font-size:18px;
-    font-weight: 500;
-    padding: 20px;
-background-color:#f5e9d7;
+}
+#both_box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+#para_track_report{
+    
+    font-size:22px;
+    text-align: center;
     
 }
-
-.even{
-    background-color: rgb(172, 161, 147);
+#status{
+    text-align: center;
+    font-size:30px;
 }
-tbody tr a{
-    color: blueviolet;
-}
+#accepted{
+    color: green;
+    text-align: center;
+    font-size:25px;
 
+}
+#rejected{
+    color:red;
+    text-align: center;
+    font-size:25px;
+
+}
+#track_report a{
+    color:white;
+  
+    border:1px solid black;
+    font-size: 20px;
+    padding:5px;
+    background-color: rgb(95, 33, 33);
+
+}
+#clarify{
+    position: relative;
+    top:50px;
+    left:30px;
+}
+#pickup{
+    position: relative;
+    top:50px;
+    left:70px;
+}
