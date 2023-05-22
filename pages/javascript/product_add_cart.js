@@ -21,7 +21,6 @@ wishlist_arr.forEach((element) => {
     </a>
     <div class="side2">
         <h2 class="product_name">${element.product_name}</h2>
-        <p class="rating">${element.highlights}</p>
         <div class="rating">
     
         </div>
@@ -33,12 +32,10 @@ wishlist_arr.forEach((element) => {
         <p class="price">₹ ${element.product_price}</p>
     </div>
     <div class="add_cart_box">
-        <h3 id="stock">stock In</h3>
+        <p id="stock">${element.highlights}</p>
     </div>
 
-    <div class="add_cart_box">
-        <button id="add_cart">Add to favourite</button>
-    </div>
+   
 
     <div class="add_cart_box">
         <p><i id="trash" onclick="delete_wishlist(${element.productid})" class="fa-solid fa-trash"></i></p>
@@ -54,20 +51,27 @@ wishlist_arr.forEach((element) => {
   });
 });
 
+
+if(total==0){
+  console.log(output,"nitthi")
+  document.getElementById("total_amount").remove()
+  document.getElementById("order_amount").remove()
+  document.getElementById("check_out").remove()
+  document.querySelector(".product_page").innerHTML = `<p id="when_empty">There is no product in the add to cart</p>`
+}
 // console.log(order_count);
 
 // console.log(total)
 const total_amount = document.getElementById("total_amount");
-total_amount.innerHTML = `Total product price:` + `  ` + ` ${total}`;
+total_amount.innerHTML = `Total product price : ` + `  ` + ` ${total}`;
 const order_amount = document.getElementById("order_amount");
-order_amount.innerHTML = `Order price:` + `  ` + `  ${total}`;
+order_amount.innerHTML = `Order price   :   ` + `  ` +`${total}`;
 
 function delete_wishlist(id) {
   wishlist_arr.find((obj) => {
-    if (obj.productid == id) {
+    if (obj.productid == id){
       obj.status = false;
       // console.log(obj.status)
-
       localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
     }
   });
@@ -76,7 +80,6 @@ function delete_wishlist(id) {
 user_detail.forEach((obj) => {
   if (last_email == obj.emailid) {
     obj.count = order_count;
-
     localStorage.setItem("user_list", JSON.stringify(user_detail));
     // console.log(user_detail)
   }

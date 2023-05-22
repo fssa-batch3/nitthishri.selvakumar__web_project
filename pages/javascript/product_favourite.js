@@ -8,6 +8,7 @@ let fav_count = 0;
 const last_email = localStorage.getItem("logged_in");
 // console.log(last_email);
 
+
 favourite_arr.forEach((element) => {
   product_information.forEach((item) => {
     if (item.productid == element.productid) {
@@ -30,7 +31,7 @@ favourite_arr.forEach((element) => {
         <p class="price">₹${element.product_price}</p>
     </div>
     <div class="add_cart_box">
-        <h3 id="stock">stock In</h3>
+        <h3 id="stock"><i id="trash" onclick="delete_wishlist(${element.productid})" class="fa-solid fa-trash"></i></h3>
     </div>
 
    
@@ -45,6 +46,15 @@ favourite_arr.forEach((element) => {
   });
   console.log(fav_count);
 });
+function delete_wishlist(id) {
+  favourite_arr.find((obj) => {
+      if (obj.productid == id){
+        obj.status = false;
+        // console.log(obj.status)
+        localStorage.setItem("favourite", JSON.stringify(favourite_arr));
+      }
+    });
+  }
 
 // console.log(order_count);
 

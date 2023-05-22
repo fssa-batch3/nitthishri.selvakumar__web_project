@@ -229,11 +229,10 @@ searchbox.addEventListener("input", (e) => {
       return item.product_name.toLowerCase().includes(searchQuery);
     }
   });
-
   const parentHtmlDiv = document.querySelector(".product_page");
   parentHtmlDiv.innerHTML = "";
-
   list_product(filteredList);
+
 });
 
 list_product(product_arr);
@@ -243,9 +242,15 @@ user_detail.forEach((e) => {
     order_count.innerHTML = e.count;
   }
 });
-
 user_detail.forEach((e) => {
   if (e.emailid == last_email) {
     favourite_count.innerHTML = e.favourite_count;
   }
 });
+document.getElementById("favourite").addEventListener("click",function () {
+  //check if checkbox is checked
+  
+      document.getElementById("favourite").setAttribute('disabled', true); //disable input
+  
+});
+
